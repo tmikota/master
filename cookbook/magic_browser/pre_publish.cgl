@@ -1,0 +1,20 @@
+{
+    "magic_browser": [
+        {
+            "buttons": [
+                {
+                    "label": "Step One",
+                    "module": "cookbook.magic_browser.pre_publish.mdl.StepOne",
+                    "name": "StepOne",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "mdl"
+        },
+        {
+            "buttons": [],
+            "name": "step_one"
+        }
+    ]
+}

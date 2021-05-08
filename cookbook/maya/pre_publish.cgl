@@ -1,0 +1,239 @@
+{
+    "maya": [
+        {
+            "buttons": [
+                {
+                    "label": "FixReferencedBundles",
+                    "module": "cookbook.maya.pre_publish.anim.FixReferencedBundles",
+                    "name": "FixReferencedBundles",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "UpdateReferences",
+                    "module": "cookbook.maya.pre_publish.anim.UpdateReferences",
+                    "name": "UpdateReferences",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "RemoveDoubleNamespaces",
+                    "module": "cookbook.maya.pre_publish.anim.RemoveDoubleNamespaces",
+                    "name": "RemoveDoubleNamespaces",
+                    "order": 3,
+                    "required": "True"
+                },
+                {
+                    "label": "OrganizeAnim",
+                    "module": "cookbook.maya.pre_publish.anim.OrganizeAnim",
+                    "name": "OrganizeAnim",
+                    "order": 4,
+                    "required": "True"
+                },
+                {
+                    "label": "Check Constraints",
+                    "module": "cookbook.maya.pre_publish.anim.CheckConstraints",
+                    "name": "CheckConstraints",
+                    "order": 5,
+                    "required": "True"
+                },
+                {
+                    "label": "FindStaticRigs",
+                    "module": "cookbook.maya.pre_publish.anim.FindStaticRigs",
+                    "name": "FindStaticRigs",
+                    "order": 6,
+                    "required": "True"
+                },
+                {
+                    "label": "VersionUp",
+                    "module": "cookbook.maya.pre_publish.anim.VersionUp",
+                    "name": "VersionUp",
+                    "order": 7,
+                    "required": "True"
+                },
+                {
+                    "label": "PublishCameras",
+                    "module": "cookbook.maya.pre_publish.anim.PublishCameras",
+                    "name": "PublishCameras",
+                    "order": 8,
+                    "required": "False"
+                },
+                {
+                    "label": "ExportAlembic",
+                    "module": "cookbook.maya.pre_publish.anim.ExportAlembic",
+                    "name": "ExportAlembic",
+                    "order": 9,
+                    "required": "True"
+                },
+                {
+                    "label": "Exporteyesalembic",
+                    "module": "cookbook.maya.pre_publish.anim.Exporteyesalembic",
+                    "name": "Exporteyesalembic",
+                    "order": 10,
+                    "required": "True"
+                },
+                {
+                    "label": "ExportBundlAnimProxy",
+                    "module": "cookbook.maya.pre_publish.anim.ExportBundlAnimProxy",
+                    "name": "ExportBundlAnimProxy",
+                    "order": 11,
+                    "required": "True"
+                },
+                {
+                    "label": "Playblastexists",
+                    "module": "cookbook.maya.pre_publish.anim.Playblastexists",
+                    "name": "Playblastexists",
+                    "order": 12,
+                    "required": "True"
+                },
+                {
+                    "label": "Publish",
+                    "module": "cookbook.maya.pre_publish.anim.Publish",
+                    "name": "Publish",
+                    "order": 13,
+                    "required": "True"
+                },
+                {
+                    "label": "Create MSD",
+                    "module": "cookbook.maya.pre_publish.anim.Createmsd",
+                    "name": "Createmsd",
+                    "order": 14,
+                    "required": "True"
+                }
+            ],
+            "name": "anim"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "OrganizeLights",
+                    "module": "cookbook.maya.pre_publish.lite.OrganizeLights",
+                    "name": "OrganizeLights",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "ExportLightRig",
+                    "module": "cookbook.maya.pre_publish.lite.ExportLightRig",
+                    "name": "ExportLightRig",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "PublishLightRig",
+                    "module": "cookbook.maya.pre_publish.lite.PublishLightRig",
+                    "name": "PublishLightRig",
+                    "order": 3,
+                    "required": "True"
+                }
+            ],
+            "name": "lite"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "SaveScene",
+                    "module": "cookbook.maya.pre_publish.render.SaveScene",
+                    "name": "SaveScene",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "SubmitRender",
+                    "module": "cookbook.maya.pre_publish.render.SubmitRender",
+                    "name": "SubmitRender",
+                    "order": 2,
+                    "required": "True"
+                }
+            ],
+            "name": "render"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Latest Model",
+                    "module": "cookbook.maya.pre_publish.shd.LatestModel",
+                    "name": "LatestModel",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Clean Env Light",
+                    "module": "cookbook.maya.pre_publish.shd.CleanEnvLight",
+                    "name": "CleanEnvLight",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Published Textures",
+                    "module": "cookbook.maya.pre_publish.shd.PublishedTextures",
+                    "name": "PublishedTextures",
+                    "order": 3,
+                    "required": "True"
+                },
+                {
+                    "label": "Save Scene",
+                    "module": "cookbook.maya.pre_publish.shd.SaveScene",
+                    "name": "SaveScene",
+                    "order": 4,
+                    "required": "True"
+                },
+                {
+                    "label": "Version Up",
+                    "module": "cookbook.maya.pre_publish.shd.VersionUp",
+                    "name": "VersionUp",
+                    "order": 5,
+                    "required": "True"
+                },
+                {
+                    "label": "Import Reference",
+                    "module": "cookbook.maya.pre_publish.shd.ImportReference",
+                    "name": "ImportReference",
+                    "order": 6,
+                    "required": "True"
+                },
+                {
+                    "label": "Shader Tags",
+                    "module": "cookbook.maya.pre_publish.shd.ShaderTags",
+                    "name": "ShaderTags",
+                    "order": 7,
+                    "required": "True"
+                },
+                {
+                    "label": "Export Model Shader",
+                    "module": "cookbook.maya.pre_publish.shd.ExportModelShader",
+                    "name": "ExportModelShader",
+                    "order": 8,
+                    "required": "True"
+                },
+                {
+                    "label": "Export Shader",
+                    "module": "cookbook.maya.pre_publish.shd.ExportShader",
+                    "name": "ExportShader",
+                    "order": 9,
+                    "required": "True"
+                },
+                {
+                    "label": "Publish",
+                    "module": "cookbook.maya.pre_publish.shd.Publish",
+                    "name": "Publish",
+                    "order": 10,
+                    "required": "True"
+                }
+            ],
+            "name": "shd"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Check Shaders",
+                    "module": "cookbook.maya.pre_publish.mdl.CheckShaders",
+                    "name": "CheckShaders",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "mdl"
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "houdini": [
+        {
+            "buttons": [
+                {
+                    "icon": "",
+                    "label": "Build",
+                    "module": "import cookbook.houdini.shelves.alchemy.Build as Build; Build.run()",
+                    "name": "Build",
+                    "order": 1,
+                    "reference_path": null
+                }
+            ],
+            "name": "alchemy"
+        }
+    ]
+}

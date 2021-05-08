@@ -1,0 +1,91 @@
+#! C:/Program Files/Nuke12.0v2/nuke-12.0.2.dll -nx
+version 12.0 v2
+define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
+<layout version="1.0">
+    <window x="0" y="0" w="2557" h="1351" screen="0">
+        <splitter orientation="1">
+            <split size="46"/>
+            <dock id="" hideTitles="1" activePageId="Toolbar.1">
+                <page id="Toolbar.1"/>
+            </dock>
+            <split size="1888" stretch="1"/>
+            <splitter orientation="2">
+                <split size="763"/>
+                <dock id="" activePageId="Viewer.1">
+                    <page id="Viewer.1"/>
+                </dock>
+                <split size="536"/>
+                <dock id="" activePageId="DAG.1" focus="true">
+                    <page id="DAG.1"/>
+                    <page id="Curve Editor.1"/>
+                    <page id="DopeSheet.1"/>
+                </dock>
+            </splitter>
+            <split size="615"/>
+            <dock id="" activePageId="Properties.1">
+                <page id="Properties.1"/>
+                <page id="uk.co.thefoundry.backgroundrenderview.1"/>
+            </dock>
+        </splitter>
+    </window>
+</layout>
+}
+Root {
+ inputs 0
+ name Z:/Projects/cmpa-animation/config/master/default_files/comp/default.nk
+ format "2048 1556 0 0 2048 1556 1 2K_Super_35(full-ap)"
+ proxy_type scale
+ proxy_format "1024 778 0 0 1024 778 1 1K_Super_35(full-ap)"
+ colorManagement Nuke
+ workingSpaceLUT linear
+ monitorLut sRGB
+ int8Lut sRGB
+ int16Lut sRGB
+ logLut Cineon
+ floatLut linear
+}
+BackdropNode {
+ inputs 0
+ name Environment_Backdrop
+ tile_color 0xffd455ff
+ gl_color 0xffe9aaff
+ label "ENV - to rotate: \\nDouble click on SphericalTransform\\nAdjust \"ry\" on \"Output Rotation Order\".  "
+ note_font_color 0xffd455ff
+ xpos 234
+ ypos -200
+ bdwidth 260
+ bdheight 309
+}
+Viewer {
+ inputs 0
+ frame 1
+ frame_range 1-100
+ name Viewer1
+ xpos -40
+ ypos -10
+}
+Read {
+ inputs 0
+ file_type exr
+ file Z:/VFX/HDRI_Skies_VOL1/HDR_Sunset14/HDR_Sunset14.exr
+ format "10000 5000 0 0 10000 5000 1 "
+ origset true
+ name Read1
+ xpos 296
+ ypos -80
+}
+SphericalTransform {
+ input "Lat Long map"
+ output Cube
+ format "960 540 0 0 960 540 1 "
+ fix true
+ name SphericalTransform1
+ xpos 296
+ ypos 8
+}
+Defocus {
+ defocus 11.8
+ name Defocus1
+ xpos 296
+ ypos 48
+}
