@@ -8,7 +8,7 @@
     "cmpa-w-x10dri": {
         "id": "WJ7JN2J-JLZIXTC-PM2Z7TI-RBMJIDG-52ODBRU-OURMISB-MSBCUSH-57Q2VAK",
         "name": "cmpa-w-x10dri",
-        "server": true,
+        "server": false,
         "user": "tmikota"
     }
 }
