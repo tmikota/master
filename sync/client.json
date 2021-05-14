@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cgl-time-sheets",
+  "private_key_id": "51d582aa2cb97b275347e97c07c9d3fd697800a7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCR9/3F3MSIHz+B\nbd87EQpS6H7O+nkP76KanaPUdyyoOGHyYvKA9iWbJDe1n+F+SAFAb5qV+NmXKAt+\n4Pz/1rAc74FdI+O1X4Uvzx8FYTSht2/sahoXZLH1J/rfAeuzKn+nOpbL5q4h64N3\nyzcX4ddgBl608WFhmPkQPz05yhXZDgVIjJ4b79seD3MjY9nEx/LHopiuEPiy8ASG\nU9UifFTmG8vzdi2qsNFeWJw0UflGE7b/RuIz4q39qP9/KDr6/thhy4ROAzrsvG2R\nLmRTC++6cl99yTnmqFZtYihBj4uXjiejtSYq+U7zQsZFmz5nvdGzHwA1M0GXM5Fx\ndFwc2fipAgMBAAECggEAF8TJtl9q7T4mtCe0/ZmaacJha8i4z+crPiwZ5635lUbh\nGXwSladUm6emc//Ifddcb3v82xuTgEaitegNqodF/uA323fNoNTLYOvu1uHA6phu\niZEEFffCoUiqVDKsM8I22Sn0MNhWVer+FGgAh6Cx1nloZeRsVrJ3KWBy0tHdBDlC\nLsTerqIGRPVQeI/4ZuBytumsdea4Kkr/7eIJDvOkwF+gMv1ABTsEG2dOX5pUQhwV\nZXMS7gdnVIqWqLuv7ASROcR5TuIp9zMCVCUoxJ8d7tclY1tLb4p5NXj+84mnbur7\njaYzdfSo4189yYp9IXm4DpJmmRGvr3hUg79UWGYmJQKBgQDM01UZ2BSLwgspLU1D\nTBc4VjlBCYpqtR7qVBnuvTCqkAWjvpQvx8wb8ifpoFSMBaTgPScOZS4EdwcJxBGh\n3GNJXOydv0L+EPspApui0W+hLisJJ91sR3Jpl2lrhdEw9eT3Z6ZTdyvqul1JQ//s\nQ7MulWf1Xj7mkG45e5cnF3DwhwKBgQC2cCuC7wHrEiQxEFx/9zXsdXry+uWUnLC8\ndX3SUUGQsyt8PYxFjZzMXJ6ekM577ia9lNB0mgKqPzQ/Gs2XthfIWBhLv+aLG+jU\nHjCzLqkD++NxTYxz8J1ayyfhhv5nmorQumuqNqyQCG+gsuKPMWo2Kwy9+faZtI+g\nCWkhnN0JTwKBgQCd9gVVbw05UyakVOmXEuF9cxGolKEI9jGnacCuG32irHuM8nb5\n+k3w52nchOdvLRMgVEkAkwtQKjNlVq56c6qmc2GPrmcN5S6tS/OXN4mtdht+bh4X\nWWplAH4ui/7ukVRJcMgW6nsWBS/YRvbh0LwpGtQXqN09lvlKn4PMhAl3lQKBgBjX\nlVUy7nPv+HWl4LKcGv+jz6Yee/yMiZRf+04UOnVVsGouh1dBPUSmqAK3fSZq+2N9\nTBVUk2BTUu303GH4LazeMhC+hMoUdtPLeJ4tkF42gnX/NUzkSsj+OOQA2cuJw7VA\nbUC0STMjsu+S7D7LX8cYfZew3d94MsZ8AZDOJ1sJAoGAOo/ijz8qJ105Tr2MS8xh\neRQWNYD/XJMweFxrNz9AuiMnALI/PtqMfs4mjtvjaBD47OJOV81c8b5/YBKYOaDy\nX7IBUg2rvTc2pXGZy+GyCd2HR6Zgq7OCa5nk6zrVwZyp5MANBquzXmoESmTNiSsr\n/cCuIe+h2M5Qi/x4qXqLXjo=\n-----END PRIVATE KEY-----\n",
+  "client_email": "fsu-cmpa@cgl-time-sheets.iam.gserviceaccount.com",
+  "client_id": "109194539615927298415",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/fsu-cmpa%40cgl-time-sheets.iam.gserviceaccount.com"
+}
