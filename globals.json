@@ -2,9 +2,9 @@
     "account_info": {
         "aws_company_name": "fsu-cmpa",
         "aws_globals_path": "https://fsu-cmpa.s3.amazonaws.com/globals.json",
+        "config_repo": "https://github.com/tmikota/master.git",
         "default_company": "",
         "globals_path": "Z:\\Projects\\VFX\\COMPANIES\\_config\\globals.json",
-        "config_repo": "https://github.com/tmikota/master.git",
         "project_management": "shotgun"
     },
     "asset_categories": {
@@ -82,6 +82,24 @@
     },
     "helpdesk": {
         "help_menu": ""
+    },
+    "layout": {
+        "asset": {
+            "name": "",
+            "source_path": "",
+            "task": "",
+            "transform": "",
+            "type": "asset"
+        },
+        "camera": {
+            "frame_end": 0,
+            "frame_start": 0,
+            "name": "",
+            "source_path": "",
+            "task": "",
+            "transform": "",
+            "type": "camera"
+        }
     },
     "logging": {
         "debug": {
@@ -661,6 +679,12 @@
                     "first": "Tom",
                     "last": "Mikota",
                     "login": "tmikota@fsu.edu"
+                },
+                "user": {
+                    "email": "tmikota@fsu.edu",
+                    "first": "Tom",
+                    "last": "Mikota",
+                    "login": "tmikota@fsu.edu"
                 }
             }
         }
@@ -726,6 +750,9 @@
                 "example": "",
                 "regex": "[a-zA-Z_]+$"
             },
+            "branch": {
+                "regex": "[a-z]+"
+            },
             "camera": {
                 "regex": "[A-Za-z0-9_]+"
             },
@@ -763,6 +790,9 @@
             },
             "minor_version": {
                 "regex": "[0-9]{3}"
+            },
+            "name": {
+                "regex": "[a-z]+"
             },
             "project": {
                 "example": "Project name rules:\n    Underscores are ok ('_',)\n    Letters of the alphabet (a-z, A-Z)\n    Must Contain 3 or more characters",
@@ -806,17 +836,11 @@
             "user_email": {
                 "regex": "[A-Za-z0-9]+"
             },
-            "version": {
-                "regex": "[0-9]{3,5}"
-            },
-            "name": {
-                "regex": "[a-z]+"
-            },
-            "branch": {
-                "regex": "[a-z]+"
-            },
             "variant": {
                 "regex": "[a-z]+"
+            },
+            "version": {
+                "regex": "[0-9]{3,5}"
             }
         },
         "scope_list": [
@@ -834,7 +858,6 @@
         }
     },
     "templates": {
-        "path_template": ["company", "context", "project", "branch", "scope"],
         "IO": {
             "render": {
                 "path": "{company}/render/{project}/{branch}/IO/{ingest_source}",
@@ -856,6 +879,13 @@
                 "version": "{version}/{resolution}/{filename}.{ext}"
             }
         },
+        "path_template": [
+            "company",
+            "context",
+            "project",
+            "branch",
+            "scope"
+        ],
         "shots": {
             "render": {
                 "path": "{company}/render/{project}/{branch}/shots/{seq}/{shot}/{task}/{variant}/{user}",
@@ -866,24 +896,6 @@
                 "path": "{company}/source/{project}/{branch}/shots/{seq}/{shot}/{task}/{variant}/{user}",
                 "version": "{version}/{resolution}/{filename}.{ext}"
             }
-        }
-    },
-    "layout": {
-        "asset": {
-            "name": "",
-            "source_path": "",
-            "task": "",
-            "transform": "",
-            "type": "asset"
-        },
-        "camera": {
-            "name": "",
-            "source_path": "",
-            "task": "",
-            "transform": "",
-            "type": "camera",
-            "frame_start": 0,
-            "frame_end": 0
         }
     }
 }
