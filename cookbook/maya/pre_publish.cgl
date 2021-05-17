@@ -132,17 +132,24 @@
         {
             "buttons": [
                 {
+                    "label": "Checkglobals",
+                    "module": "cookbook.maya.pre_publish.render.Checkglobals",
+                    "name": "Checkglobals",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
                     "label": "SaveScene",
                     "module": "cookbook.maya.pre_publish.render.SaveScene",
                     "name": "SaveScene",
-                    "order": 1,
+                    "order": 2,
                     "required": "True"
                 },
                 {
                     "label": "SubmitRender",
                     "module": "cookbook.maya.pre_publish.render.SubmitRender",
                     "name": "SubmitRender",
-                    "order": 2,
+                    "order": 3,
                     "required": "True"
                 }
             ],
@@ -226,9 +233,9 @@
         {
             "buttons": [
                 {
-                    "label": "Check Shaders",
-                    "module": "cookbook.maya.pre_publish.mdl.CheckShaders",
-                    "name": "CheckShaders",
+                    "label": "Check For Non Quads",
+                    "module": "cookbook.maya.pre_publish.mdl.CheckForNonQuads",
+                    "name": "CheckForNonQuads",
                     "order": 1,
                     "required": "True"
                 }

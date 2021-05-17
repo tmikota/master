@@ -12,5 +12,5 @@ class Createmsd(PreflightCheck):
         """
        
         """
-        anim.Task().export_msd(publish=True)
+        anim.Task().export_msd(self.shared_data['publish_object'])
         self.pass_check('Animation msd created')
