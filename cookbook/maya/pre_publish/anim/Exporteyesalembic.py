@@ -17,15 +17,12 @@ class Exporteyesalembic(PreflightCheck):
     def run(self):
         """
         script to be executed when the preflight is run.
-
         If the preflight is successful:
         self.pass_check('Message about a passed Check')
-
         if the preflight fails:
         self.fail_check('Message about a failed check')
         :return:
         """
-
         eye_stuff = self.george_eye_stuff() + self.jennifer_eye_stuff()
         for each in eye_stuff:
             pm.select(d=True)

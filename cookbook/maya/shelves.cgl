@@ -76,27 +76,6 @@
                 }
             ],
             "name": "Maya_Alchemy"
-        },
-        {
-            "buttons": [
-                {
-                    "icon": "",
-                    "label": "Cool Thing One",
-                    "module": "import cgl_tools.maya.shelves.Jarom.CoolThingOne as CoolThingOne; CoolThingOne.run()",
-                    "name": "CoolThingOne",
-                    "order": 1,
-                    "reference_path": null
-                },
-                {
-                    "icon": "",
-                    "label": "Cool Thing Two",
-                    "module": "import cgl_tools.maya.shelves.Jarom.CoolThingTwo as CoolThingTwo; CoolThingTwo.run()",
-                    "name": "CoolThingTwo",
-                    "order": 2,
-                    "reference_path": null
-                }
-            ],
-            "name": "Jarom"
         }
     ]
 }

@@ -13,8 +13,8 @@ load_plugin('AbcImport')
 
 class ExportAlembic(PreflightCheck):
 
-    sframe = int(pm.playbackOptions(query=True, min=True))
-    eframe = int(pm.playbackOptions(query=True, max=True))
+    sframe = int(pm.playbackOptions(query=True, animationStartTime=True))
+    eframe = int(pm.playbackOptions(query=True, animationEndTime=True))
 
     def getName(self):
         pass
