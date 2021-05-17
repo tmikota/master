@@ -4,7 +4,6 @@
         "aws_globals_path": "https://fsu-cmpa.s3.amazonaws.com/globals.json",
         "config_repo": "https://github.com/tmikota/master.git",
         "default_company": "",
-        "globals_path": "Z:\\Projects\\VFX\\COMPANIES\\_config\\globals.json",
         "project_management": "shotgun"
     },
     "asset_categories": {
