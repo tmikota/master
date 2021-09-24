@@ -43,6 +43,22 @@
     "dvp": {
         "frame_rate": 24
     },
+    "edit_categories": {
+        "Character": "char",
+        "Environment": "env",
+        "Library": "lib",
+        "Production": "prod",
+        "Prop": "prop",
+        "Vehicle": "veh"
+    },
+    "edit_category_long_list": [
+        "Subject",
+        "Scene",
+        "B_Roll",
+        "Tutorial",
+        "Lecture",
+        "Zoom"
+    ],
     "email": {
         "bugs": "c5r2y1k1t5h5o4l9@fsu-cmpa.slack.com",
         "from": "reports@cglumberjack.com",
@@ -120,6 +136,27 @@
         "7": "%07d",
         "8": "%08d",
         "9": "%09d"
+    },
+    "perforce": {
+        "depots": {
+            "KYULDEPOT": "4.26.2",
+            "TomDepot": "4.26.2",
+            "depot": "4.26.2"
+        },
+        "drive": "C:",
+        "port": 1666,
+        "server": {
+            "computer": "DESKTOP-TPTBT49",
+            "ip": "10.0.0.102",
+            "user": "cmpaforgepc2"
+        },
+        "workstations": {
+            "CMPA-W-VP-W01": {
+                "computer": "CMPA-W-VP-W01",
+                "ip": "10.0.0.101",
+                "user": "vp01"
+            }
+        }
     },
     "project_management": {
         "ftrack": {
@@ -563,9 +600,11 @@
                             "Modeling/UV": "mdl",
                             "Reference": "ref",
                             "Rigging": "rig",
+                            "Set": "set",
                             "Shading": "shd",
                             "Stand In": "stdin",
-                            "Texturing": "tex"
+                            "Texturing": "tex",
+                            "World": "world"
                         },
                         "shots": {
                             "Animatic": "amtc",
@@ -594,9 +633,11 @@
                             "mdl": "Modeling/UV",
                             "ref": "Reference",
                             "rig": "Rigging",
+                            "set": "Set",
                             "shd": "Shading",
                             "stdin": "Stand In",
-                            "tex": "Texturing"
+                            "tex": "Texturing",
+                            "world": "World"
                         },
                         "shots": {
                             "amtc": "Animatic",
@@ -635,6 +676,12 @@
                     "first": "Cameron",
                     "last": "Baker",
                     "login": "cab18n@my.fsu.edu"
+                },
+                "cmpaforgepc2": {
+                    "email": "km16f@gmail.com",
+                    "first": "Kyul",
+                    "last": "Molt",
+                    "login": "km16f"
                 },
                 "ec18f": {
                     "email": "ec18f@my.fsu.edu",
@@ -684,6 +731,24 @@
                     "first": "Tom",
                     "last": "Mikota",
                     "login": "tmikota@fsu.edu"
+                },
+                "vp01": {
+                    "email": "tmikota@fsu.edu",
+                    "first": "Kyle",
+                    "last": "Molter",
+                    "login": "tmikota@fsu.edu"
+                },
+                "vp03": {
+                    "email": "tmikota@gmail.com",
+                    "first": "VP03",
+                    "last": "",
+                    "login": ""
+                },
+                "vp04": {
+                    "email": "tmikota@fsu.edu",
+                    "first": "Tom",
+                    "last": "Mikota",
+                    "login": "tmikota@fsu.edu"
                 }
             }
         }
@@ -692,7 +757,6 @@
         "context_list": [
             "render",
             "source",
-            "unity",
             "unreal"
         ],
         "general": {
@@ -767,7 +831,7 @@
                 "regex": "[0-9_]+"
             },
             "ext": {
-                "regex": "[a-z]{2,5}"
+                "regex": "[a-z]{2,9}"
             },
             "filename": {
                 "regex": "\\w+"
@@ -807,7 +871,7 @@
                 "regex": "[A-Za-z0-9_\\:]+"
             },
             "scope": {
-                "example": "examples: assets, shots",
+                "example": "examples: assets, shots, sets",
                 "regex": "[a-z]+"
             },
             "seq": {
@@ -845,7 +909,8 @@
         "scope_list": [
             "assets",
             "shots",
-            "IO"
+            "IO",
+            "sets"
         ]
     },
     "sync": {
@@ -885,6 +950,17 @@
             "branch",
             "scope"
         ],
+        "sets": {
+            "render": {
+                "file": "/{filename}.{ext}",
+                "path": "{company}/render/{project}/{branch}/sets/{type}/{asset}/{task}/{variant}/{user}",
+                "version": "{version}/{resolution}/{filename}.{ext}"
+            },
+            "source": {
+                "path": "{company}/source/{project}/{branch}/sets/{type}/{asset}/{task}/{variant}/{user}",
+                "version": "{version}/{resolution}/{filename}.{ext}"
+            }
+        },
         "shots": {
             "render": {
                 "path": "{company}/render/{project}/{branch}/shots/{seq}/{shot}/{task}/{variant}/{user}",
@@ -894,6 +970,27 @@
             "source": {
                 "path": "{company}/source/{project}/{branch}/shots/{seq}/{shot}/{task}/{variant}/{user}",
                 "version": "{version}/{resolution}/{filename}.{ext}"
+            }
+        },
+        "unreal": {
+            "assets": {
+                "file": "{filename}.{ext}",
+                "path": "content/assets/{type}/{asset}/{task}/{variant}"
+            },
+            "multiuser": {
+                "port": 7000
+            },
+            "plugins": [
+                "Water",
+                "CodeView",
+                "NiagaraExtras"
+            ],
+            "project": {
+                "path": "{company}/unreal/{unreal_project}/{filename}.{ext}"
+            },
+            "shots": {
+                "file": "{filename}.{ext}",
+                "path": "content/shots/{seq}/{shot}/{task}/{variant}"
             }
         }
     }

@@ -3,18 +3,26 @@
         {
             "buttons": [
                 {
-                    "label": "Step One",
-                    "module": "cookbook.magic_browser.pre_publish.mdl.StepOne",
-                    "name": "StepOne",
+                    "label": "Setupperforce",
+                    "module": "cookbook.magic_browser.pre_publish.set.Setupperforce",
+                    "name": "Setupperforce",
                     "order": 1,
                     "required": "True"
                 }
             ],
-            "name": "mdl"
+            "name": "set"
         },
         {
-            "buttons": [],
-            "name": "step_one"
+            "buttons": [
+                {
+                    "label": "Publish",
+                    "module": "cookbook.magic_browser.pre_publish.default.Publish",
+                    "name": "Publish",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "default"
         }
     ]
 }
