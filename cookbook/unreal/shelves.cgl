@@ -1,0 +1,25 @@
+{
+    "unreal": [
+        {
+            "buttons": [
+                {
+                    "icon": "",
+                    "label": "Button1",
+                    "module": "import cookbook.unreal.shelves.TestShelf.Button1 as Button1; Button1.run()",
+                    "name": "Button1",
+                    "order": 1,
+                    "reference_path": null
+                },
+                {
+                    "icon": "",
+                    "label": "Bigboybutton",
+                    "module": "import cookbook.unreal.shelves.TestShelf.Bigboybutton as Bigboybutton; Bigboybutton.run()",
+                    "name": "Bigboybutton",
+                    "order": 2,
+                    "reference_path": null
+                }
+            ],
+            "name": "TestShelf"
+        }
+    ]
+}

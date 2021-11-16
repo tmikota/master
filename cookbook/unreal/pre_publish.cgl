@@ -1,0 +1,58 @@
+{
+    "unreal": [
+        {
+            "buttons": [
+                {
+                    "label": "Organize Scene",
+                    "module": "cookbook.unreal.pre_publish.set.OrganizeScene",
+                    "name": "OrganizeScene",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Fg Tool",
+                    "module": "cookbook.unreal.pre_publish.set.FgTool",
+                    "name": "FgTool",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Resource Usage",
+                    "module": "cookbook.unreal.pre_publish.set.ResourceUsage",
+                    "name": "ResourceUsage",
+                    "order": 3,
+                    "required": "True"
+                },
+                {
+                    "label": "Commit And Push",
+                    "module": "cookbook.unreal.pre_publish.set.CommitAndPush",
+                    "name": "CommitAndPush",
+                    "order": 4,
+                    "required": "True"
+                },
+                {
+                    "label": "Levelselected",
+                    "module": "cookbook.unreal.pre_publish.set.Levelselected",
+                    "name": "Levelselected",
+                    "order": 5,
+                    "required": "True"
+                },
+                {
+                    "label": "Pushtodepot",
+                    "module": "cookbook.unreal.pre_publish.set.Pushtodepot",
+                    "name": "Pushtodepot",
+                    "order": 6,
+                    "required": "True"
+                },
+                {
+                    "label": "Export Set",
+                    "module": "cookbook.unreal.pre_publish.set.ExportSet",
+                    "name": "ExportSet",
+                    "order": 7,
+                    "required": "True"
+                }
+            ],
+            "name": "set"
+        }
+    ]
+}

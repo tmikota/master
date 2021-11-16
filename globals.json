@@ -22,6 +22,12 @@
         "Production",
         "Library"
     ],
+    "colors": {
+        "background": "#1E1F26",
+        "secondary": "#283655",
+        "highlight": "#4D648D",
+        "text": "#D0E1F9"
+    },
     "definitions": {
         "ingest_browser_header": [
             "Filename",
@@ -511,6 +517,13 @@
                 }
             }
         },
+        "frame.io": {
+            "api": {
+                "api_key": "fio-u-0scVQDPIR-zz15u3vgr8wjXbvm8yWu_DLmmHlocnZq1J0ToLE84GgkW0dVw0l3LI",
+                "team_name": "FSU FILM",
+                "project_name": "ForgeFA21"
+            }
+        },
         "lumbermill": {
             "api": {
                 "default_schema": "DEFAULT"
@@ -749,6 +762,12 @@
                     "first": "Tom",
                     "last": "Mikota",
                     "login": "tmikota@fsu.edu"
+                },
+                "vp05": {
+                    "email": "tmikota@fsu.edu",
+                    "first": "Tom",
+                    "last": "Mikota",
+                    "login": "tmikota@fsu.edu"
                 }
             }
         }
@@ -983,7 +1002,11 @@
             "plugins": [
                 "Water",
                 "CodeView",
-                "NiagaraExtras"
+                "NiagaraExtras",
+                "RigLogic",
+                "LiveLink",
+                "LiveLinkControlRig",
+                "HairStrands"
             ],
             "project": {
                 "path": "{company}/unreal/{unreal_project}/{filename}.{ext}"
