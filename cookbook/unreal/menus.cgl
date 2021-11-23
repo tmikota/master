@@ -36,6 +36,12 @@
                     "module": "import cookbook.unreal.menus.PreProduction.Resourceusage as Resourceusage; Resourceusage.run()",
                     "name": "Resourceusage",
                     "order": 4
+                },
+                {
+                    "label": "Switchlevels",
+                    "module": "import cookbook.unreal.menus.PreProduction.Switchlevels as Switchlevels; Switchlevels.run()",
+                    "name": "Switchlevels",
+                    "order": 5
                 }
             ],
             "name": "PreProduction"
