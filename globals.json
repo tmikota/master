@@ -9,8 +9,6 @@
     "asset_categories": {
         "Character": "char",
         "Environment": "env",
-        "Library": "lib",
-        "Production": "prod",
         "Prop": "prop",
         "Vehicle": "veh"
     },
@@ -18,9 +16,7 @@
         "Prop",
         "Environment",
         "Vehicle",
-        "Character",
-        "Production",
-        "Library"
+        "Character"
     ],
     "colors": {
         "background": "#1E1F26",
