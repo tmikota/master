@@ -1,4 +1,10 @@
 {
+    "CMPA-WL-C4LW1J3": {
+        "id": "XRYQG2J-6TL74ZS-ZTHZHGY-GO5X6OE-JWPYBGF-4XX6SFR-M6FLR64-GW5TRA7",
+        "machine_type": "workstation",
+        "name": "CMPA-WL-C4LW1J3",
+        "user": "tmikota"
+    },
     "DESKTOP-J94QDHS": {
         "id": "73BF4XW-IM4YGJ4-PCTHX54-G52NAZ2-6IF6JGI-T3L3ZLC-JYSLURU-S7HB6QT",
         "machine_type": "server",
