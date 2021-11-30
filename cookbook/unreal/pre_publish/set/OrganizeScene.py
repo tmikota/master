@@ -22,7 +22,6 @@ class OrganizeScene(PreflightCheck):
         :return:
         """
         # print('PreflightTemplate')'
-        print("IN ORGANIZE SCENE")
         organize_scene()
         self.pass_check('Check Passed')
         # self.fail_check('Check Failed')

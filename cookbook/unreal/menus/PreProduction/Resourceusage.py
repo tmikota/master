@@ -1,9 +1,12 @@
 # from cgl.plugins.unreal import alchemy as alc
 from cgl.core.utils.general import save_json
-import unreal
 import time
 import glob
 import os
+import sys
+import unreal
+from PySide2 import QtWidgets, QtGui, QtUiTools, QtCore
+from cgl.plugins.unreal_engine.ui.dialogs import ResourceDialog
 
 
 def handle_static_meshes(filepath):
@@ -158,6 +161,13 @@ def get_file(deltaTime):
 def run():
     current_world = unreal.EditorLevelLibrary().get_editor_world()
     unreal.SystemLibrary().execute_console_command(current_world, "memreport -full")
+    json_path = "C:\\Users\\VP01\\Desktop\\Kyles fyles\\TestFOlder\\resource_management.json"
+    app = QtWidgets.QApplication.instance()
+    if not app:
+        app = QtWidgets.QApplication(sys.argv)
+    resource_dialog = ResourceDialog(resource_json=json_path)
+    resource_dialog.show()
+    app.exec_()
 
 
 if __name__ == "__main__":
