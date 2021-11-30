@@ -2,7 +2,7 @@
 from cgl.core.path import PathObject
 from cgl.plugins.unreal_engine.utils import update_mesh, get_asset_task, get_source_path
 import unreal
-p4
+
 
 def run():
     workspace_path = unreal.SystemLibrary.convert_to_absolute_path(unreal.Paths.project_dir())
@@ -13,5 +13,16 @@ def run():
     selected_actor = unreal.EditorLevelLibrary.get_selected_level_actors()[0]
     asset_task = get_asset_task(selected_actor)
     if asset_task == "Mdl":
-        update_mesh(asset=selected_actor, path_object=path_object)
+        static_mesh_component = selected_actor.static_mesh_component
+        static_mesh = static_mesh_component.static_mesh
+        update_mesh(static_mesh=static_mesh, path_object=path_object)
+    if asset_task == "Bndl":
+        root_component = selected_actor.root_component
+        for comp in root_component.get_children_components(True):
+            if comp.get_class().get_name() == "StaticMeshComponent":
+                static_mesh = comp.static_mesh
+                update_mesh(static_mesh=static_mesh, path_object=path_object)
 
+
+if __name__ == '__main__':
+    run()

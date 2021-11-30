@@ -18,8 +18,15 @@ def run():
     selected_actor = unreal.EditorLevelLibrary.get_selected_level_actors()[0]
     asset_task = get_asset_task(selected_actor)
     if asset_task == "Mdl":
-        publish_static_mesh(selected_actor, path_object)
-    print("Task: {}".format(asset_task))
+        static_mesh = selected_actor.static_mesh_component.static_mesh
+        publish_static_mesh(static_mesh, path_object)
+    if asset_task == "Bndl":
+        root_component = selected_actor.root_component
+        for comp in root_component.get_children_components(True):
+            if comp.get_class().get_name() == "StaticMeshComponent":
+                static_mesh = comp.static_mesh
+                publish_static_mesh(static_mesh, path_object)
+    # print("Task: {}".format(asset_task))
     # root_comp = selected_actor.root_component
     # for comp in root_comp.get_children_components(True):
     #     # print(comp.get_class().get_name())
@@ -33,5 +40,7 @@ def run():
     #     get_asset_task(asset_)
     #     # if asset_class == "StaticMesh":
     #     #     publish_static_mesh(asset_, path_object)
+if __name__ == '__main__':
+    run()
 
 
