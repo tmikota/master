@@ -1,6 +1,6 @@
 # from cgl.plugins.unreal import alchemy as alc
 from cgl.core.path import PathObject
-from cgl.plugins.unreal_engine.utils import update_mesh, get_asset_task, get_source_path
+from cgl.plugins.unreal_engine.utils import update_mesh, update_bndl, update_layout, get_asset_task, get_source_path
 import unreal
 
 
@@ -12,16 +12,14 @@ def run():
 
     selected_actor = unreal.EditorLevelLibrary.get_selected_level_actors()[0]
     asset_task = get_asset_task(selected_actor)
+    unique_mesh_list = []
     if asset_task == "Mdl":
-        static_mesh_component = selected_actor.static_mesh_component
-        static_mesh = static_mesh_component.static_mesh
+        static_mesh = selected_actor.static_mesh_component.static_mesh
         update_mesh(static_mesh=static_mesh, path_object=path_object)
     if asset_task == "Bndl":
-        root_component = selected_actor.root_component
-        for comp in root_component.get_children_components(True):
-            if comp.get_class().get_name() == "StaticMeshComponent":
-                static_mesh = comp.static_mesh
-                update_mesh(static_mesh=static_mesh, path_object=path_object)
+        update_bndl(asset=selected_actor, path_object=path_object, unique_mesh_list=unique_mesh_list)
+    if asset_task == "Lay":
+        update_layout(asset=selected_actor, path_object=path_object, unique_mesh_list=unique_mesh_list)
 
 
 if __name__ == '__main__':

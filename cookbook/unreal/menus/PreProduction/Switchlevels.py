@@ -4,6 +4,7 @@ import unreal
 from PySide2 import QtWidgets, QtGui, QtUiTools, QtCore
 from cgl.plugins.unreal_engine.ui.dialogs import LevelWidget
 
+
 def run():
     app = QtWidgets.QApplication.instance()
 
