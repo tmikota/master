@@ -152,9 +152,9 @@
         "drive": "C:",
         "port": 1666,
         "server": {
-            "computer": "DESKTOP-TPTBT49",
-            "ip": "10.0.0.102",
-            "user": "cmpaforgepc2"
+            "computer": "CMPA-W-VP-W01",
+            "ip": "10.0.0.101",
+            "user": "vp01"
         },
         "workstations": {
             "CMPA-W-VP-W01": {

@@ -24,12 +24,12 @@ class CommitAndPush(PreflightCheck):
         self.fail_check('Message about a failed check')
         :return:
         """
-        # filepath = unreal.SystemLibrary.convert_to_absolute_path(unreal.Paths.project_dir())
-        # project_name = unreal.Paths.get_base_filename(unreal.Paths.get_project_file_path())
-        # msd_path = filepath + project_name + ".msd"
-        # source_path = load_json(msd_path)['source_path']
-        # path_object = PathObject(source_path)
-        # commit(path_object)
-        # push()
+        filepath = unreal.SystemLibrary.convert_to_absolute_path(unreal.Paths.project_dir())
+        project_name = unreal.Paths.get_base_filename(unreal.Paths.get_project_file_path())
+        msd_path = filepath + project_name + ".msd"
+        source_path = load_json(msd_path)['source_path']
+        path_object = PathObject(source_path)
+        commit()
+        push()
         self.pass_check('Check Passed')
         # self.fail_check('Check Failed')

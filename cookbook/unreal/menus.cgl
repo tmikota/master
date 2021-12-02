@@ -24,6 +24,24 @@
                     "module": "import cookbook.unreal.menus.PreProduction.Publishselected as Publishselected; Publishselected.run()",
                     "name": "Publishselected",
                     "order": 2
+                },
+                {
+                    "label": "Updateselectedasset",
+                    "module": "import cookbook.unreal.menus.PreProduction.Updateselectedasset as Updateselectedasset; Updateselectedasset.run()",
+                    "name": "Updateselectedasset",
+                    "order": 3
+                },
+                {
+                    "label": "Resourceusage",
+                    "module": "import cookbook.unreal.menus.PreProduction.Resourceusage as Resourceusage; Resourceusage.run()",
+                    "name": "Resourceusage",
+                    "order": 4
+                },
+                {
+                    "label": "Switchlevels",
+                    "module": "import cookbook.unreal.menus.PreProduction.Switchlevels as Switchlevels; Switchlevels.run()",
+                    "name": "Switchlevels",
+                    "order": 5
                 }
             ],
             "name": "PreProduction"
