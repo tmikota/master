@@ -43,11 +43,19 @@
                     "reference_path": null
                 },
                 {
+                    "icon": "C:/CGLUMBERJACK/COMPANIES/4th_wall/config/master/cookbook/maya/shelves/Maya_Alchemy/",
+                    "label": "Clean Turntable",
+                    "module": "import cookbook.maya.shelves.Maya_Alchemy.CleanTurntable as CleanTurntable; CleanTurntable.run()",
+                    "name": "CleanTurntable",
+                    "order": 6,
+                    "reference_path": null
+                },
+                {
                     "icon": "C:/CGLUMBERJACK/COMPANIES/4th_wall/config/master/cookbook/maya/shelves/Maya_Alchemy/render_36px.png",
                     "label": "Render",
                     "module": "import cookbook.maya.shelves.Maya_Alchemy.Render as Render; Render.run()",
                     "name": "Render",
-                    "order": 6,
+                    "order": 7,
                     "reference_path": null
                 },
                 {
@@ -55,7 +63,7 @@
                     "label": "Review",
                     "module": "import cookbook.maya.shelves.Maya_Alchemy.Review as Review; Review.run()",
                     "name": "Review",
-                    "order": 7,
+                    "order": 8,
                     "reference_path": null
                 },
                 {
@@ -63,7 +71,7 @@
                     "label": "Publish",
                     "module": "import cookbook.maya.shelves.Maya_Alchemy.Publish as Publish; Publish.run()",
                     "name": "Publish",
-                    "order": 8,
+                    "order": 9,
                     "reference_path": null
                 },
                 {
@@ -71,7 +79,7 @@
                     "label": "Thumbnail",
                     "module": "import cookbook.maya.shelves.Maya_Alchemy.Thumbnail as Thumbnail; Thumbnail.run()",
                     "name": "Thumbnail",
-                    "order": 9,
+                    "order": 10,
                     "reference_path": null
                 }
             ],

@@ -1,7 +1,7 @@
 from cgl.plugins.preflight.preflight_check import PreflightCheck
 # there is typically a alchemy.py, and utils.py file in the plugins directory.
 # look here for pre-built, useful functions
-# from cgl.plugins.maya import alchemy as alc
+from cgl.plugins.maya import alchemy as alc
 
 
 class Publish(PreflightCheck):
@@ -20,6 +20,6 @@ class Publish(PreflightCheck):
         self.fail_check('Message about a failed check')
         :return:
         """
-        print('PreflightTemplate')
+		alc.scene_object().publish()
         self.pass_check('Check Passed')
-        # self.fail_check('Check Failed')
+		# close the window.
