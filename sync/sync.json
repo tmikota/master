@@ -1,4 +1,11 @@
 {
     "company_short_name": "thw",
-    "projects": {"advent": {"short_name": "adv"}}
+    "projects": {
+        "advent": {
+            "short_name": "adv"
+        },
+        "capernaum": {
+            "short_name": "cap"
+        }
+    }
 }
