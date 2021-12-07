@@ -149,15 +149,8 @@
         "port": 1666,
         "server": {
             "computer": "DESKTOP-TPTBT49",
-            "ip": "10.0.0.102",
-            "user": "cmpaforgepc2"
-        },
-        "workstations": {
-            "CMPA-W-VP-W01": {
-                "computer": "CMPA-W-VP-W01",
-                "ip": "10.0.0.101",
-                "user": "vp01"
-            }
+            "ip": "10.0.0.101",
+            "user": "vp01"
         }
     },
     "project_management": {
