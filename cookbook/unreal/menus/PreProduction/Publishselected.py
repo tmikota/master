@@ -1,6 +1,7 @@
 # from cgl.plugins.unreal import alchemy as alc
 import os
 from cgl.core.path import PathObject
+from cgl.core.config.config import ProjectConfig
 from cgl.core.utils.general import current_user, save_json
 from cgl.plugins.unreal_engine.utils import get_source_path, publish_static_mesh, publish_bndl, publish_layout, get_asset_task
 import unreal
@@ -10,7 +11,9 @@ def run():
     workspace_path = unreal.SystemLibrary.convert_to_absolute_path(unreal.Paths.project_dir())
     project_name = unreal.Paths.get_base_filename(unreal.Paths.get_project_file_path())
     path_obj_source_path = get_source_path(workspace_path, project_name)
-    path_object = PathObject(path_obj_source_path)
+    company = '4th_wall'
+    cfg = ProjectConfig(company=company)
+    path_object = PathObject(path_obj_source_path, cfg)
 
     unique_mesh_list = []
     selected_actor = unreal.EditorLevelLibrary.get_selected_level_actors()[0]
