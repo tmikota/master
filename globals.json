@@ -4,7 +4,7 @@
         "aws_globals_path": "https://fsu-cmpa.s3.amazonaws.com/globals.json",
         "config_repo": "https://github.com/tmikota/master.git",
         "default_company": "",
-        "project_management": "shotgun"
+        "project_management": "alchemy"
     },
     "asset_categories": {
         "Character": "char",
@@ -148,7 +148,7 @@
         "drive": "C:",
         "port": 1666,
         "server": {
-            "computer": "DESKTOP-TPTBT49",
+            "computer": "CMPA-W-VP-W01",
             "ip": "10.0.0.101",
             "user": "vp01"
         }
