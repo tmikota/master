@@ -759,6 +759,186 @@
                     "login": "tmikota@fsu.edu"
                 }
             }
+        },
+        "alchemy": {
+            "api": {
+                "api_key": "",
+                "api_script": "",
+                "api_user": "",
+                "concurrent": "",
+                "concurrent_low": 0,
+                "default_schema": "default",
+                "notes": "ensure short codes exist for all pipeline steps in shotgun, might want a wizard for this.",
+                "project_short_name": "",
+                "server_url": ""
+            },
+            "tasks": {
+                "default": {
+                    "long_to_short": {
+                        "assets": {
+                            "Bundle": "bndl",
+                            "Concept": "cncpt",
+                            "Layout": "lay",
+                            "Modeling/UV": "mdl",
+                            "Reference": "ref",
+                            "Rigging": "rig",
+                            "Set": "set",
+                            "Shading": "shd",
+                            "Stand In": "stdin",
+                            "Texturing": "tex",
+                            "World": "world"
+                        },
+                        "shots": {
+                            "Animatic": "amtc",
+                            "Animation": "anim",
+                            "Background": "bg",
+                            "Camera": "cam",
+                            "Compositing": "comp",
+                            "Editorial": "edit",
+                            "Green Screen": "greenscreen",
+                            "Ingest": "ingest",
+                            "Layout": "lay",
+                            "Lighting": "lite",
+                            "MatchMove": "mm",
+                            "Plate": "plt",
+                            "Previs": "prev",
+                            "Sound Editing": "sound",
+                            "Storyboards": "boards",
+                            "fx": "fx"
+                        }
+                    },
+                    "short_to_long": {
+                        "assets": {
+                            "bndl": "Bundle",
+                            "cncpt": "Concept",
+                            "lay": "Layout",
+                            "mdl": "Modeling/UV",
+                            "ref": "Reference",
+                            "rig": "Rigging",
+                            "set": "Set",
+                            "shd": "Shading",
+                            "stdin": "Stand In",
+                            "tex": "Texturing",
+                            "world": "World"
+                        },
+                        "shots": {
+                            "amtc": "Animatic",
+                            "anim": "Animation",
+                            "bg": "Background",
+                            "boards": "Storyboards",
+                            "cam": "Camera",
+                            "comp": "Compositing",
+                            "edit": "Editorial",
+                            "fx": "fx",
+                            "greenscreen": "Green Screen",
+                            "ingest": "Ingest",
+                            "lay": "Layout",
+                            "lite": "Lighting",
+                            "mm": "MatchMove",
+                            "plt": "Plate",
+                            "prev": "Previs",
+                            "sound": "Sound Editing"
+                        }
+                    }
+                },
+                "symlink": [
+                    "comp",
+                    "tex",
+                    "lite"
+                ]
+            },
+            "users": {
+                "bja16": {
+                    "first": "Brendan",
+                    "last": "Arena",
+                    "login": "bja16@my.fsu.edu"
+                },
+                "cab18n": {
+                    "email": "cab18n@my.fsu.edu",
+                    "first": "Cameron",
+                    "last": "Baker",
+                    "login": "cab18n@my.fsu.edu"
+                },
+                "cmpaforgepc2": {
+                    "email": "km16f@gmail.com",
+                    "first": "Kyul",
+                    "last": "Molt",
+                    "login": "km16f"
+                },
+                "ec18f": {
+                    "email": "ec18f@my.fsu.edu",
+                    "first": "Erica",
+                    "last": "Chow",
+                    "login": "ec18f@my.fsu.edu"
+                },
+                "jhl16": {
+                    "email": "jhl16@my.fsu.edu",
+                    "first": "Jillian",
+                    "last": "Lucia",
+                    "login": "jhl16@my.fsu.edu"
+                },
+                "jzd16": {
+                    "first": "Josh",
+                    "last": "Devaughn",
+                    "login": "jzd16@my.fsu.edu"
+                },
+                "ker18q": {
+                    "email": "ker18q@my.fsu.edu",
+                    "first": "Karli",
+                    "last": "Roberts",
+                    "login": "ker18q@my.fsu.edu"
+                },
+                "kfk18": {
+                    "first": "Keaton",
+                    "last": "Kish",
+                    "login": "kfk18@my.fsu.edu"
+                },
+                "ram16e": {
+                    "first": "Royce",
+                    "last": "Marnell",
+                    "login": "ram16e@my.fsu.edu"
+                },
+                "scd16d": {
+                    "first": "Shae",
+                    "last": "Demandt",
+                    "login": "scd16d@my.fsu.edu"
+                },
+                "tmikota": {
+                    "first": "Tom",
+                    "last": "Mikota",
+                    "login": "tmikota@fsu.edu"
+                },
+                "user": {
+                    "email": "tmikota@fsu.edu",
+                    "first": "Tom",
+                    "last": "Mikota",
+                    "login": "tmikota@fsu.edu"
+                },
+                "vp01": {
+                    "email": "tmikota@fsu.edu",
+                    "first": "Kyle",
+                    "last": "Molter",
+                    "login": "tmikota@fsu.edu"
+                },
+                "vp03": {
+                    "email": "tmikota@gmail.com",
+                    "first": "VP03",
+                    "last": "",
+                    "login": ""
+                },
+                "vp04": {
+                    "email": "tmikota@fsu.edu",
+                    "first": "Tom",
+                    "last": "Mikota",
+                    "login": "tmikota@fsu.edu"
+                },
+                "vp05": {
+                    "email": "tmikota@fsu.edu",
+                    "first": "Tom",
+                    "last": "Mikota",
+                    "login": "tmikota@fsu.edu"
+                }
+            }
         }
     },
     "rules": {
