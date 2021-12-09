@@ -216,24 +216,31 @@
                     "required": "True"
                 },
                 {
+                    "label": "Remove Namespaces",
+                    "module": "cookbook.maya.pre_publish.rig.RemoveNamespaces",
+                    "name": "RemoveNamespaces",
+                    "order": 6,
+                    "required": "True"
+                },
+                {
                     "label": "Check Rig Children",
                     "module": "cookbook.maya.pre_publish.rig.CheckRigChildren",
                     "name": "CheckRigChildren",
-                    "order": 6,
+                    "order": 7,
                     "required": "True"
                 },
                 {
                     "label": "Export Rig",
                     "module": "cookbook.maya.pre_publish.rig.ExportRig",
                     "name": "ExportRig",
-                    "order": 7,
+                    "order": 8,
                     "required": "True"
                 },
                 {
                     "label": "Publish",
                     "module": "cookbook.maya.pre_publish.rig.Publish",
                     "name": "Publish",
-                    "order": 8,
+                    "order": 9,
                     "required": "True"
                 }
             ],
