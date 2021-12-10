@@ -43,7 +43,7 @@
                     "reference_path": null
                 },
                 {
-                    "icon": "C:/CGLUMBERJACK/COMPANIES/4th_wall/config/master/cookbook/maya/shelves/Maya_Alchemy/",
+                    "icon": "C:/CGLUMBERJACK/COMPANIES/4th_wall/config/master/cookbook/maya/shelves/Maya_Alchemy/TT_clean_36px.png",
                     "label": "Clean Turntable",
                     "module": "import cookbook.maya.shelves.Maya_Alchemy.CleanTurntable as CleanTurntable; CleanTurntable.run()",
                     "name": "CleanTurntable",
@@ -75,7 +75,7 @@
                     "reference_path": null
                 },
                 {
-                    "icon": "C:/CGLUMBERJACK/COMPANIES/4th_wall/config/master/cookbook/maya/shelves/Maya_Alchemy/",
+                    "icon": "C:/CGLUMBERJACK/COMPANIES/4th_wall/config/master/cookbook/maya/shelves/Maya_Alchemy/snap_to_origin_36px.png",
                     "label": "Thumbnail",
                     "module": "import cookbook.maya.shelves.Maya_Alchemy.Thumbnail as Thumbnail; Thumbnail.run()",
                     "name": "Thumbnail",
