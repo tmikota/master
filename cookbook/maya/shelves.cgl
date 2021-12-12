@@ -84,6 +84,35 @@
                 }
             ],
             "name": "Maya_Alchemy"
+        },
+        {
+            "buttons": [
+                {
+                    "icon": "",
+                    "label": "Make Variants",
+                    "module": "import cookbook.maya.shelves.Advent.MakeVariants as MakeVariants; MakeVariants.run()",
+                    "name": "MakeVariants",
+                    "order": 1,
+                    "reference_path": null
+                },
+                {
+                    "icon": "",
+                    "label": "Create New Color Variant",
+                    "module": "import cookbook.maya.shelves.Advent.CreateNewColorVariant as CreateNewColorVariant; CreateNewColorVariant.run()",
+                    "name": "CreateNewColorVariant",
+                    "order": 2,
+                    "reference_path": null
+                },
+                {
+                    "icon": "",
+                    "label": "Define Color Palette",
+                    "module": "import cookbook.maya.shelves.Advent.DefineColorPalette as DefineColorPalette; DefineColorPalette.run()",
+                    "name": "DefineColorPalette",
+                    "order": 3,
+                    "reference_path": null
+                }
+            ],
+            "name": "Advent"
         }
     ]
 }
