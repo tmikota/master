@@ -89,7 +89,7 @@
             "buttons": [
                 {
                     "icon": "",
-                    "label": "Make Variants",
+                    "label": "Make Geo Variants",
                     "module": "import cookbook.maya.shelves.Advent.MakeVariants as MakeVariants; MakeVariants.run()",
                     "name": "MakeVariants",
                     "order": 1,
