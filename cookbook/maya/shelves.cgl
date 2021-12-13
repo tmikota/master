@@ -3,7 +3,7 @@
         {
             "buttons": [
                 {
-                    "icon": "Z:/Projects/VFX/config/master/cookbook/maya/shelves/Maya_Alchemy/build_36px.png",
+                    "icon": "C:/CGLUMBERJACK/COMPANIES/4th_wall/config/master/cookbook/maya/shelves/Maya_Alchemy/build_36px.png",
                     "label": "Build",
                     "module": "import cookbook.maya.shelves.Maya_Alchemy.Build as Build; Build.run()",
                     "name": "Build",
@@ -11,7 +11,7 @@
                     "reference_path": null
                 },
                 {
-                    "icon": "Z:/Projects/VFX/config/master/cookbook/maya/shelves/Maya_Alchemy/Import_36px.png",
+                    "icon": "C:/CGLUMBERJACK/COMPANIES/4th_wall/config/master/cookbook/maya/shelves/Maya_Alchemy/Import_36px.png",
                     "label": "Open",
                     "module": "import cookbook.maya.shelves.Maya_Alchemy.Open as Open; Open.run()",
                     "name": "Open",
@@ -19,7 +19,7 @@
                     "reference_path": null
                 },
                 {
-                    "icon": "Z:/Projects/VFX/config/master/cookbook/maya/shelves/Maya_Alchemy/version_up_36px.png",
+                    "icon": "C:/CGLUMBERJACK/COMPANIES/4th_wall/config/master/cookbook/maya/shelves/Maya_Alchemy/version_up_36px.png",
                     "label": "Version Up",
                     "module": "import cookbook.maya.shelves.Maya_Alchemy.VersionUp as VersionUp; VersionUp.run()",
                     "name": "VersionUp",
@@ -27,7 +27,7 @@
                     "reference_path": null
                 },
                 {
-                    "icon": "Z:/Projects/VFX/config/master/cookbook/maya/shelves/Maya_Alchemy/hdr_lib_36px.png",
+                    "icon": "C:/CGLUMBERJACK/COMPANIES/4th_wall/config/master/cookbook/maya/shelves/Maya_Alchemy/hdr_lib_36px.png",
                     "label": "Env Light",
                     "module": "import cookbook.maya.shelves.Maya_Alchemy.EnvLight as EnvLight; EnvLight.run()",
                     "name": "EnvLight",
@@ -35,7 +35,7 @@
                     "reference_path": null
                 },
                 {
-                    "icon": "Z:/Projects/VFX/config/master/cookbook/maya/shelves/Maya_Alchemy/TT_36px.png",
+                    "icon": "C:/CGLUMBERJACK/COMPANIES/4th_wall/config/master/cookbook/maya/shelves/Maya_Alchemy/TT_36px.png",
                     "label": "Turntable",
                     "module": "import cookbook.maya.shelves.Maya_Alchemy.Turntable as Turntable; Turntable.run()",
                     "name": "Turntable",
@@ -43,39 +43,76 @@
                     "reference_path": null
                 },
                 {
-                    "icon": "Z:/Projects/VFX/config/master/cookbook/maya/shelves/Maya_Alchemy/render_36px.png",
-                    "label": "Render",
-                    "module": "import cookbook.maya.shelves.Maya_Alchemy.Render as Render; Render.run()",
-                    "name": "Render",
+                    "icon": "C:/CGLUMBERJACK/COMPANIES/4th_wall/config/master/cookbook/maya/shelves/Maya_Alchemy/TT_clean_36px.png",
+                    "label": "Clean Turntable",
+                    "module": "import cookbook.maya.shelves.Maya_Alchemy.CleanTurntable as CleanTurntable; CleanTurntable.run()",
+                    "name": "CleanTurntable",
                     "order": 6,
                     "reference_path": null
                 },
                 {
-                    "icon": "Z:/Projects/VFX/config/master/cookbook/maya/shelves/Maya_Alchemy/review_36px.png",
-                    "label": "Review",
-                    "module": "import cookbook.maya.shelves.Maya_Alchemy.Review as Review; Review.run()",
-                    "name": "Review",
+                    "icon": "C:/CGLUMBERJACK/COMPANIES/4th_wall/config/master/cookbook/maya/shelves/Maya_Alchemy/render_36px.png",
+                    "label": "Render",
+                    "module": "import cookbook.maya.shelves.Maya_Alchemy.Render as Render; Render.run()",
+                    "name": "Render",
                     "order": 7,
                     "reference_path": null
                 },
                 {
-                    "icon": "Z:/Projects/VFX/config/master/cookbook/maya/shelves/Maya_Alchemy/publish_36px.png",
-                    "label": "Publish",
-                    "module": "import cookbook.maya.shelves.Maya_Alchemy.Publish as Publish; Publish.run()",
-                    "name": "Publish",
+                    "icon": "C:/CGLUMBERJACK/COMPANIES/4th_wall/config/master/cookbook/maya/shelves/Maya_Alchemy/review_36px.png",
+                    "label": "Review",
+                    "module": "import cookbook.maya.shelves.Maya_Alchemy.Review as Review; Review.run()",
+                    "name": "Review",
                     "order": 8,
                     "reference_path": null
                 },
                 {
-                    "icon": "",
+                    "icon": "C:/CGLUMBERJACK/COMPANIES/4th_wall/config/master/cookbook/maya/shelves/Maya_Alchemy/publish_36px.png",
+                    "label": "Publish",
+                    "module": "import cookbook.maya.shelves.Maya_Alchemy.Publish as Publish; Publish.run()",
+                    "name": "Publish",
+                    "order": 9,
+                    "reference_path": null
+                },
+                {
+                    "icon": "C:/CGLUMBERJACK/COMPANIES/4th_wall/config/master/cookbook/maya/shelves/Maya_Alchemy/snap_to_origin_36px.png",
                     "label": "Thumbnail",
                     "module": "import cookbook.maya.shelves.Maya_Alchemy.Thumbnail as Thumbnail; Thumbnail.run()",
                     "name": "Thumbnail",
-                    "order": 9,
+                    "order": 10,
                     "reference_path": null
                 }
             ],
             "name": "Maya_Alchemy"
+        },
+        {
+            "buttons": [
+                {
+                    "icon": "",
+                    "label": "Make Geo Variants",
+                    "module": "import cookbook.maya.shelves.Advent.MakeVariants as MakeVariants; MakeVariants.run()",
+                    "name": "MakeVariants",
+                    "order": 1,
+                    "reference_path": null
+                },
+                {
+                    "icon": "",
+                    "label": "Define Color Palette",
+                    "module": "import cookbook.maya.shelves.Advent.DefineColorPalette as DefineColorPalette; DefineColorPalette.run()",
+                    "name": "DefineColorPalette",
+                    "order": 2,
+                    "reference_path": null
+                },
+                {
+                    "icon": "",
+                    "label": "Create Variant",
+                    "module": "import cookbook.maya.shelves.Advent.CreateNewColorVariant as CreateNewColorVariant; CreateNewColorVariant.run()",
+                    "name": "CreateNewColorVariant",
+                    "order": 3,
+                    "reference_path": null
+                }
+            ],
+            "name": "Advent"
         }
     ]
 }

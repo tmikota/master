@@ -1,21 +1,3 @@
 {
-    "houdini": [
-        {
-            "buttons": [
-                {
-                    "label": "One",
-                    "module": "import cgl_tools.houdini.menus.TestTom.One as One; One.run()",
-                    "name": "One",
-                    "order": 1
-                },
-                {
-                    "label": "Two",
-                    "module": "import config.master.cookbook.houdini.menus.TestTom.Two as Two; Two.run()",
-                    "name": "Two",
-                    "order": 2
-                }
-            ],
-            "name": "TestTom"
-        }
-    ]
+    "houdini": []
 }

@@ -3,6 +3,29 @@
         {
             "buttons": [],
             "name": "lite"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Set Up Paths",
+                    "module": "cookbook.maya.pre_render.lay.SetUpPaths",
+                    "name": "SetUpPaths",
+                    "order": 1
+                },
+                {
+                    "label": "Render Settings",
+                    "module": "cookbook.maya.pre_render.lay.RenderSettings",
+                    "name": "RenderSettings",
+                    "order": 2
+                },
+                {
+                    "label": "Render Locally",
+                    "module": "cookbook.maya.pre_render.lay.RenderLocally",
+                    "name": "RenderLocally",
+                    "order": 3
+                }
+            ],
+            "name": "lay"
         }
     ]
 }
