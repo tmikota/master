@@ -151,6 +151,13 @@
             "computer": "CMPA-W-VP-W01",
             "ip": "10.0.0.101",
             "user": "vp01"
+        },
+        "workstations": {
+            "CMPA-W-VP-W01": {
+                "computer": "CMPA-W-VP-W01",
+                "ip": "10.0.0.101",
+                "user": "vp01"
+            }
         }
     },
     "project_management": {

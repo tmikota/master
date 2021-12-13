@@ -25,13 +25,13 @@ class FgTool(PreflightCheck):
         :return:
         """
 
-        # project_dir_path = unreal.SystemLibrary.convert_to_absolute_path(unreal.Paths.project_dir())
-        # widget_path = os.path.join(project_dir_path, "Content", "FG_Tool.uasset")
-        # if os.path.exists(widget_path):
-        #     print("YUHHH")
-        # else:
-        #     widget_source_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "content", "FGTool", "FG_Tool.uasset")
-        #     shutil.copy(widget_source_path, widget_path)
-        # create_window()
+        project_dir_path = unreal.SystemLibrary.convert_to_absolute_path(unreal.Paths.project_dir())
+        widget_path = os.path.join(project_dir_path, "Content", "FG_Tool.uasset")
+        if os.path.exists(widget_path):
+            print("YUHHH")
+        else:
+            widget_source_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "content", "FGTool", "FG_Tool.uasset")
+            shutil.copy(widget_source_path, widget_path)
+        create_window()
         self.pass_check('Check Passed')
         # self.fail_check('Check Failed')

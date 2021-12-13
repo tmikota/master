@@ -21,7 +21,6 @@ class Pushtodepot(PreflightCheck):
         self.fail_check('Message about a failed check')
         :return:
         """
-        print('PreflightTemplate')
         main()
         self.pass_check('Check Passed')
         # self.fail_check('Check Failed')
