@@ -97,17 +97,17 @@
                 },
                 {
                     "icon": "",
-                    "label": "Create New Color Variant",
-                    "module": "import cookbook.maya.shelves.Advent.CreateNewColorVariant as CreateNewColorVariant; CreateNewColorVariant.run()",
-                    "name": "CreateNewColorVariant",
+                    "label": "Define Color Palette",
+                    "module": "import cookbook.maya.shelves.Advent.DefineColorPalette as DefineColorPalette; DefineColorPalette.run()",
+                    "name": "DefineColorPalette",
                     "order": 2,
                     "reference_path": null
                 },
                 {
                     "icon": "",
-                    "label": "Define Color Palette",
-                    "module": "import cookbook.maya.shelves.Advent.DefineColorPalette as DefineColorPalette; DefineColorPalette.run()",
-                    "name": "DefineColorPalette",
+                    "label": "Create Variant",
+                    "module": "import cookbook.maya.shelves.Advent.CreateNewColorVariant as CreateNewColorVariant; CreateNewColorVariant.run()",
+                    "name": "CreateNewColorVariant",
                     "order": 3,
                     "reference_path": null
                 }
