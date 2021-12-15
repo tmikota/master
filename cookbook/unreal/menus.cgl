@@ -14,16 +14,40 @@
         {
             "buttons": [
                 {
-                    "label": "Createsublevels",
+                    "label": "Create Sublevels",
                     "module": "import cookbook.unreal.menus.PreProduction.Createsublevels as Createsublevels; Createsublevels.run()",
                     "name": "Createsublevels",
                     "order": 1
                 },
                 {
-                    "label": "Publishselected",
+                    "label": "Publish Selected Mesh",
                     "module": "import cookbook.unreal.menus.PreProduction.Publishselected as Publishselected; Publishselected.run()",
                     "name": "Publishselected",
                     "order": 2
+                },
+                {
+                    "label": "Resource Usage",
+                    "module": "import cookbook.unreal.menus.PreProduction.ResourceUsage as ResourceUsage; ResourceUsage.run()",
+                    "name": "ResourceUsage",
+                    "order": 3
+                },
+                {
+                    "label": "Switch Levels",
+                    "module": "import cookbook.unreal.menus.PreProduction.SwitchLevels as SwitchLevels; SwitchLevels.run()",
+                    "name": "SwitchLevels",
+                    "order": 4
+                },
+                {
+                    "label": "Update Selected Asset",
+                    "module": "import cookbook.unreal.menus.PreProduction.UpdateSelectedAsset as UpdateSelectedAsset; UpdateSelectedAsset.run()",
+                    "name": "UpdateSelectedAsset",
+                    "order": 5
+                },
+                {
+                    "label": "Migrate Selected Asset",
+                    "module": "import cookbook.unreal.menus.PreProduction.MigrateSelectedAsset as MigrateSelectedAsset; MigrateSelectedAsset.run()",
+                    "name": "MigrateSelectedAsset",
+                    "order": 6
                 }
             ],
             "name": "PreProduction"
