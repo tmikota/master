@@ -51,6 +51,34 @@
                 }
             ],
             "name": "PreProduction"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Set Up Ndisplay",
+                    "module": "import cookbook.unreal.menus.Virtual_Production.SetUpNdisplay as SetUpNdisplay; SetUpNdisplay.run()",
+                    "name": "SetUpNdisplay",
+                    "order": 1
+                },
+                {
+                    "label": "Connect Mosys",
+                    "module": "import cookbook.unreal.menus.Virtual_Production.ConnectMosys as ConnectMosys; ConnectMosys.run()",
+                    "name": "ConnectMosys",
+                    "order": 2
+                }
+            ],
+            "name": "Virtual_Production"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Place Migrated Assets",
+                    "module": "import cookbook.unreal.menus.Capernaum.PlaceMigratedAssets as PlaceMigratedAssets; PlaceMigratedAssets.run()",
+                    "name": "PlaceMigratedAssets",
+                    "order": 1
+                }
+            ],
+            "name": "Capernaum"
         }
     ]
 }
