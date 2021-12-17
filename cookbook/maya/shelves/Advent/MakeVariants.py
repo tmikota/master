@@ -39,9 +39,13 @@ def hide_all(chest_items, back_items, head_items, mask_items, eyes_items, frame)
 
 
 def run():
+    """
+    Creates all the asset variants within the scene
+    """
     pm.select(d=True)
     chest_items = get_items('Chest')
     back_items = get_items('Back')
+    noggin_items = get_items('Noggin')
     head_items = get_items('Head')
     mask_items = get_items('Mask')
     eyes_items = get_items('Eyes')
@@ -50,21 +54,21 @@ def run():
     hide_all(chest_items, back_items, head_items, mask_items, eyes_items, i)
     pm.currentTime(i, edit=True)
     for chest in chest_items:
-        print('chest i:', i)
         i = process_this(chest, chest_items, i)
-        for back in back_items:
-            print('\tback i:', i)
-            i = process_this(back, back_items, i)
-            for head in head_items:
-                i = process_this(head, head_items, i)
-                for eyes in eyes_items:
-                    i = process_this(eyes, eyes_items, i)
-                    for mask in mask_items:
-                        i = process_this(mask, mask_items, i)
-                        if len(mask_items) == 1:
-                            i += 1
-                            pm.currentTime(i, edit=True)
-                            key_all_visibility([mask], visibility=0, frame=i)
+        for noggin in noggin_items:
+            i = process_this(noggin, noggin_items, i)
+            for back in back_items:
+                i = process_this(back, back_items, i)
+                for head in head_items:
+                    i = process_this(head, head_items, i)
+                    for eyes in eyes_items:
+                        i = process_this(eyes, eyes_items, i)
+                        for mask in mask_items:
+                            i = process_this(mask, mask_items, i)
+                            if len(mask_items) == 1:
+                                i += 1
+                                pm.currentTime(i, edit=True)
+                                key_all_visibility([mask], visibility=0, frame=i)
         i += 1
         hide_all(chest_items, back_items, head_items, mask_items, eyes_items, i)
 
