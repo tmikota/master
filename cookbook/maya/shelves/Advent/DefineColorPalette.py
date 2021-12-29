@@ -1,7 +1,9 @@
 from cgl.plugins.Qt import QtCore, QtGui, QtWidgets
 import webbrowser
+import time
 import pymel.core as pm
 from cgl.plugins.maya.tasks.tex import create_and_attach_shader
+from cgl.plugins.maya.tasks.shd import get_default_shader
 from shiboken2 import wrapInstance
 import maya.OpenMayaUI as omui
 
@@ -12,19 +14,16 @@ def maya_main_window():
 
 
 class Colorizer(QtWidgets.QDialog):
+
     def __init__(self, parent=maya_main_window()):
         super(Colorizer, self).__init__(parent)
         self.setWindowTitle('Color-o-matic')
+        self.default_shader = get_default_shader()
+
         layout = QtWidgets.QVBoxLayout(self)
         color_reference_button = QtWidgets.QPushButton('Color Reference')
         grid_layout = QtWidgets.QGridLayout()
-        # button_layout = QtWidgets.QHBoxLayout()
-        # ok_button = QtWidgets.QPushButton('Create Shaders')
-        # cancel_button = QtWidgets.QPushButton('Cancel')
-        # button_layout.addStretch(1)
-        # button_layout.addWidget(cancel_button)
-        # button_layout.addWidget(ok_button)
-        materials = ['base', 'secondary', 'accent', 'trimA', 'trimB']
+        materials = ['base', 'secondary', 'accent', 'trimA', 'trimB', 'special']
         self.shaders = []
         for i, m in enumerate(materials):
             label = QtWidgets.QPushButton(m)
@@ -36,7 +35,8 @@ class Colorizer(QtWidgets.QDialog):
             combo = QtWidgets.QComboBox()
             combo.label = m
             combo.shader = label
-            combo.addItems(['default', 'gold', 'silver', 'copper', 'bronze', 'steel'])
+            combo.line_edit = line_edit
+            combo.addItems(['default', 'gold', 'chrome'])
             label.type = 'default'
             grid_layout.addWidget(label, i, 0)
             grid_layout.addWidget(line_edit, i, 1)
@@ -62,17 +62,22 @@ class Colorizer(QtWidgets.QDialog):
     def on_combo_changed(self):
         combo = self.sender()
         combo.shader.type = combo.currentText()
-        # todo - do something here to make the corresponding button change color according to the "metallic" shader.
+        if combo.currentText() == 'default':
+            if combo.line_edit.text():
+                create_and_attach_shader(combo.shader.text(), combo.line_edit.text(), source_shader=self.default_shader,
+                                         shader_type=combo.currentText())
+            else:
+                print('need hex value to create shader')
+        else:
+            mtl = combo.shader.text()
+            source_shader = self.default_shader
+            shader_type = combo.currentText()
+            create_and_attach_shader(name=mtl, hex_color='', source_shader=source_shader,
+                                     shader_type=shader_type)
 
-    # def create_and_connect_shaders(self):
-    #     for shader in self.shaders:
-    #         shader_label = shader.text()
-    #         shader_color = shader.color
-    #         shader_type = shader.type
-    #
-    #         print(shader_label)
-    #         if shader_color:
-    #             create_and_attach_shader(name=shader_label, hex_color=shader_color)
+    def default_selected(self):
+        print(self.sender().button.shader)
+        print('its default')
 
     @staticmethod
     def color_reference_clicked():
@@ -84,7 +89,7 @@ class Colorizer(QtWidgets.QDialog):
         button.color = line_edit_text
         button.setStyleSheet('background-color: #{};'.format(line_edit_text))
         print('Changing {} to {}'.format(button.text(), line_edit_text))
-        create_and_attach_shader(button.text(), line_edit_text)
+        create_and_attach_shader(button.text(), line_edit_text, source_shader=self.default_shader)
 
 
 def hex_to_rgb(hex):
@@ -92,14 +97,19 @@ def hex_to_rgb(hex):
     return r/255, g/255, b/255
 
 
-def create_and_attach_shader(name, hex_color):
+def rgb_to_hex(r, g, b):
+    print(r, g, b)
+
+
+def create_and_attach_shader(name, hex_color, source_shader, shader_type='default'):
+
     mtl_name = '{}_shd'.format(name)
     if pm.objExists(mtl_name):
         pm.delete(mtl_name)
     sg_name = '{}_SG'.format(name)
     if pm.objExists(sg_name):
         pm.delete(sg_name)
-    shader = pm.shadingNode(str('aiStandardSurface'), asShader=True, name=mtl_name)
+    shader = pm.shadingNode(str(source_shader), asShader=True, name=mtl_name)
     if not pm.objExists(sg_name):
         pm.sets(renderable=True, noSurfaceShader=True, empty=True, name=sg_name)
         pm.connectAttr('%s.outColor' % shader, '%s.surfaceShader' % sg_name)
@@ -108,8 +118,37 @@ def create_and_attach_shader(name, hex_color):
     pm.select(mtl_groups)
     pm.sets(sg_name, forceElement=True)
     pm.select(d=True)
-    r, g, b = hex_to_rgb(hex_color)
-    pm.setAttr('{}.baseColor'.format(mtl_name), r, g, b, type='double3')
+    if shader_type == 'default':
+        r, g, b = hex_to_rgb(hex_color)
+        if source_shader == 'RedshiftMaterial':
+            pm.setAttr('{}.diffuse_color'.format(mtl_name), r, g, b, type='double3')
+        else:
+            pm.setAttr('{}.baseColor'.format(mtl_name), r, g, b, type='double3')
+        return
+    elif shader_type == 'gold':
+        pm.select(mtl_name)
+        pm.setAttr('{}.preset'.format(mtl_name), 5)
+        print('pm.setAttr("{}.preset", 5)'.format(mtl_name))
+        return
+    elif shader_type == 'silver':
+        pm.setAttr('{}.preset'.format(mtl_name), 9)
+        # button.setStyleSheet('background-color: #{};'.format(line_edit_text))
+    elif shader_type == 'chrome':
+        pm.select(mtl_name)
+        print('pm.setAttr("{}.preset", 9)'.format(mtl_name))
+        pm.setAttr('{}.preset'.format(mtl_name), 9)
+        pm.setAttr('{}.refl_roughness'.format(mtl_name), .1)
+        return
+    elif shader_type == 'copper':
+        pm.setAttr('{}.preset'.format(mtl_name), 4)
+        pm.setAttr('{}.refl_roughness'.format(mtl_name), .25)
+        pm.setAttr('{}.refl_reflectivity'.format(mtl_name), 0.7215, 0.4509, 0.2, type='double3')
+    elif shader_type == 'iron':
+        pm.setAttr('{}.preset'.format(mtl_name), 6)
+    elif shader_type == 'lead':
+        pm.setAttr('{}.preset'.format(mtl_name), 7)
+    elif shader_type == 'platinum':
+        pm.setAttr('{}.preset'.format(mtl_name), 8)
 
 
 def run():

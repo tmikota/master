@@ -19,9 +19,9 @@
                     "order": 2
                 },
                 {
-                    "label": "Render Locally",
-                    "module": "cookbook.maya.pre_render.lay.RenderLocally",
-                    "name": "RenderLocally",
+                    "label": "Submit To Deadline",
+                    "module": "cookbook.maya.pre_render.lay.SubmitToDeadline",
+                    "name": "SubmitToDeadline",
                     "order": 3
                 }
             ],
