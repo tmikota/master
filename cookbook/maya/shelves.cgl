@@ -110,6 +110,22 @@
                     "name": "CreateNewColorVariant",
                     "order": 3,
                     "reference_path": null
+                },
+                {
+                    "icon": "",
+                    "label": "Glo",
+                    "module": "import cookbook.maya.shelves.Advent.Glo as Glo; Glo.run()",
+                    "name": "Glo",
+                    "order": 4,
+                    "reference_path": null
+                },
+                {
+                    "icon": "",
+                    "label": "Secial",
+                    "module": "import cookbook.maya.shelves.Advent.Secial as Secial; Secial.run()",
+                    "name": "Secial",
+                    "order": 5,
+                    "reference_path": null
                 }
             ],
             "name": "Advent"

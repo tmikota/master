@@ -1,7 +1,7 @@
 {
     "account_info": {
         "config_repo": "https://github.com/tmikota/master.git",
-        "project_management": "alchemy"
+        "project_management": "shotgun"
     },
     "render_info": {
         "Maya": {
@@ -788,15 +788,15 @@
         },
         "shotgun": {
             "api": {
-                "api_key": "bc29cd2fd4ce9fe3c2598c4d559b09f88eaa95b05edfd12a834a23aea0797e2f",
-                "api_script": "core_tools",
+                "api_key": "k6kbifVfafcj~xavareluagfk",
+                "api_script": "alchemy",
                 "api_user": "tmikota",
                 "concurrent": 4,
                 "concurrent_low": 0,
                 "default_schema": "default",
                 "notes": "ensure short codes exist for all pipeline steps in shotgun, might want a wizard for this.",
                 "project_short_name": "sg_code",
-                "server_url": "https://fsuada.shotgunstudio.com"
+                "server_url": "https://4thwall.shotgunstudio.com"
             },
             "tasks": {
                 "default": {
@@ -805,7 +805,7 @@
                             "Bundle": "bndl",
                             "Concept": "cncpt",
                             "Layout": "lay",
-                            "Modeling/UV": "mdl",
+                            "Model": "mdl",
                             "Reference": "ref",
                             "Rigging": "rig",
                             "Set": "set",
@@ -838,7 +838,7 @@
                             "bndl": "Bundle",
                             "cncpt": "Concept",
                             "lay": "Layout",
-                            "mdl": "Modeling/UV",
+                            "mdl": "Model",
                             "ref": "Reference",
                             "rig": "Rigging",
                             "set": "Set",
@@ -874,10 +874,10 @@
                 ]
             },
             "users": {
-                "bja16": {
-                    "first": "Brendan",
-                    "last": "Arena",
-                    "login": "bja16@my.fsu.edu"
+                "cgtom": {
+                    "first": "Tom",
+                    "last": "Mikota",
+                    "login": "3d_artist@4thwallfx.com"
                 }
             }
         }
