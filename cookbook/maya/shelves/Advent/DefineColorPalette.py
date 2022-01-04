@@ -23,7 +23,7 @@ class Colorizer(QtWidgets.QDialog):
         layout = QtWidgets.QVBoxLayout(self)
         color_reference_button = QtWidgets.QPushButton('Color Reference')
         grid_layout = QtWidgets.QGridLayout()
-        materials = ['base', 'secondary', 'accent', 'trimA', 'trimB', 'special']
+        materials = ['base', 'secondary', 'accent', 'trimA', 'trimB', 'glow', 'special']
         self.shaders = []
         for i, m in enumerate(materials):
             label = QtWidgets.QPushButton(m)
@@ -53,11 +53,26 @@ class Colorizer(QtWidgets.QDialog):
         color_reference_button.clicked.connect(self.color_reference_clicked)
         # ok_button.clicked.connect(self.create_and_connect_shaders)
 
+    @staticmethod
+    def select_shader_tag(tag='glow'):
+        glowies = []
+        for sh in pm.ls(s=True):
+            if pm.attributeQuery('shader_tag', node=sh, exists=True):
+                pm.select(d=True)
+                pm.select(sh)
+                topnode = pm.pickWalk(d='up')[0]
+                glowies.append(topnode)
+        pm.select(d=True)
+        pm.select(glowies)
+
     def on_shader_clicked(self):
         name = self.sender().text()
         pm.select(d=True)
-        mtl_groups = pm.ls(regex='*{}_mtl'.format(name))
-        pm.select(mtl_groups)
+        if name == 'glow':
+            self.select_shader_tag()
+        else:
+            mtl_groups = pm.ls(regex='*{}_mtl'.format(name))
+            pm.select(mtl_groups)
 
     def on_combo_changed(self):
         combo = self.sender()
@@ -102,6 +117,8 @@ def rgb_to_hex(r, g, b):
 
 
 def create_and_attach_shader(name, hex_color, source_shader, shader_type='default'):
+    if name == 'glow':
+        current_selection = pm.ls(sl=True)
 
     mtl_name = '{}_shd'.format(name)
     if pm.objExists(mtl_name):
@@ -114,10 +131,16 @@ def create_and_attach_shader(name, hex_color, source_shader, shader_type='defaul
         pm.sets(renderable=True, noSurfaceShader=True, empty=True, name=sg_name)
         pm.connectAttr('%s.outColor' % shader, '%s.surfaceShader' % sg_name)
     pm.select(d=True)
-    mtl_groups = pm.ls(regex='*{}_mtl'.format(name))
-    pm.select(mtl_groups)
+    if name == 'glow':
+        pm.select(current_selection)
+    else:
+        mtl_groups = pm.ls(regex='*{}_mtl'.format(name))
+        pm.select(mtl_groups)
     pm.sets(sg_name, forceElement=True)
     pm.select(d=True)
+    if name == 'glow':
+        # set glowing values
+        print("I'm going to glow.")
     if shader_type == 'default':
         r, g, b = hex_to_rgb(hex_color)
         if source_shader == 'RedshiftMaterial':

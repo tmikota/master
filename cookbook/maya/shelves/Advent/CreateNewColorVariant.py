@@ -23,9 +23,12 @@ def get_next_asset_name(path_object=None):
     return next_name
 
 
-def create_variant(variant=get_next_asset_name()):
-    so = alc.scene_object()
-    next_name = get_next_asset_name(so)
+def create_variant(variant=None):
+    if not variant:
+        so = alc.scene_object()
+        next_name = get_next_asset_name(so)
+    else:
+        next_name = variant
     var_path = alc.scene_object().copy(shot=next_name, latest=True, set_proper_filename=True).path_root
     var_dir = os.path.dirname(var_path)
     if not os.path.exists(var_dir):

@@ -81,6 +81,14 @@
                     "name": "Thumbnail",
                     "order": 10,
                     "reference_path": null
+                },
+                {
+                    "icon": "Z:/CGLUMBERJACK/COMPANIES/4th_wall/config/master/cookbook/maya/shelves/Maya_Alchemy/update_refs_36px.png",
+                    "label": "Update Refs",
+                    "module": "import cookbook.maya.shelves.Maya_Alchemy.UpdateRefs as UpdateRefs; UpdateRefs.run()",
+                    "name": "UpdateRefs",
+                    "order": 11,
+                    "reference_path": null
                 }
             ],
             "name": "Maya_Alchemy"
