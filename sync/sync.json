@@ -6,6 +6,8 @@
         },
         "capernaum": {
             "short_name": "cap"
-        }
+        },
+        "ApoclypseTown":
+        {"short_name": "apoclypsetown"}
     }
 }
