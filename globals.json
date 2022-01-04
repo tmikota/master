@@ -160,16 +160,8 @@
         "advent": {
             "short_name": "adv"
         },
-        "capernaum": {
-            "short_name": "cap"
-        }
-    },
-    "project_info": {
-        "*": {
-            "short_name": ""
-        },
-        "advent": {
-            "short_name": "adv"
+        "apoclypsetown": {
+            "short_name": "apoclypsetown"
         }
     },
     "project_management": {
