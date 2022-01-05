@@ -162,6 +162,9 @@
         },
         "apoclypsetown": {
             "short_name": "apoclypsetown"
+        },
+        "capernaum": {
+            "short_name": "cap"
         }
     },
     "project_management": {
