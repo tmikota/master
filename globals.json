@@ -147,10 +147,10 @@
         },
         "drive": "C:",
         "port": 1666,
+        "password": "eat8Tacos!",
         "server": {
-            "computer": "CMPA-W-VP-W01",
-            "ip": "10.0.0.101",
-            "user": "vp01"
+            "computer": "ec2",
+            "ip": "ssl:54.242.123.49"
         }
     },
     "project_info": {
