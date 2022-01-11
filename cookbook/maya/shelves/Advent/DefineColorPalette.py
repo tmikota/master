@@ -53,6 +53,31 @@ class Colorizer(QtWidgets.QDialog):
         color_reference_button.clicked.connect(self.color_reference_clicked)
         # ok_button.clicked.connect(self.create_and_connect_shaders)
 
+    def set_glow_color(self, hex_color):
+        rgb_color = hex_to_rgb(hex_color)
+        r = rgb_color[0]
+        g = rgb_color[1]
+        b = rgb_color[2]
+        print("R: {}\nG: {}\B: {}".format(r, g, b))
+        for asset in pm.general.ls('*PhysicalLightShape*', dep=True, dag=True, r=True):
+            if pm.general.nodeType(asset) == "RedshiftPhysicalLight":
+                intensity_ = "{}.intensity".format(asset)
+                r_attr = "{}.colorR".format(asset)
+                g_attr = "{}.colorG".format(asset)
+                b_attr = "{}.colorB".format(asset)
+                pm.setAttr(intensity_, 10)
+                pm.setAttr(r_attr, r)
+                pm.setAttr(g_attr, g)
+                pm.setAttr(b_attr, b)
+        print('selecting all glow lights')
+        print('changing intensity to 10')
+        print('changing color to {}'.format(rgb_color))
+        # select all glow lights in scene
+        # set intensity to 10
+        # set color to hex value of line_edit
+        pass
+
+
     @staticmethod
     def select_shader_tag(tag='glow'):
         glowies = []
@@ -104,7 +129,10 @@ class Colorizer(QtWidgets.QDialog):
         button.color = line_edit_text
         button.setStyleSheet('background-color: #{};'.format(line_edit_text))
         print('Changing {} to {}'.format(button.text(), line_edit_text))
-        create_and_attach_shader(button.text(), line_edit_text, source_shader=self.default_shader)
+        if button.text() == "glow":
+            self.set_glow_color(line_edit_text)
+        else:
+            create_and_attach_shader(button.text(), line_edit_text, source_shader=self.default_shader)
 
 
 def hex_to_rgb(hex):

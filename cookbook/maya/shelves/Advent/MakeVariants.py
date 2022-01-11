@@ -3,8 +3,10 @@ import pymel.core as pm
 
 def get_items(item_name):
     str_items = []
-    items = pm.ls(regex='\w+:\w{}\w:mdl'.format(item_name))
+    items = pm.ls(regex='\w+:\w{}\w*\d*:mdl'.format(item_name))
+    print(item_name)
     for i in items:
+        print('\t', i)
         str_items.append(str(i))
     return str_items
 
@@ -30,12 +32,13 @@ def process_this(this, all, i):
     return i
 
 
-def hide_all(chest_items, back_items, head_items, mask_items, eyes_items, frame):
+def hide_all(chest_items, back_items, head_items, mask_items, eyes_items, noggin_items, frame):
     key_all_visibility(chest_items, 0, frame)
     key_all_visibility(back_items, 0, frame)
     key_all_visibility(head_items, 0, frame)
     key_all_visibility(mask_items, 0, frame)
     key_all_visibility(eyes_items, 0, frame)
+    key_all_visibility(noggin_items, 0, frame)
 
 
 def run():
@@ -49,9 +52,10 @@ def run():
     head_items = get_items('Head')
     mask_items = get_items('Mask')
     eyes_items = get_items('Eyes')
-    print('{} total combinations'.format(len(chest_items) * len(back_items) * len(head_items) * len(mask_items)))
+    # print('{} total combinations'.format(len(chest_items) * len(back_items) * len(head_items) * len(mask_items)
+    #                                      * len(noggin_items) * len(eyes_items)))
     i = 1
-    hide_all(chest_items, back_items, head_items, mask_items, eyes_items, i)
+    hide_all(chest_items, back_items, head_items, mask_items, eyes_items, noggin_items, i)
     pm.currentTime(i, edit=True)
     for chest in chest_items:
         i = process_this(chest, chest_items, i)
@@ -70,6 +74,6 @@ def run():
                                 pm.currentTime(i, edit=True)
                                 key_all_visibility([mask], visibility=0, frame=i)
         i += 1
-        hide_all(chest_items, back_items, head_items, mask_items, eyes_items, i)
+        hide_all(chest_items, back_items, head_items, mask_items, eyes_items, noggin_items, i)
 
 
