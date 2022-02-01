@@ -78,16 +78,22 @@
                     "order": 1
                 },
                 {
-                    "label": "Migrate Selected Level",
-                    "module": "import cookbook.unreal.menus.Capernaum.MigrateSelectedLevel as MigrateSelectedLevel; MigrateSelectedLevel.run()",
-                    "name": "MigrateSelectedLevel",
-                    "order": 2
-                },
-                {
                     "label": "Publish Selected",
                     "module": "import cookbook.unreal.menus.Capernaum.PublishSelected as PublishSelected; PublishSelected.run()",
                     "name": "PublishSelected",
+                    "order": 2
+                },
+                {
+                    "label": "Migrate Selected Asset",
+                    "module": "import cookbook.unreal.menus.Capernaum.MigrateSelectedAsset as MigrateSelectedAsset; MigrateSelectedAsset.run()",
+                    "name": "MigrateSelectedAsset",
                     "order": 3
+                },
+                {
+                    "label": "Update Selected Asset",
+                    "module": "import cookbook.unreal.menus.Capernaum.UpdateSelectedAsset as UpdateSelectedAsset; UpdateSelectedAsset.run()",
+                    "name": "UpdateSelectedAsset",
+                    "order": 4
                 }
             ],
             "name": "Capernaum"

@@ -3,12 +3,6 @@
         "config_repo": "https://github.com/tmikota/master.git",
         "project_management": "shotgun"
     },
-    "render_info": {
-        "Maya": {
-            "renderer": "redshift",
-            "default_shader": "RedshiftMaterial",
-            "pool": "gpu"}
-    },
     "asset_categories": {
         "Character": "char",
         "Environment": "env",
@@ -152,8 +146,8 @@
             "depot": "4.26.2"
         },
         "drive": "C:",
-        "port": 1666,
         "password": "eat8Tacos!",
+        "port": 1666,
         "server": {
             "computer": "ec2",
             "ip": "ssl:54.242.123.49"
@@ -171,6 +165,12 @@
         },
         "capernaum": {
             "short_name": "cap"
+        },
+        "testproject": {
+            "short_name": "tes"
+        },
+        "tinman": {
+            "short_name": "tin"
         }
     },
     "project_management": {
@@ -874,6 +874,13 @@
                     "login": "3d_artist@4thwallfx.com"
                 }
             }
+        }
+    },
+    "render_info": {
+        "Maya": {
+            "default_shader": "RedshiftMaterial",
+            "pool": "gpu",
+            "renderer": "redshift"
         }
     },
     "rules": {

@@ -6,7 +6,6 @@ from cgl.plugins.maya.alchemy import scene_object
 from cgl.ui.widgets.dialog import InputDialog
 import cgl.plugins.maya.tasks.anim as anim_task
 import pymel.core as pm
-import maya.mel
 
 load_plugin('AbcImport')
 
@@ -45,7 +44,6 @@ class ExportAlembic(PreflightCheck):
                     abc_export_path = scene_object().copy(context='render', filename=name_).path_root
                     if os.path.exists(abc_export_path):
                         abc_export_path.replace(name_, '%sa')
-                    print "Exporting : %s" % abc_export_path
                     # with rigs, i only want the mdl, so i'm setting that here.
                     if pm.objExists(each.replace(':rig', ':mdl')):
                         anim_task.export_abc(abc_export_path, each.replace(':rig', ':mdl'))

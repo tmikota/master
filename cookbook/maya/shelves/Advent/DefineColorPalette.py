@@ -45,6 +45,8 @@ class Colorizer(QtWidgets.QDialog):
             label.clicked.connect(self.on_shader_clicked)
             line_edit.textChanged.connect(self.on_color_changed)
             combo.currentIndexChanged.connect(self.on_combo_changed)
+            self.set_initial_color('{}_shd'.format(m), line_edit)
+
 
         layout.addWidget(color_reference_button)
         layout.addLayout(grid_layout)
@@ -52,6 +54,10 @@ class Colorizer(QtWidgets.QDialog):
 
         color_reference_button.clicked.connect(self.color_reference_clicked)
         # ok_button.clicked.connect(self.create_and_connect_shaders)
+
+    def set_initial_color(self, shader, line_edit):
+        hex_color = get_color(shader)
+        line_edit.setText(hex_color)
 
     def set_glow_color(self, hex_color):
         rgb_color = hex_to_rgb(hex_color)
@@ -141,7 +147,20 @@ def hex_to_rgb(hex):
 
 
 def rgb_to_hex(r, g, b):
-    print(r, g, b)
+    return '%02x%02x%02x' % (r, g, b)
+
+
+def get_color(shader):
+    try:
+        r, g, b = pm.getAttr('{}.diffuse_color'.format(shader))
+        r = int(r*255)
+        g = int(g*255)
+        b = int(b*255)
+        print(r, g, b)
+        return rgb_to_hex(r, g, b)
+    except:
+        print(shader, 'has no diffuse_color')
+        return ''
 
 
 def create_and_attach_shader(name, hex_color, source_shader, shader_type='default'):

@@ -97,10 +97,18 @@
             "buttons": [
                 {
                     "icon": "",
+                    "label": "Create Variant",
+                    "module": "import cookbook.maya.shelves.Advent.CreateNewColorVariant as CreateNewColorVariant; CreateNewColorVariant.run()",
+                    "name": "CreateNewColorVariant",
+                    "order": 1,
+                    "reference_path": null
+                },
+                {
+                    "icon": "",
                     "label": "Make Geo Variants",
                     "module": "import cookbook.maya.shelves.Advent.MakeVariants as MakeVariants; MakeVariants.run()",
                     "name": "MakeVariants",
-                    "order": 1,
+                    "order": 2,
                     "reference_path": null
                 },
                 {
@@ -108,14 +116,6 @@
                     "label": "Define Color Palette",
                     "module": "import cookbook.maya.shelves.Advent.DefineColorPalette as DefineColorPalette; DefineColorPalette.run()",
                     "name": "DefineColorPalette",
-                    "order": 2,
-                    "reference_path": null
-                },
-                {
-                    "icon": "",
-                    "label": "Create Variant",
-                    "module": "import cookbook.maya.shelves.Advent.CreateNewColorVariant as CreateNewColorVariant; CreateNewColorVariant.run()",
-                    "name": "CreateNewColorVariant",
                     "order": 3,
                     "reference_path": null
                 },
@@ -134,9 +134,46 @@
                     "name": "Secial",
                     "order": 5,
                     "reference_path": null
+                },
+                {
+                    "icon": "",
+                    "label": "Rarity",
+                    "module": "import cookbook.maya.shelves.Advent.Rarity as Rarity; Rarity.run()",
+                    "name": "Rarity",
+                    "order": 6,
+                    "reference_path": null
                 }
             ],
             "name": "Advent"
+        },
+        {
+            "buttons": [
+                {
+                    "icon": "",
+                    "label": "Import Mdl",
+                    "module": "import cookbook.maya.shelves.Capernaum.ImportMdl as ImportMdl; ImportMdl.run()",
+                    "name": "ImportMdl",
+                    "order": 1,
+                    "reference_path": null
+                },
+                {
+                    "icon": "",
+                    "label": "Export Mdl",
+                    "module": "import cookbook.maya.shelves.Capernaum.ExportMdl as ExportMdl; ExportMdl.run()",
+                    "name": "ExportMdl",
+                    "order": 2,
+                    "reference_path": null
+                },
+                {
+                    "icon": "",
+                    "label": "Get Rarity",
+                    "module": "import cookbook.maya.shelves.Capernaum.GetRarity as GetRarity; GetRarity.run()",
+                    "name": "GetRarity",
+                    "order": 3,
+                    "reference_path": null
+                }
+            ],
+            "name": "Capernaum"
         }
     ]
 }
