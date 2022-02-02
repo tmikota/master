@@ -862,9 +862,19 @@
                 ]
             },
             "users": {
+                "tmiko": {
+                    "first": "Tom",
+                    "last": "Mikota",
+                    "login": "3d_artist@4thwallfx.com"
+                },
                 "cgtom": {
                     "first": "Tom",
                     "last": "Mikota",
+                    "login": "3d_artist@4thwallfx.com"
+                },
+                "default": {
+                    "first": "Bob",
+                    "last": "McBobson",
                     "login": "3d_artist@4thwallfx.com"
                 }
             }
