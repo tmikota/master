@@ -160,11 +160,17 @@
         "advent": {
             "short_name": "adv"
         },
+        "alco": {
+            "short_name": "alc"
+        },
         "apoclypsetown": {
             "short_name": "apoclypsetown"
         },
         "capernaum": {
             "short_name": "cap"
+        },
+        "settingstester": {
+            "short_name": "set"
         },
         "testproject": {
             "short_name": "tes"
@@ -868,11 +874,6 @@
                 ]
             },
             "users": {
-                "tmiko": {
-                    "first": "Tom",
-                    "last": "Mikota",
-                    "login": "3d_artist@4thwallfx.com"
-                },
                 "cgtom": {
                     "first": "Tom",
                     "last": "Mikota",
@@ -881,6 +882,11 @@
                 "default": {
                     "first": "Bob",
                     "last": "McBobson",
+                    "login": "3d_artist@4thwallfx.com"
+                },
+                "tmiko": {
+                    "first": "Tom",
+                    "last": "Mikota",
                     "login": "3d_artist@4thwallfx.com"
                 }
             }

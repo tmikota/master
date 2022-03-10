@@ -46,7 +46,7 @@ def run():
     mdls = pm.ls(regex='*:mdl')
     eframe = int(pm.playbackOptions(query=True, animationEndTime=True))
     i = int(pm.playbackOptions(query=True, animationStartTime=True)) - 1
-    path_object = scene_object().copy(context='render')
+    path_object = scene_object().copy(context='render', latest=True)
     export_dir = os.path.dirname(path_object.path_root)
     filename = path_object.filename_base
     #print(uuid.uuid5(uuid.NAMESPACE_URL, path_object.filename_base))

@@ -31,7 +31,6 @@ class Rarity(PreflightCheck):
         #print(uuid.uuid5(uuid.NAMESPACE_URL, path_object.filename_base))
 
         while i < eframe:
-            i += 1
             attrs = []
             dict = {}
             pm.currentTime(i)
@@ -57,5 +56,6 @@ class Rarity(PreflightCheck):
             dict['attributes'] = attrs
             full_json_path = os.path.join(export_dir, json_filename)
             save_json(full_json_path, dict)
+            i += 1
         self.pass_check('Check Passed')
         # self.fail_check('Check Failed')
