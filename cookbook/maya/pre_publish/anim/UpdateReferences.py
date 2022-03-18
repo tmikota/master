@@ -1,5 +1,6 @@
 from cgl.plugins.preflight.preflight_check import PreflightCheck
 from cgl.plugins.maya import utils
+from importlib import reload
 reload(utils)
 
 

@@ -1,5 +1,6 @@
 from cgl.plugins.preflight.preflight_check import PreflightCheck
 import cgl.plugins.maya.tasks.lay as lay
+from importlib import reload
 reload(lay)
 
 

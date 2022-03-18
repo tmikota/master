@@ -1,10 +1,8 @@
 from cgl.plugins.preflight.preflight_check import PreflightCheck
-# there is typically a lumbermill.py, and utils.py file in the plugins directory.
-# look here for pre-built, useful functions
-from cgl.plugins.maya import alchemy
+import cgl.plugins.maya.tasks.lay as lay
 
 
-class Publish(PreflightCheck):
+class OrganizeReferences(PreflightCheck):
 
     def getName(self):
         pass
@@ -20,7 +18,8 @@ class Publish(PreflightCheck):
         self.fail_check('Message about a failed check')
         :return:
         """
-        publish_object = alchemy.scene_object().publish()
-        self.shared_data['publish_object'] = publish_object
-        self.pass_check('Check Passed')
+        from importlib import reload
+        reload(lay)
 
+        lay.organize_assets()
+        self.pass_check('Check Passed')

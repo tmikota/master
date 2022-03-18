@@ -1,6 +1,7 @@
 from cgl.plugins.preflight.preflight_check import PreflightCheck
 import os
 import cgl.plugins.maya.tasks.lay as lay
+from importlib import reload
 reload(lay)
 from cgl.core.path import PathObject
 import cgl.plugins.maya.alchemy as lm
@@ -33,7 +34,7 @@ class FindStaticRigs(PreflightCheck):
                 print(each)
                 pm.select(d=True)
                 pm.select(each)
-                self.fix_static_present()
+                # self.fix_static_present()
                 pm.hide(each)
         self.pass_check('No Static Rigs in Scene')
         # self.fail_check('Check Failed')

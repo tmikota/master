@@ -174,6 +174,35 @@
                 }
             ],
             "name": "Capernaum"
+        },
+        {
+            "buttons": [
+                {
+                    "icon": "",
+                    "label": "Import Layout",
+                    "module": "import cookbook.maya.shelves.APC_Town.ImportLayout as ImportLayout; ImportLayout.run()",
+                    "name": "ImportLayout",
+                    "order": 1,
+                    "reference_path": null
+                },
+                {
+                    "icon": "",
+                    "label": "Import Base Rig",
+                    "module": "import cookbook.maya.shelves.APC_Town.ImportBaseRig as ImportBaseRig; ImportBaseRig.run()",
+                    "name": "ImportBaseRig",
+                    "order": 2,
+                    "reference_path": null
+                },
+                {
+                    "icon": "",
+                    "label": "Imp Lgt",
+                    "module": "import cookbook.maya.shelves.APC_Town.ImportLighting as ImportLighting; ImportLighting.run()",
+                    "name": "ImportLighting",
+                    "order": 3,
+                    "reference_path": null
+                }
+            ],
+            "name": "APC_Town"
         }
     ]
 }

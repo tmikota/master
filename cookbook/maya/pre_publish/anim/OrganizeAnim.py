@@ -1,6 +1,7 @@
 from cgl.plugins.preflight.preflight_check import PreflightCheck
 import pymel.core as pm
 import cgl.plugins.maya.utils as utils
+from importlib import reload
 reload(utils)
 # there is typically a lumbermill.py, and utils.py file in the plugins directory.
 # look here for pre-built, useful functions

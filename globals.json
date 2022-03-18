@@ -919,7 +919,7 @@
             },
             "shot_cam": {
                 "example": "Example Shot Cam: cam010_0200",
-                "regex": "^cam[0-9]{3}_[0-9]{4}$"
+                "regex": "^cam[0-9]{3}_[0-9]{3,4}$"
             },
             "taskname": {
                 "example": "eg: animation, anim",
