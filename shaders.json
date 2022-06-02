@@ -113,6 +113,54 @@
                   }
               }
           }
+      },
+    "redshift": {
+      "type": "shader",
+      "software": "redshift-3066",
+      "default_shader_attrs": {
+        "Ks": 0.1
+      },
+      "parameters": {
+        "diffuse": {
+          "attr": "0",
+          "colorspace": "ACEScg",
+          "name_match": ["Diffuse", "diffuse", "BaseColor", "albedo"]
+        },
+        "specGain": {
+          "attr": "10",
+          "channel": "r",
+          "colorspace": "Raw",
+          "name_match": ["SpecularColor", "specColor"]
+        },
+        "specColor": {
+          "attr": "5",
+          "colorspace": "Raw",
+          "name_match": ["Specular", "spec", "specular", "specColor"]
+        },
+        "specRough": {
+          "attr": "7",
+          "channel": "r",
+          "colorspace": "Raw",
+          "name_match": ["Roughness"]
+        },
+        "normal": {
+          "attr": "52",
+          "normal": "True",
+          "colorspace": "Raw",
+          "name_match": ["Normal"],
+          "shader_attrs":{
+            "bumpDepth": 0.1
+          }
+        },
+        "metalness": {
+          "attr": "14",
+          "channel": "r",
+          "colorspace": "Raw",
+          "name_match": ["Metalness", "metalness"],
+          "shader_attrs": {
+          }
+        }
       }
+    }
   }
 }

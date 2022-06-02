@@ -1,0 +1,16 @@
+{
+    "resolve": [
+        {
+            "buttons": [
+                {
+                    "label": "List Retime Plates",
+                    "module": "cookbook.resolve.pre_publish.edt.ListRetimePlates",
+                    "name": "ListRetimePlates",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "edt"
+        }
+    ]
+}

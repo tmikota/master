@@ -1,0 +1,59 @@
+{
+    "maya": [
+        {
+            "buttons": [
+                {
+                    "label": "Set Basic Render Settings",
+                    "module": "cookbook.maya.build.mdl.SetBasicRenderSettings",
+                    "name": "SetBasicRenderSettings",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Create Material Groups",
+                    "module": "cookbook.maya.build.mdl.CreateMaterialGroups",
+                    "name": "CreateMaterialGroups",
+                    "order": 2,
+                    "required": "True"
+                }
+            ],
+            "name": "mdl"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Create Material Groups",
+                    "module": "cookbook.maya.build.cth.CreateMaterialGroups",
+                    "name": "CreateMaterialGroups",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "cth"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Import Model",
+                    "module": "cookbook.maya.build.rig.ImportModel",
+                    "name": "ImportModel",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "rig"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Import Camera",
+                    "module": "cookbook.maya.build.anm.ImportCamera",
+                    "name": "ImportCamera",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "anm"
+        }
+    ]
+}

@@ -80,24 +80,17 @@
                     "required": "True"
                 },
                 {
-                    "label": "Update Shotgun",
-                    "module": "cookbook.maya.pre_publish.mdl.UpdateShotgun",
-                    "name": "UpdateShotgun",
+                    "label": "Create Msd",
+                    "module": "cookbook.maya.pre_publish.mdl.CreateMsd",
+                    "name": "CreateMsd",
                     "order": 12,
-                    "required": "True"
-                },
-                {
-                    "label": "Playblast Exists",
-                    "module": "cookbook.maya.pre_publish.mdl.PlayblastExists",
-                    "name": "PlayblastExists",
-                    "order": 13,
                     "required": "True"
                 },
                 {
                     "label": "Publish",
                     "module": "cookbook.maya.pre_publish.mdl.Publish",
                     "name": "Publish",
-                    "order": 14,
+                    "order": 13,
                     "required": "True"
                 }
             ],
@@ -400,6 +393,114 @@
                 }
             ],
             "name": "render"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Publish",
+                    "module": "cookbook.maya.pre_publish.lrg.Publish",
+                    "name": "Publish",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "lrg"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Save Scene",
+                    "module": "cookbook.maya.pre_publish.cth.SaveScene",
+                    "name": "SaveScene",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Clean Tt",
+                    "module": "cookbook.maya.pre_publish.cth.CleanTt",
+                    "name": "CleanTt",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Check Mdl Name",
+                    "module": "cookbook.maya.pre_publish.cth.CheckMdlName",
+                    "name": "CheckMdlName",
+                    "order": 3,
+                    "required": "True"
+                },
+                {
+                    "label": "Delete History",
+                    "module": "cookbook.maya.pre_publish.cth.DeleteHistory",
+                    "name": "DeleteHistory",
+                    "order": 4,
+                    "required": "True"
+                },
+                {
+                    "label": "Freeze Transformations",
+                    "module": "cookbook.maya.pre_publish.cth.FreezeTransformations",
+                    "name": "FreezeTransformations",
+                    "order": 5,
+                    "required": "True"
+                },
+                {
+                    "label": "Check Geo Resolution",
+                    "module": "cookbook.maya.pre_publish.cth.CheckGeoResolution",
+                    "name": "CheckGeoResolution",
+                    "order": 6,
+                    "required": "True"
+                },
+                {
+                    "label": "Check Mtl Names",
+                    "module": "cookbook.maya.pre_publish.cth.CheckMtlNames",
+                    "name": "CheckMtlNames",
+                    "order": 7,
+                    "required": "True"
+                },
+                {
+                    "label": "Check Geo Names",
+                    "module": "cookbook.maya.pre_publish.cth.CheckGeoNames",
+                    "name": "CheckGeoNames",
+                    "order": 8,
+                    "required": "True"
+                },
+                {
+                    "label": "Assign Basic Colors",
+                    "module": "cookbook.maya.pre_publish.cth.AssignBasicColors",
+                    "name": "AssignBasicColors",
+                    "order": 9,
+                    "required": "True"
+                },
+                {
+                    "label": "Version Up",
+                    "module": "cookbook.maya.pre_publish.cth.VersionUp",
+                    "name": "VersionUp",
+                    "order": 10,
+                    "required": "True"
+                },
+                {
+                    "label": "Export High Res",
+                    "module": "cookbook.maya.pre_publish.cth.ExportHighRes",
+                    "name": "ExportHighRes",
+                    "order": 11,
+                    "required": "True"
+                },
+                {
+                    "label": "Create Msd",
+                    "module": "cookbook.maya.pre_publish.cth.CreateMsd",
+                    "name": "CreateMsd",
+                    "order": 12,
+                    "required": "True"
+                },
+                {
+                    "label": "Publish",
+                    "module": "cookbook.maya.pre_publish.cth.Publish",
+                    "name": "Publish",
+                    "order": 13,
+                    "required": "True"
+                }
+            ],
+            "name": "cth"
         }
     ]
 }

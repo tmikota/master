@@ -1,0 +1,61 @@
+{
+    "alchemy": [
+        {
+            "buttons": [
+                {
+                    "label": "Organize Tex Files",
+                    "module": "cookbook.alchemy.pre_publish.tex.OrganizeTexFiles",
+                    "name": "OrganizeTexFiles",
+                    "order": 1,
+                    "required": "False"
+                },
+                {
+                    "label": "Create Msd",
+                    "module": "cookbook.alchemy.pre_publish.tex.CreateMsd",
+                    "name": "CreateMsd",
+                    "order": 2,
+                    "required": "False"
+                },
+                {
+                    "label": "Check Model Material Publish",
+                    "module": "cookbook.alchemy.pre_publish.tex.CheckModelMaterialPublish",
+                    "name": "CheckModelMaterialPublish",
+                    "order": 3,
+                    "required": "False"
+                },
+                {
+                    "label": "Publish",
+                    "module": "cookbook.alchemy.pre_publish.tex.Publish",
+                    "name": "Publish",
+                    "order": 4,
+                    "required": "True"
+                }
+            ],
+            "name": "tex"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Publish",
+                    "module": "cookbook.alchemy.pre_publish.default.Publish",
+                    "name": "Publish",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "default"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Publish",
+                    "module": "cookbook.alchemy.pre_publish.clr.Publish",
+                    "name": "Publish",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "clr"
+        }
+    ]
+}

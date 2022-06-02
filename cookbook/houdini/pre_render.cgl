@@ -1,0 +1,126 @@
+{
+    "houdini": [
+        {
+            "buttons": [
+                {
+                    "label": "Set Render Settings",
+                    "module": "cookbook.houdini.pre_render.ldv.SetRenderSettings",
+                    "name": "SetRenderSettings",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Set Up Aovs",
+                    "module": "cookbook.houdini.pre_render.ldv.SetUpAovs",
+                    "name": "SetUpAovs",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Save Scene",
+                    "module": "cookbook.houdini.pre_render.ldv.SaveScene",
+                    "name": "SaveScene",
+                    "order": 3,
+                    "required": "True"
+                },
+                {
+                    "label": "Create Msd",
+                    "module": "cookbook.houdini.pre_render.ldv.CreateMsd",
+                    "name": "CreateMsd",
+                    "order": 4,
+                    "required": "True"
+                },
+                {
+                    "label": "Create Rs File",
+                    "module": "cookbook.houdini.pre_render.ldv.CreateRsFile",
+                    "name": "CreateRsFile",
+                    "order": 5,
+                    "required": "True"
+                },
+                {
+                    "label": "Submit To Deadline",
+                    "module": "cookbook.houdini.pre_render.ldv.SubmitToDeadline",
+                    "name": "SubmitToDeadline",
+                    "order": 6,
+                    "required": "True"
+                },
+                {
+                    "label": "Submit Slap Comp",
+                    "module": "cookbook.houdini.pre_render.ldv.SubmitSlapComp",
+                    "name": "SubmitSlapComp",
+                    "order": 7,
+                    "required": "True"
+                }
+            ],
+            "name": "ldv"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Set Render Settings",
+                    "module": "cookbook.houdini.pre_render.lte.SetRenderSettings",
+                    "name": "SetRenderSettings",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Check For Wildcards",
+                    "module": "cookbook.houdini.pre_render.lte.CheckForWildcards",
+                    "name": "CheckForWildcards",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Turn Off Automatic Sampling",
+                    "module": "cookbook.houdini.pre_render.lte.AutomaticSampling",
+                    "name": "AutomaticSampling",
+                    "order": 3,
+                    "required": "True"
+                },
+                {
+                    "label": "Set Up Render Stats",
+                    "module": "cookbook.houdini.pre_render.lte.SetUpRenderStats",
+                    "name": "SetUpRenderStats",
+                    "order": 4,
+                    "required": "True"
+                },
+                {
+                    "label": "Set Up Aovs",
+                    "module": "cookbook.houdini.pre_render.lte.SetUpAovs",
+                    "name": "SetUpAovs",
+                    "order": 5,
+                    "required": "True"
+                },
+                {
+                    "label": "Save Scene",
+                    "module": "cookbook.houdini.pre_render.lte.SaveScene",
+                    "name": "SaveScene",
+                    "order": 6,
+                    "required": "True"
+                },
+                {
+                    "label": "Create Rs Files",
+                    "module": "cookbook.houdini.pre_render.lte.CreateRsFile",
+                    "name": "CreateRsFile",
+                    "order": 7,
+                    "required": "True"
+                },
+                {
+                    "label": "Sumbit To Deadline",
+                    "module": "cookbook.houdini.pre_render.lte.SumbitToDeadline",
+                    "name": "SumbitToDeadline",
+                    "order": 8,
+                    "required": "True"
+                },
+                {
+                    "label": "Slap Comp",
+                    "module": "cookbook.houdini.pre_render.lte.SlapComp",
+                    "name": "SlapComp",
+                    "order": 9,
+                    "required": "True"
+                }
+            ],
+            "name": "lte"
+        }
+    ]
+}

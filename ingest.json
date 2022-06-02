@@ -1,0 +1,43 @@
+{
+    "color": [
+        {
+            "directory": "to_be_specified",
+            "path": "J:\\staging\\jersey\\editorial\\20220510\\20220510b_MAR\\BEC2740_102_MP01_V001\\support_files\\BEC2740_102_MP01_V001.ccc",
+            "task": "color"
+        },
+        {
+            "directory": "to_be_specified",
+            "path": "J:\\staging\\jersey\\editorial\\20220510\\20220510b_MAR\\BEC2740_102_MP01_V001\\support_files\\BEC2740_102_MP01_V001.cdl",
+            "task": "color"
+        }
+    ],
+    "images": [
+        {
+            "directory": "V:/COMPANIES/marz/source/jersey/master/shots/2740/BEC2740_102/plate/default/ingest/000.000/high",
+            "path": "J:/staging/jersey/editorial/20220510/20220510b_MAR/BEC2740_102_MP01_V001/4448x3096/BEC2740_102_MP01_V001.*.exr",
+            "task": "plate"
+        }
+    ],
+    "ref": [
+        {
+            "directory": "to_be_specified",
+            "path": "J:\\staging\\jersey\\editorial\\20220510\\20220510a_MAR\\BEC1720_102_comp_v025_vfx.mov",
+            "task": "reference"
+        },
+        {
+            "directory": "to_be_specified",
+            "path": "J:\\staging\\jersey\\editorial\\20220510\\20220510b_MAR\\BEC2740_102_MP01_V001.mov",
+            "task": "reference"
+        },
+        {
+            "directory": "to_be_specified",
+            "path": "J:\\staging\\jersey\\editorial\\20220510\\20220510b_MAR\\BEC2740_102_MP01_V001_FF.mov",
+            "task": "reference"
+        },
+        {
+            "directory": "to_be_specified",
+            "path": "J:\\staging\\jersey\\editorial\\20220510\\20220510b_MAR\\BEC2740_102_MP01_V001_vfx.mov",
+            "task": "reference"
+        }
+    ]
+}

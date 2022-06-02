@@ -1,13 +1,3 @@
 {
-    "maya": {
-        "mdl": {
-            "MakePreview": {
-                "label": "MakePreview", 
-                "module": "import cgl_tools.maya.menus.mdl.MakePreview as MakePreview; MakePreview.run()", 
-                "name": "MakePreview", 
-                "order": 1
-            }, 
-            "order": 1
-        }
-    }
+    "maya": []
 }

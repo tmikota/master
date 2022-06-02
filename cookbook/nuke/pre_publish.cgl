@@ -1,0 +1,28 @@
+{
+    "nuke": [
+        {
+            "buttons": [
+                {
+                    "label": "Publish",
+                    "module": "cookbook.nuke.pre_publish.rpo.Publish",
+                    "name": "Publish",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "rpo"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Publish",
+                    "module": "cookbook.nuke.pre_publish.ret.Publish",
+                    "name": "Publish",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "ret"
+        }
+    ]
+}

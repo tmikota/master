@@ -1,14 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1792be25-e5a8-4f48-b078-866bd1be2b17" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alchemy/pre_publish.cgl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alchemy/pre_publish/default/Publish.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alchemy/pre_publish/default/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alchemy/pre_publish/tex/CheckModelMaterialPublish.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alchemy/pre_publish/tex/CheckTextureNaming.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alchemy/pre_publish/tex/CreateMsd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alchemy/pre_publish/tex/OrganizeTexFiles.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alchemy/pre_publish/tex/Publish.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/alchemy/pre_publish/tex/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/build.cgl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/build/ldv/BuildShaders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/build/ldv/ImportModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/build/ldv/ImportShaders.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/build/ldv/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/menus/Alchemy/Build.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/menus/Alchemy/CleanTurntable.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/menus/Alchemy/Open.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/menus/Alchemy/Publish.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/menus/Alchemy/Render.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/menus/Alchemy/Review.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/menus/Alchemy/Turntable.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/menus/Alchemy/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/menus/test_menu/TestBttn.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/menus/test_menu/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/pre_render.cgl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/shelves/alchemy/CleanTurntable.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/shelves/alchemy/Import_36px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/shelves/alchemy/Publish.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/shelves/alchemy/Render.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/shelves/alchemy/Review.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/shelves/alchemy/TT_36px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/shelves/alchemy/TT_clean_36px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/shelves/alchemy/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/shelves/alchemy/Turntable.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/shelves/alchemy/build_36px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/shelves/alchemy/hdr_lib_36px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/shelves/alchemy/publish_36px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/shelves/alchemy/render_36px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/shelves/alchemy/review_36px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/shelves/alchemy/snap_to_origin_36px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/houdini/shelves/alchemy/version_up_36px.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ingest/pre_publish.cgl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ingest/pre_publish/color/CreateSymlinks.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ingest/pre_publish/color/Publish.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ingest/pre_publish/color/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ingest/pre_render.cgl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ingest/pre_render/plt/Color.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ingest/pre_render/plt/CopyToServer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ingest/pre_render/plt/CreateJpgProxies.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ingest/pre_render/plt/CreateMov.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ingest/pre_render/plt/Degrain.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ingest/pre_render/plt/Reposition.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ingest/pre_render/plt/Retime.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ingest/pre_render/plt/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maya/build.cgl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maya/pre_publish/mdl/ChooseTask.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maya/pre_publish/mdl/CreateMsd.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maya/pre_render/mdl/CheckForTt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maya/pre_render/mdl/SaveScene.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maya/pre_render/mdl/SetRenderSettings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maya/pre_render/mdl/SetUpAovs.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maya/pre_render/mdl/SlapComp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/maya/pre_render/mdl/SubmitToDeadline.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nuke/build.cgl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pre_publish.cgl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pre_render.cgl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resolve/pre_publish.cgl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resolve/pre_render.cgl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cgl_tools.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cgl_tools.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/houdini/menus.cgl" beforeDir="false" afterPath="$PROJECT_DIR$/houdini/menus.cgl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/houdini/pre_publish.cgl" beforeDir="false" afterPath="$PROJECT_DIR$/houdini/pre_publish.cgl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/houdini/shelves.cgl" beforeDir="false" afterPath="$PROJECT_DIR$/houdini/shelves.cgl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/houdini/shelves/alchemy/Build.py" beforeDir="false" afterPath="$PROJECT_DIR$/houdini/shelves/alchemy/Build.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ingest/shelves.cgl" beforeDir="false" afterPath="$PROJECT_DIR$/ingest/shelves.cgl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/menus.cgl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/menus/File/ExportToDrive.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/menus/File/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/menus/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights.cgl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/default/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/default/cgl_tools.lumbermill.preflights.default.check_publish_files.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/default/cgl_tools.lumbermill.preflights.default.publish_files.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/default/check_publish_files.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/default/publish_files.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/default/publish_render_files.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/default/publish_source_files.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/ingest_default/PublishFromIngestDataFrame.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/ingest_default/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/ingest_default/cgl_tools.lumbermill.preflights.ingest_default.PublishFromIngestDataFrame.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/plate/CopyFiles.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/plate/CreateProxy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/plate/CreateProxyGif.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/plate/CreateProxyHD.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/plate/CreateProxyMov.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/plate/CreatePublishFiles.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/plate/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/plate/cgl_tools.lumbermill.preflights.plate.CreateProxy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/plate/cgl_tools.lumbermill.preflights.plate.CreateProxyGif.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/plate/cgl_tools.lumbermill.preflights.plate.CreateProxyHD.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/plate/cgl_tools.lumbermill.preflights.plate.CreateProxyMov.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/plate/cgl_tools.lumbermill.preflights.plate.CreatePublishFiles.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/tex/CheckTextureNaming.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/tex/Closewindow.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/tex/Createpublishversion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/tex/MakeTxFiles.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/tex/NextMajorVersion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/tex/Publish.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/preflights/tex/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/shelves.cgl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lumbermill/shelves/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/magic_browser/menus.cgl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/magic_browser/menus/Test/Poop.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/magic_browser/pre_publish.cgl" beforeDir="false" afterPath="$PROJECT_DIR$/magic_browser/pre_publish.cgl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/magic_browser/pre_publish/mdl/StepOne.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/maya/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maya/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/maya/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/maya/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maya/menus.cgl" beforeDir="false" afterPath="$PROJECT_DIR$/maya/menus.cgl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maya/pre_publish.cgl" beforeDir="false" afterPath="$PROJECT_DIR$/maya/pre_publish.cgl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maya/pre_publish/mdl/ExportHighRes.py" beforeDir="false" afterPath="$PROJECT_DIR$/maya/pre_publish/mdl/ExportHighRes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maya/pre_render.cgl" beforeDir="false" afterPath="$PROJECT_DIR$/maya/pre_render.cgl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maya/shelves.cgl" beforeDir="false" afterPath="$PROJECT_DIR$/maya/shelves.cgl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/maya/shelves/Advent/CreateNewColorVariant.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maya/shelves/Advent/DefineColorPalette.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maya/shelves/Advent/MakeVariants.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maya/shelves/Advent/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/maya/shelves/Maya_Alchemy/Render.py" beforeDir="false" afterPath="$PROJECT_DIR$/maya/shelves/Maya_Alchemy/Render.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuke/shelves.cgl" beforeDir="false" afterPath="$PROJECT_DIR$/nuke/shelves.cgl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../css/icons/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/../css/icons/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../default_files/comp/default.nk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../default_files/comp/seq/010_0000.nk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../default_files/comp/variant/redcar.nk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../default_files/dnoise/default.nk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../default_files/fx/default.hipnc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../default_files/lay/default.mb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../default_files/mdl/default.mb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../default_files/shd/default.mb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../globals.json" beforeDir="false" afterPath="$PROJECT_DIR$/../globals.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../shaders.json" beforeDir="false" afterPath="$PROJECT_DIR$/../shaders.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../sync/sync.json" beforeDir="false" afterPath="$PROJECT_DIR$/../sync/sync.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +162,20 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="46" />
@@ -63,10 +214,86 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/cglumberjack/python/cglumberjack/cgl" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.CheckModelMaterialPublish">
+    <configuration name="CheckModelMaterialPublish" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cgl_tools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/alchemy/pre_publish/tex" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/alchemy/pre_publish/tex/CheckModelMaterialPublish.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CheckTextureNaming" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cgl_tools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/alchemy/pre_publish/tex" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/alchemy/pre_publish/tex/CheckTextureNaming.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="CreateMsd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cgl_tools" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/alchemy/pre_publish/tex" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/alchemy/pre_publish/tex/CreateMsd.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.CheckModelMaterialPublish" />
+        <item itemvalue="Python.CreateMsd" />
+        <item itemvalue="Python.CheckTextureNaming" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -125,6 +352,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lumbermill/preflights/ingest_default/PublishFromIngestDataFrame.py">

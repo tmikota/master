@@ -3,15 +3,76 @@
         {
             "buttons": [
                 {
-                    "icon": "",
+                    "icon": "V:/COMPANIES/marz/config/master/cookbook/houdini/shelves/alchemy/build_36px.png",
                     "label": "Build",
                     "module": "import cookbook.houdini.shelves.alchemy.Build as Build; Build.run()",
                     "name": "Build",
                     "order": 1,
                     "reference_path": null
+                },
+                {
+                    "icon": "V:/COMPANIES/marz/config/master/cookbook/maya/shelves/Maya_Alchemy/hdr_lib_36px.png",
+                    "label": "Env Light",
+                    "module": "import cookbook.houdini.shelves.alchemy.Hdri as Hdri; Hdri.run()",
+                    "name": "Hdri",
+                    "order": 2,
+                    "reference_path": null
+                },
+                {
+                    "icon": "V:/COMPANIES/marz/config/master/cookbook/houdini/shelves/alchemy/TT_36px.png",
+                    "label": "Turntable",
+                    "module": "import cookbook.houdini.shelves.alchemy.Turntable as Turntable; Turntable.run()",
+                    "name": "Turntable",
+                    "order": 3,
+                    "reference_path": null
+                },
+                {
+                    "icon": "V:/COMPANIES/marz/config/master/cookbook/houdini/shelves/alchemy/TT_clean_36px.png",
+                    "label": "Clean Turntable",
+                    "module": "import cookbook.houdini.shelves.alchemy.CleanTurntable as CleanTurntable; CleanTurntable.run()",
+                    "name": "CleanTurntable",
+                    "order": 4,
+                    "reference_path": null
+                },
+                {
+                    "icon": "V:/COMPANIES/marz/config/master/cookbook/houdini/shelves/alchemy/render_36px.png",
+                    "label": "Render",
+                    "module": "import cookbook.houdini.shelves.alchemy.Render as Render; Render.run()",
+                    "name": "Render",
+                    "order": 5,
+                    "reference_path": null
+                },
+                {
+                    "icon": "V:/COMPANIES/marz/config/master/cookbook/houdini/shelves/alchemy/review_36px.png",
+                    "label": "Review",
+                    "module": "import cookbook.houdini.shelves.alchemy.Review as Review; Review.run()",
+                    "name": "Review",
+                    "order": 6,
+                    "reference_path": null
+                },
+                {
+                    "icon": "V:/COMPANIES/marz/config/master/cookbook/houdini/shelves/alchemy/publish_36px.png",
+                    "label": "Publish",
+                    "module": "import cookbook.houdini.shelves.alchemy.Publish as Publish; Publish.run()",
+                    "name": "Publish",
+                    "order": 7,
+                    "reference_path": null
                 }
             ],
             "name": "alchemy"
+        },
+        {
+            "buttons": [
+                {
+                    "icon": "",
+                    "label": "Eyebrow",
+                    "module": "import cookbook.houdini.shelves.CFX.Eyebrow as Eyebrow; Eyebrow.run()",
+                    "name": "Eyebrow",
+                    "order": 1,
+                    "reference_path": null
+                }
+            ],
+            "name": "CFX"
         }
     ]
 }

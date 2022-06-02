@@ -15,7 +15,7 @@ class ExportHighRes(PreflightCheck):
         export high res obj, fbx, mb files.
         :return:
         """
-        types = ['obj', 'fbx', 'mb']
+        types = ['fbx', 'ma', 'abc']
         for t in types:
             mdl.export_mdl(ext=t)
         self.pass_check('Check Passed')

@@ -1,7 +1,76 @@
 {
     "maya": [
         {
-            "buttons": [],
+            "buttons": [
+                {
+                    "label": "Check For Tt",
+                    "module": "cookbook.maya.pre_render.mdl.CheckForTt",
+                    "name": "CheckForTt",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Set Render Settings",
+                    "module": "cookbook.maya.pre_render.mdl.SetRenderSettings",
+                    "name": "SetRenderSettings",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Set Up Aovs",
+                    "module": "cookbook.maya.pre_render.mdl.SetUpAovs",
+                    "name": "SetUpAovs",
+                    "order": 3,
+                    "required": "True"
+                },
+                {
+                    "label": "Save Scene",
+                    "module": "cookbook.maya.pre_render.mdl.SaveScene",
+                    "name": "SaveScene",
+                    "order": 4,
+                    "required": "True"
+                },
+                {
+                    "label": "Submit To Deadline",
+                    "module": "cookbook.maya.pre_render.mdl.SubmitToDeadline",
+                    "name": "SubmitToDeadline",
+                    "order": 5,
+                    "required": "True"
+                },
+                {
+                    "label": "Slap Comp",
+                    "module": "cookbook.maya.pre_render.mdl.SlapComp",
+                    "name": "SlapComp",
+                    "order": 6,
+                    "required": "True"
+                }
+            ],
+            "name": "mdl"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Set Render Settings",
+                    "module": "cookbook.maya.pre_render.lite.SetRenderSettings",
+                    "name": "SetRenderSettings",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "No Local Paths",
+                    "module": "cookbook.maya.pre_render.lite.NoLocalPaths",
+                    "name": "NoLocalPaths",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Submit To Deadline",
+                    "module": "cookbook.maya.pre_render.lite.SubmitToDeadline",
+                    "name": "SubmitToDeadline",
+                    "order": 3,
+                    "required": "True"
+                }
+            ],
             "name": "lite"
         },
         {
@@ -10,22 +79,119 @@
                     "label": "Set Up Paths",
                     "module": "cookbook.maya.pre_render.lay.SetUpPaths",
                     "name": "SetUpPaths",
-                    "order": 1
+                    "order": 1,
+                    "required": "True"
                 },
                 {
                     "label": "Render Settings",
                     "module": "cookbook.maya.pre_render.lay.RenderSettings",
                     "name": "RenderSettings",
-                    "order": 2
+                    "order": 2,
+                    "required": "True"
                 },
                 {
                     "label": "Render Locally",
                     "module": "cookbook.maya.pre_render.lay.RenderLocally",
                     "name": "RenderLocally",
-                    "order": 3
+                    "order": 3,
+                    "required": "True"
                 }
             ],
             "name": "lay"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Check For Tt",
+                    "module": "cookbook.maya.pre_render.rig.CheckForTt",
+                    "name": "CheckForTt",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Set Render Settings",
+                    "module": "cookbook.maya.pre_render.rig.SetRenderSettings",
+                    "name": "SetRenderSettings",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Set Up Aovs",
+                    "module": "cookbook.maya.pre_render.rig.SetUpAovs",
+                    "name": "SetUpAovs",
+                    "order": 3,
+                    "required": "True"
+                },
+                {
+                    "label": "Save Scene",
+                    "module": "cookbook.maya.pre_render.rig.SaveScene",
+                    "name": "SaveScene",
+                    "order": 4,
+                    "required": "True"
+                },
+                {
+                    "label": "Submit To Deadline",
+                    "module": "cookbook.maya.pre_render.rig.SubmitToDeadline",
+                    "name": "SubmitToDeadline",
+                    "order": 5,
+                    "required": "True"
+                },
+                {
+                    "label": "Slay Comp",
+                    "module": "cookbook.maya.pre_render.rig.SlayComp",
+                    "name": "SlayComp",
+                    "order": 6,
+                    "required": "True"
+                }
+            ],
+            "name": "rig"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Check For Tt",
+                    "module": "cookbook.maya.pre_render.cth.CheckForTt",
+                    "name": "CheckForTt",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Set Render Settings",
+                    "module": "cookbook.maya.pre_render.cth.SetRenderSettings",
+                    "name": "SetRenderSettings",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Set Up Aovs",
+                    "module": "cookbook.maya.pre_render.cth.SetUpAovs",
+                    "name": "SetUpAovs",
+                    "order": 3,
+                    "required": "True"
+                },
+                {
+                    "label": "Save Scene",
+                    "module": "cookbook.maya.pre_render.cth.SaveScene",
+                    "name": "SaveScene",
+                    "order": 4,
+                    "required": "True"
+                },
+                {
+                    "label": "Submit To Deadline",
+                    "module": "cookbook.maya.pre_render.cth.SubmitToDeadline",
+                    "name": "SubmitToDeadline",
+                    "order": 5,
+                    "required": "True"
+                },
+                {
+                    "label": "Slap Comp",
+                    "module": "cookbook.maya.pre_render.cth.SlapComp",
+                    "name": "SlapComp",
+                    "order": 6,
+                    "required": "True"
+                }
+            ],
+            "name": "cth"
         }
     ]
 }

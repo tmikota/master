@@ -1,0 +1,65 @@
+{
+    "nuke": [
+        {
+            "buttons": [
+                {
+                    "label": "Set Up Node Paths",
+                    "module": "cookbook.nuke.build.rpo.SetUpNodePaths",
+                    "name": "SetUpNodePaths",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Set Frame Range",
+                    "module": "cookbook.nuke.build.rpo.SetFrameRange",
+                    "name": "SetFrameRange",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Set Write Node Path",
+                    "module": "cookbook.nuke.build.rpo.SetWriteNodePath",
+                    "name": "SetWriteNodePath",
+                    "order": 3,
+                    "required": "True"
+                }
+            ],
+            "name": "rpo"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Retime",
+                    "module": "cookbook.nuke.build.ret.Retime",
+                    "name": "Retime",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "ret"
+        },
+        {
+            "buttons": [],
+            "name": "rpo"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Testbutton",
+                    "module": "cookbook.nuke.build.test.Testbutton",
+                    "name": "Testbutton",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Another Test",
+                    "module": "cookbook.nuke.build.test.AnotherTest",
+                    "name": "AnotherTest",
+                    "order": 2,
+                    "required": "True"
+                }
+            ],
+            "name": "test"
+        }
+    ]
+}

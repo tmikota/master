@@ -1,3 +1,103 @@
 {
-    "houdini": {}
+    "houdini": [
+        {
+            "buttons": [
+                {
+                    "label": "Latest Model",
+                    "module": "cookbook.houdini.pre_publish.ldv.LatestModel",
+                    "name": "LatestModel",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Latest Textures",
+                    "module": "cookbook.houdini.pre_publish.ldv.LatestTextures",
+                    "name": "LatestTextures",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Check Texture Color Space",
+                    "module": "cookbook.houdini.pre_publish.ldv.CheckTextureColorSpace",
+                    "name": "CheckTextureColorSpace",
+                    "order": 3,
+                    "required": "True"
+                },
+                {
+                    "label": "Check Material Names",
+                    "module": "cookbook.houdini.pre_publish.ldv.CheckMaterialNames",
+                    "name": "CheckMaterialNames",
+                    "order": 4,
+                    "required": "True"
+                },
+                {
+                    "label": "Check All Shapes Have Material Assignment",
+                    "module": "cookbook.houdini.pre_publish.ldv.CheckAllShapesHaveMaterialAssignment",
+                    "name": "CheckAllShapesHaveMaterialAssignment",
+                    "order": 5,
+                    "required": "True"
+                },
+                {
+                    "label": "Check Shader Util Aovs",
+                    "module": "cookbook.houdini.pre_publish.ldv.CheckShaderUtilAovs",
+                    "name": "CheckShaderUtilAovs",
+                    "order": 6,
+                    "required": "True"
+                },
+                {
+                    "label": "Check Subdivs",
+                    "module": "cookbook.houdini.pre_publish.ldv.CheckSubdivs",
+                    "name": "CheckSubdivs",
+                    "order": 7,
+                    "required": "True"
+                },
+                {
+                    "label": "Check Displacement",
+                    "module": "cookbook.houdini.pre_publish.ldv.CheckDisplacement",
+                    "name": "CheckDisplacement",
+                    "order": 8,
+                    "required": "True"
+                },
+                {
+                    "label": "Publish",
+                    "module": "cookbook.houdini.pre_publish.ldv.Publish",
+                    "name": "Publish",
+                    "order": 9,
+                    "required": "True"
+                }
+            ],
+            "name": "ldv"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Set Render Settings",
+                    "module": "cookbook.houdini.pre_publish.lte.SetRenderSettings",
+                    "name": "SetRenderSettings",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Check For Wildcards",
+                    "module": "cookbook.houdini.pre_publish.lte.CheckForWildcards",
+                    "name": "CheckForWildcards",
+                    "order": 2,
+                    "required": "True"
+                }
+            ],
+            "name": "lte"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Publish",
+                    "module": "cookbook.houdini.pre_publish.crg.Publish",
+                    "name": "Publish",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "crg"
+        }
+    ]
 }

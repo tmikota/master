@@ -1,0 +1,28 @@
+{
+    "nuke": [
+        {
+            "buttons": [
+                {
+                    "label": "Submit To Deadline",
+                    "module": "cookbook.nuke.pre_render.rpo.SubmitToDeadline",
+                    "name": "SubmitToDeadline",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "rpo"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Submit To Deadline",
+                    "module": "cookbook.nuke.pre_render.ret.SubmitToDeadline",
+                    "name": "SubmitToDeadline",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "ret"
+        }
+    ]
+}

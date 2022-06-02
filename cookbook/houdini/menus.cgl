@@ -1,3 +1,49 @@
 {
-    "houdini": []
+    "houdini": [
+        {
+            "buttons": [],
+            "name": "test_menu"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Build",
+                    "module": "import cookbook.houdini.menus.Alchemy.Build as Build; Build.run()",
+                    "name": "Build",
+                    "order": 1
+                },
+                {
+                    "label": "Turntable",
+                    "module": "import cookbook.houdini.menus.Alchemy.Turntable as Turntable; Turntable.run()",
+                    "name": "Turntable",
+                    "order": 2
+                },
+                {
+                    "label": "Clean Turntable",
+                    "module": "import cookbook.houdini.menus.Alchemy.CleanTurntable as CleanTurntable; CleanTurntable.run()",
+                    "name": "CleanTurntable",
+                    "order": 3
+                },
+                {
+                    "label": "Render",
+                    "module": "import cookbook.houdini.menus.Alchemy.Render as Render; Render.run()",
+                    "name": "Render",
+                    "order": 4
+                },
+                {
+                    "label": "Review",
+                    "module": "import cookbook.houdini.menus.Alchemy.Review as Review; Review.run()",
+                    "name": "Review",
+                    "order": 5
+                },
+                {
+                    "label": "Publish",
+                    "module": "import cookbook.houdini.menus.Alchemy.Publish as Publish; Publish.run()",
+                    "name": "Publish",
+                    "order": 6
+                }
+            ],
+            "name": "Alchemy"
+        }
+    ]
 }

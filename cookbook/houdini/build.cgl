@@ -1,0 +1,58 @@
+{
+    "houdini": [
+        {
+            "buttons": [
+                {
+                    "label": "Import Model",
+                    "module": "cookbook.houdini.build.ldv.ImportModel",
+                    "name": "ImportModel",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Import Textures",
+                    "module": "cookbook.houdini.build.ldv.ImportTextures",
+                    "name": "ImportTextures",
+                    "order": 2,
+                    "required": "True"
+                }
+            ],
+            "name": "ldv"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Import Model",
+                    "module": "cookbook.houdini.build.grm.ImportModel",
+                    "name": "ImportModel",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "grm"
+        },
+        {
+            "buttons": [],
+            "name": "wrg"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Import Model",
+                    "module": "cookbook.houdini.build.crg.ImportModel",
+                    "name": "ImportModel",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Import Cloth",
+                    "module": "cookbook.houdini.build.crg.ImportCloth",
+                    "name": "ImportCloth",
+                    "order": 2,
+                    "required": "True"
+                }
+            ],
+            "name": "crg"
+        }
+    ]
+}
