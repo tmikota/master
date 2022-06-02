@@ -37,6 +37,6 @@ class ExportShader(PreflightCheck):
                 else:
                     pm.select(x, tgl=True, ne=True)
                 count += 1
-        print 'Exporting %s' % pub_path
+        print('Exporting %s' % pub_path)
         pm.exportSelected(pub_path, typ='mayaBinary')
         self.pass_check('Shader Exported to: %s' % pub_path)
