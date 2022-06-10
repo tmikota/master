@@ -1,8 +1,6 @@
 from cgl.plugins.preflight.preflight_check import PreflightCheck
-# there is typically a alchemy.py, and utils.py file in the plugins directory.
-# look here for pre-built, useful functions
-# from cgl.plugins.houdini import alchemy as alc
-
+from cgl.plugins.houdini import alchemy as alc
+import hou
 
 class Publish(PreflightCheck):
 
@@ -20,8 +18,10 @@ class Publish(PreflightCheck):
         self.fail_check('Message about a failed check')
         :return:
         """
-		publish_render_object = alc.scene_object().publish()
-		if(os.path.isfile(publish_render_object.path_root)):
-			self.pass_check('Cloth rig published, success')
-		else:
-			self.fail_check('Cloth rig publish, fail')
+        file_out = alc.scene_object().copy(context='render',
+                                           filename='cloth_rig').path_root
+        hou.node('/obj/cloth_rig/').setSelected(True)
+        alc.export_selected_nodes(file_out)
+        self.pass_check('Check Passed')
+        # self.fail_check('Check Failed')
+

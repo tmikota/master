@@ -3,10 +3,17 @@
         {
             "buttons": [
                 {
+                    "label": "Version Up",
+                    "module": "cookbook.nuke.pre_publish.rpo.VersionUp",
+                    "name": "VersionUp",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
                     "label": "Publish",
                     "module": "cookbook.nuke.pre_publish.rpo.Publish",
                     "name": "Publish",
-                    "order": 1,
+                    "order": 2,
                     "required": "True"
                 }
             ],

@@ -216,16 +216,19 @@
                 "default": {
                     "long_to_short": {
                         "assets": {
+                            "blendshapes": "bls",
                             "cloth": "cth",
                             "cloth rig": "crg",
                             "color": "clr",
                             "crowd rig": "wrg",
+                            "fx": "fx",
                             "groom": "grm",
                             "groom rig": "grg",
                             "hdr": "hdr",
                             "light rig": "lrg",
                             "look dev": "ldv",
                             "model": "mdl",
+                            "muscle rig": "mrg",
                             "rig": "rig",
                             "texture": "tex"
                         },
@@ -237,9 +240,12 @@
                             "crowd": "cwd",
                             "destruction": "dst",
                             "dmp": "dmp",
+                            "edit_breakdown": "edb",
+                            "edit_ref": "edr",
                             "env": "env",
                             "layout": "lay",
                             "lighting": "lte",
+                            "paint": "pnt",
                             "plate": "plt",
                             "reposition": "rpo",
                             "retime": "ret",
@@ -251,15 +257,18 @@
                     },
                     "short_to_long": {
                         "assets": {
+                            "bls": "blendshapes",
                             "clr": "color",
                             "crg": "cloth rig",
                             "cth": "cloth",
+                            "fx": "fx",
                             "grg": "groom rig",
                             "grm": "groom",
                             "hdr": "hdr",
                             "ldv": "look dev",
                             "lrg": "light rig",
                             "mdl": "model",
+                            "mrg": "muscle rig",
                             "rig": "rig",
                             "tex": "texture",
                             "wrg": "crowd rig"
@@ -272,10 +281,13 @@
                             "cwd": "crowd",
                             "dmp": "dmp",
                             "dst": "destruction",
+                            "edb": "edit_breakdown",
+                            "edr": "edit_ref",
                             "env": "env",
                             "lay": "layout",
                             "lte": "lighting",
                             "plt": "plate",
+                            "pnt": "paint",
                             "ret": "retime",
                             "rpo": "reposition",
                             "rto": "roto",
@@ -317,11 +329,11 @@
                     "last": "sidhwa",
                     "login": "nsidhwa@monstersaliensrobotszombies.com"
                 },
-                "tmikota": {
+                "xgong": {
                     "email": "tmikota@monstersaliensrobotszombies.com",
-                    "first": "Tom",
-                    "last": "Mikota",
-                    "login": "tmikota@monstersaliensrobotszombies.com"
+                    "first": "Sam",
+                    "last": "Gong",
+                    "login": "xgong@monstersaliensrobotszombies.com"
                 }
             }
         }

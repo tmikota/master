@@ -15,5 +15,7 @@ class CreateMsd(PreflightCheck):
         :return:
         """
         po = self.shared_data['path_object']
-        tex.Task(path_object=po).export_msd()
+        msd_info = tex.Task(path_object=po).export_msd()
+        mtl_groups = sorted(msd_info['attrs']['mtl_groups'])
+        self.shared_data['tex_mtl_groups'] = mtl_groups
         self.pass_check('Check Passed')

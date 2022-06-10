@@ -94,21 +94,9 @@
                     "name": "Vetela",
                     "order": 1,
                     "reference_path": null
-                },
-                {
-                    "icon": "",
-                    "label": "Vetela",
-                    "module": "import cookbook.maya.shelves.Rig.Vetela as Vetela; Vetela.run()",
-                    "name": "Vetela",
-                    "order": 2,
-                    "reference_path": null
                 }
             ],
             "name": "Rig"
-        },
-        {
-            "buttons": [],
-            "name": ""
         }
     ]
 }

@@ -3,9 +3,9 @@
         {
             "buttons": [
                 {
-                    "label": "Set Up Node Paths",
-                    "module": "cookbook.nuke.build.rpo.SetUpNodePaths",
-                    "name": "SetUpNodePaths",
+                    "label": "Set Read Node Paths",
+                    "module": "cookbook.nuke.build.rpo.SetReadNodePaths",
+                    "name": "SetReadNodePaths",
                     "order": 1,
                     "required": "True"
                 },
@@ -17,10 +17,24 @@
                     "required": "True"
                 },
                 {
+                    "label": "Set Resolution",
+                    "module": "cookbook.nuke.build.rpo.SetResolution",
+                    "name": "SetResolution",
+                    "order": 3,
+                    "required": "True"
+                },
+                {
+                    "label": "Set Up Node Paths",
+                    "module": "cookbook.nuke.build.rpo.SetUpNodePaths",
+                    "name": "SetUpNodePaths",
+                    "order": 4,
+                    "required": "True"
+                },
+                {
                     "label": "Set Write Node Path",
                     "module": "cookbook.nuke.build.rpo.SetWriteNodePath",
                     "name": "SetWriteNodePath",
-                    "order": 3,
+                    "order": 5,
                     "required": "True"
                 }
             ],
@@ -29,18 +43,28 @@
         {
             "buttons": [
                 {
-                    "label": "Retime",
-                    "module": "cookbook.nuke.build.ret.Retime",
-                    "name": "Retime",
+                    "label": "Set Read Node Paths",
+                    "module": "cookbook.nuke.build.ret.SetReadNodePaths",
+                    "name": "SetReadNodePaths",
                     "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Set Frame Range",
+                    "module": "cookbook.nuke.build.ret.SetFrameRange",
+                    "name": "SetFrameRange",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Set Resolution",
+                    "module": "cookbook.nuke.build.ret.SetResolution",
+                    "name": "SetResolution",
+                    "order": 3,
                     "required": "True"
                 }
             ],
             "name": "ret"
-        },
-        {
-            "buttons": [],
-            "name": "rpo"
         },
         {
             "buttons": [

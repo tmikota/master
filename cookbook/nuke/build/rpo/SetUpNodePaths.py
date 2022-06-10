@@ -2,7 +2,7 @@ from cgl.plugins.preflight.preflight_check import PreflightCheck
 
 # there is typically a alchemy.py, and utils.py file in the plugins directory.
 # look here for pre-built, useful functions
-# from cgl.plugins.nuke import alchemy as alc
+from cgl.plugins.nuke import alchemy as alc
 
 
 class SetUpNodePaths(PreflightCheck):
@@ -21,5 +21,9 @@ class SetUpNodePaths(PreflightCheck):
         :return:
         """
         print("PreflightTemplate")
+        import nuke
+        match_grades = nuke.allNodes('MatchGrade')
+        for node in match_grades:
+            print(node)
         self.pass_check("Check Passed")
         # self.fail_check('Check Failed')

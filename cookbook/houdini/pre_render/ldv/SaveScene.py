@@ -20,6 +20,10 @@ class SaveScene(PreflightCheck):
         self.fail_check('Message about a failed check')
         :return:
         """
-        print('PreflightTemplate')
+        import hou
+
+        print('Saving scene file...')
+        hou.hipFile.save()
+        print('Scene saved!')
         self.pass_check('Check Passed')
         # self.fail_check('Check Failed')

@@ -90,10 +90,17 @@
         {
             "buttons": [
                 {
+                    "label": "Export Cloth Rig",
+                    "module": "cookbook.houdini.pre_publish.crg.ExportClothRig",
+                    "name": "ExportClothRig",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
                     "label": "Publish",
                     "module": "cookbook.houdini.pre_publish.crg.Publish",
                     "name": "Publish",
-                    "order": 1,
+                    "order": 2,
                     "required": "True"
                 }
             ],

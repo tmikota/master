@@ -3,7 +3,6 @@ from cgl.plugins.preflight.preflight_check import PreflightCheck
 # look here for pre-built, useful functions
 # from cgl.plugins.houdini import alchemy as alc
 
-
 class SetRenderSettings(PreflightCheck):
 
     def getName(self):
@@ -20,6 +19,12 @@ class SetRenderSettings(PreflightCheck):
         self.fail_check('Message about a failed check')
         :return:
         """
+        import hou
+        out_root = hou.node('/out')
+
+        if not out_root.children():
+            redshift_node = out_root.createNode('Redshift_ROP')
+
         print('PreflightTemplate')
         self.pass_check('Check Passed')
         # self.fail_check('Check Failed')

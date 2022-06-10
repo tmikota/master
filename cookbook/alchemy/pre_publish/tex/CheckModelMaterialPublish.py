@@ -1,6 +1,8 @@
 from cgl.plugins.preflight.preflight_check import PreflightCheck
 from cgl.plugins.maya.tasks import tex
 from cgl.core.path import PathObject
+import os
+
 
 class CheckModelMaterialPublish(PreflightCheck):
 
@@ -19,17 +21,21 @@ class CheckModelMaterialPublish(PreflightCheck):
         :return:
         """
         po = self.shared_data['path_object']
-        mo = po.copy(latest=True, task='mdl', user='publish', set_proper_filename=True, ext='ma')
-        print(sorted(po.msd_info['attrs']['mtl_groups']))
-        print(mo.msd_info['attrs']['mtl_groups'])
-        tex_mtl_groups = sorted(po.msd_info['attrs']['mtl_groups'])
+        tex_mtl_groups = self.shared_data['tex_mtl_groups']
+        mo = po.copy(latest=True, task='mdl', user='publish', set_proper_filename=True, ext='.ma')
+        if not os.path.isfile(mo.msd_path):
+            self.fail_check('MSD {} does not exist'.format(mo.msd_path))
+
         mdl_mtl_groups = sorted(mo.msd_info['attrs']['mtl_groups'])
 
         if tex_mtl_groups == mdl_mtl_groups:
-            self.pass_check('Material Groups Match!')
-        else:
-            self.fail_check('Material Groups do not Match!')
             print(tex_mtl_groups)
             print(mdl_mtl_groups)
+            self.pass_check('Material Groups Match!')
+        else:
+            print(tex_mtl_groups)
+            print(mdl_mtl_groups)
+            self.fail_check('Material Groups do not Match!')
+
 
 

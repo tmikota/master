@@ -3,31 +3,45 @@
         {
             "buttons": [
                 {
+                    "label": "Check Major Version",
+                    "module": "cookbook.alchemy.pre_publish.tex.CheckMajorVersion",
+                    "name": "CheckMajorVersion",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Check For Textures",
+                    "module": "cookbook.alchemy.pre_publish.tex.CheckForTextures",
+                    "name": "CheckForTextures",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
                     "label": "Organize Tex Files",
                     "module": "cookbook.alchemy.pre_publish.tex.OrganizeTexFiles",
                     "name": "OrganizeTexFiles",
-                    "order": 1,
-                    "required": "False"
+                    "order": 3,
+                    "required": "True"
                 },
                 {
                     "label": "Create Msd",
                     "module": "cookbook.alchemy.pre_publish.tex.CreateMsd",
                     "name": "CreateMsd",
-                    "order": 2,
-                    "required": "False"
+                    "order": 4,
+                    "required": "True"
                 },
                 {
                     "label": "Check Model Material Publish",
                     "module": "cookbook.alchemy.pre_publish.tex.CheckModelMaterialPublish",
                     "name": "CheckModelMaterialPublish",
-                    "order": 3,
-                    "required": "False"
+                    "order": 5,
+                    "required": "True"
                 },
                 {
                     "label": "Publish",
                     "module": "cookbook.alchemy.pre_publish.tex.Publish",
                     "name": "Publish",
-                    "order": 4,
+                    "order": 6,
                     "required": "True"
                 }
             ],

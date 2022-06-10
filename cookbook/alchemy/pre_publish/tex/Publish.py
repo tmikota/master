@@ -1,7 +1,6 @@
 from cgl.plugins.preflight.preflight_check import PreflightCheck
-# there is typically a alchemy.py, and utils.py file in the plugins directory.
-# look here for pre-built, useful functions
-# from cgl.plugins.alchemy import alchemy as alc
+from cgl.core.msd_tools import edit_publish_msd
+import time
 
 
 class Publish(PreflightCheck):
@@ -20,7 +19,9 @@ class Publish(PreflightCheck):
         self.fail_check('Message about a failed check')
         :return:
         """
-        self.shared_data['path_object'].publish()
+        user_object = self.shared_data['path_object']
+        po = user_object.publish()
+        time.sleep(5)  # TODO - this would be better to force this to wait until it's done.
+        edit_publish_msd(user_object.user, po)
         self.pass_check('Check Passed')
         self.final_check()
-        # self.fail_check('Check Failed')

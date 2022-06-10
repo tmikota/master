@@ -22,15 +22,17 @@ class SlapComp(PreflightCheck):
         render_path = job_info['render_path']
         # job = job_info['job']
         # print('job::',job)
-        job_id = job_info['job_id']
-        print('job_id::', job_id)
+        parent_job_id = job_info['job_id']
+        print('parent_job_id::', parent_job_id)
 
         # # build a slap comp for the shot
         # sc_info = build_turntable_slapcomp(render_path)
-        alc.create_turntable_submission(render_path, parent_job=job_id[0], pool='turntable')
+        job_id = alc.create_turntable_submission(render_path, parent_job=parent_job_id[0], pool='turntable')
         # alc.create_turntable_submission(source_sequence=render_path,parent_job=job_id[0], pool='turntable')
         # # submit the slap comp to deadline to render.
         # alc.submit_to_farm(sc_info['scene_file'], sc_info['write_node'], sc_info['start_frame'],
         #                    sc_info['end_frame'], sc_info['output_dir'], job_info['job_id'])
-        self.pass_check('Check Passed')
-        # self.fail_check('Check Failed')
+        if job_id:
+            self.pass_check('Check Passed')
+        else:
+            self.fail_check('Check Failed')

@@ -23,6 +23,11 @@ class SetUpAovs(PreflightCheck):
         :return:
         """
         import pymel.core as pm
+        # Clear any AOVs in file
+        all_aovs = pm.ls(type='RedshiftAOV')
+        for aov in all_aovs:
+            pm.delete(aov)
+
         aov = pm.rsCreateAov(type='Normals')
         aov = pm.rsCreateAov(type='Beauty')
 

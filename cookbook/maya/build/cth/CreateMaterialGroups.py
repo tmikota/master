@@ -1,14 +1,11 @@
 from cgl.plugins.preflight.preflight_check import PreflightCheck
-import cgl.plugins.maya.tasks.mdl as mdl
-from importlib import reload
-reload(mdl)
+from cgl.plugins.maya.tasks.mdl import create_material_groups
 # there is typically a alchemy.py, and utils.py file in the plugins directory.
 # look here for pre-built, useful functions
 # from cgl.plugins.maya import alchemy as alc
 
 
-class CreateMsd(PreflightCheck):
-
+class CreateMaterialGroups(PreflightCheck):
     def getName(self):
         pass
 
@@ -23,6 +20,6 @@ class CreateMsd(PreflightCheck):
         self.fail_check('Message about a failed check')
         :return:
         """
-        mdl.Task().export_msd(task_name='mdl')
-        self.pass_check('Check Passed')
+        create_material_groups()
+        self.pass_check("Check Passed")
         # self.fail_check('Check Failed')

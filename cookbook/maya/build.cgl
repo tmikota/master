@@ -51,6 +51,20 @@
                     "name": "ImportCamera",
                     "order": 1,
                     "required": "True"
+                },
+                {
+                    "label": "Import Tracked Geo",
+                    "module": "cookbook.maya.build.anm.ImportTrackedGeo",
+                    "name": "ImportTrackedGeo",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Set Framerange",
+                    "module": "cookbook.maya.build.anm.SetFramerange",
+                    "name": "SetFramerange",
+                    "order": 3,
+                    "required": "True"
                 }
             ],
             "name": "anm"

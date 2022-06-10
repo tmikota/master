@@ -21,7 +21,10 @@ class SubmitToDeadline(PreflightCheck):
         :return:
         """
         print('PreflightTemplate')
-        job_info = alc.submit_to_farm()
+        try:
+            job_info = alc.submit_to_farm(pool='turntable')
+        except:
+            job_info = alc.submit_to_farm()
         self.shared_data['job_info'] = job_info
         self.pass_check('Check Passed')
         # self.fail_check('Check Failed')

@@ -141,13 +141,13 @@
           "attr": "7",
           "channel": "r",
           "colorspace": "Raw",
-          "name_match": ["Roughness"]
+          "name_match": ["Roughness", "rough"]
         },
         "normal": {
           "attr": "52",
           "normal": "True",
           "colorspace": "Raw",
-          "name_match": ["Normal"],
+          "name_match": ["Normal", "normal"],
           "shader_attrs":{
             "bumpDepth": 0.1
           }
@@ -156,7 +156,7 @@
           "attr": "14",
           "channel": "r",
           "colorspace": "Raw",
-          "name_match": ["Metalness", "metalness"],
+          "name_match": ["Metalness", "metalness", "metal"],
           "shader_attrs": {
           }
         }

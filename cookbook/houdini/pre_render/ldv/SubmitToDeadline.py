@@ -1,7 +1,7 @@
 from cgl.plugins.preflight.preflight_check import PreflightCheck
 # there is typically a alchemy.py, and utils.py file in the plugins directory.
 # look here for pre-built, useful functions
-# from cgl.plugins.houdini import alchemy as alc
+from cgl.plugins.houdini import alchemy as alc
 
 
 class SubmitToDeadline(PreflightCheck):
@@ -20,6 +20,11 @@ class SubmitToDeadline(PreflightCheck):
         self.fail_check('Message about a failed check')
         :return:
         """
+        try:
+            job_info = alc.submit_to_farm(pool='redshift_houdini')
+        except:
+            job_info = alc.submit_to_farm()
+        self.shared_data['job_info'] = job_info
         print('PreflightTemplate')
         self.pass_check('Check Passed')
         # self.fail_check('Check Failed')

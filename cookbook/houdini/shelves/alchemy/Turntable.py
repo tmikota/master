@@ -23,23 +23,30 @@ def run():
     nullYRotation.setKeyframe(key1)
     
     key2 = hou.Keyframe()
-    key2.setFrame(240)
+    key2.setFrame(9)
     key2.setValue(360)
     
     nullYRotation.setKeyframe(key2)
     
-    geometry = selection[0].renderNode().geometry()
+    selectedGeoNode = selection[0]
+    geometry = selectedGeoNode.renderNode().geometry()
     bbox = geometry.boundingBox()
     
     camera = root.createNode("cam")
-
+    
+    outsideScale = selectedGeoNode.parm("scale").eval()
+    
     camYPosition = camera.parm("ty")
     camZPosition = camera.parm("tz")
-    camYPosition.set(bbox.center()[1])
-    camZPosition.set((bbox.sizevec()[1])*2.4)
-
+    
+    if bbox.sizevec()[0] < bbox.sizevec()[1]:
+        camYPosition.set(bbox.center()[1]*outsideScale)
+        camZPosition.set((bbox.sizevec()[1])*2.6*outsideScale)
+    else:
+        camYPosition.set(bbox.center()[1]*outsideScale)
+        camZPosition.set((bbox.sizevec()[0])*2.2*outsideScale)
+    
     view.setCamera(camera)
     hou.ui.triggerUpdate()
     
     root.layoutChildren()
-
