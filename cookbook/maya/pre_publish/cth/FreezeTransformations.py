@@ -18,6 +18,6 @@ class FreezeTransformations(PreflightCheck):
         self.fail_check('Message about a failed check')
         :return:
         """
-        mdl.freeze_transforms(name='mdl')
+        mdl.freeze_transforms(name='cth')
         self.pass_check('Check Passed')
         # self.fail_check('Check Failed')

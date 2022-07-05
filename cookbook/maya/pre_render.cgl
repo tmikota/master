@@ -192,6 +192,18 @@
                 }
             ],
             "name": "cth"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Export Animation",
+                    "module": "cookbook.maya.pre_render.anm.ExportAnimation",
+                    "name": "ExportAnimation",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "anm"
         }
     ]
 }

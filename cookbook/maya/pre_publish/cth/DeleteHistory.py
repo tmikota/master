@@ -20,6 +20,6 @@ class DeleteHistory(PreflightCheck):
         self.fail_check('Message about a failed check')
         :return:
         """
-        mdl.delete_history(name='mdl')
+        mdl.delete_history(name='cth')
         self.pass_check('History Deleted, Check Passed')
         # self.fail_check('Check Failed')

@@ -1,0 +1,37 @@
+{
+    "three_d_equalizer": [
+        {
+            "buttons": [
+                {
+                    "label": "Saveproject",
+                    "module": "cookbook.three_d_equalizer.pre_publish.trk.Saveproject",
+                    "name": "Saveproject",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Exportmaya",
+                    "module": "cookbook.three_d_equalizer.pre_publish.trk.Exportmaya",
+                    "name": "Exportmaya",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Exportnuke",
+                    "module": "cookbook.three_d_equalizer.pre_publish.trk.Exportnuke",
+                    "name": "Exportnuke",
+                    "order": 3,
+                    "required": "True"
+                },
+                {
+                    "label": "Exportlens",
+                    "module": "cookbook.three_d_equalizer.pre_publish.trk.Exportlens",
+                    "name": "Exportlens",
+                    "order": 4,
+                    "required": "True"
+                }
+            ],
+            "name": "trk"
+        }
+    ]
+}

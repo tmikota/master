@@ -24,31 +24,17 @@
                     "required": "True"
                 },
                 {
-                    "label": "Create Msd",
-                    "module": "cookbook.houdini.pre_render.ldv.CreateMsd",
-                    "name": "CreateMsd",
-                    "order": 4,
-                    "required": "True"
-                },
-                {
-                    "label": "Create Rs File",
-                    "module": "cookbook.houdini.pre_render.ldv.CreateRsFile",
-                    "name": "CreateRsFile",
-                    "order": 5,
-                    "required": "True"
-                },
-                {
                     "label": "Submit To Deadline",
                     "module": "cookbook.houdini.pre_render.ldv.SubmitToDeadline",
                     "name": "SubmitToDeadline",
-                    "order": 6,
+                    "order": 4,
                     "required": "True"
                 },
                 {
                     "label": "Submit Slap Comp",
                     "module": "cookbook.houdini.pre_render.ldv.SubmitSlapComp",
                     "name": "SubmitSlapComp",
-                    "order": 7,
+                    "order": 5,
                     "required": "True"
                 }
             ],

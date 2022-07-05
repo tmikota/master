@@ -1,0 +1,8 @@
+{
+    "resolve": [
+        {
+            "buttons": [],
+            "name": "tasks"
+        }
+    ]
+}

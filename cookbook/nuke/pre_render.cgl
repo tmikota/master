@@ -3,9 +3,9 @@
         {
             "buttons": [
                 {
-                    "label": "Submit To Deadline",
-                    "module": "cookbook.nuke.pre_render.rpo.SubmitToDeadline",
-                    "name": "SubmitToDeadline",
+                    "label": "Render",
+                    "module": "cookbook.nuke.pre_render.rpo.Render",
+                    "name": "Render",
                     "order": 1,
                     "required": "True"
                 }
@@ -15,9 +15,9 @@
         {
             "buttons": [
                 {
-                    "label": "Submit To Deadline",
-                    "module": "cookbook.nuke.pre_render.ret.SubmitToDeadline",
-                    "name": "SubmitToDeadline",
+                    "label": "Render",
+                    "module": "cookbook.nuke.pre_render.ret.Render",
+                    "name": "Render",
                     "order": 1,
                     "required": "True"
                 }

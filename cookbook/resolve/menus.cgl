@@ -1,0 +1,50 @@
+{
+    "resolve": [
+        {
+            "buttons": [
+                {
+                    "label": "Createproject",
+                    "module": "import cookbook.resolve.menus.Project.Createproject as Createproject; Createproject.run()",
+                    "name": "Createproject",
+                    "order": 1
+                },
+                {
+                    "label": "Deleteproject",
+                    "module": "import cookbook.resolve.menus.Project.Deleteproject as Deleteproject; Deleteproject.run()",
+                    "name": "Deleteproject",
+                    "order": 2
+                },
+                {
+                    "label": "Load Project",
+                    "module": "import cookbook.resolve.menus.Project.LoadProject as LoadProject; LoadProject.run()",
+                    "name": "LoadProject",
+                    "order": 3
+                }
+            ],
+            "name": "Project"
+        },
+        {
+            "buttons": [],
+            "name": "Media_Pool"
+        },
+        {
+            "buttons": [],
+            "name": "Timeline"
+        },
+        {
+            "buttons": [],
+            "name": "Clip"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Test",
+                    "module": "import cookbook.resolve.menus.Color.Test as Test; Test.run()",
+                    "name": "Test",
+                    "order": 1
+                }
+            ],
+            "name": "Color"
+        }
+    ]
+}

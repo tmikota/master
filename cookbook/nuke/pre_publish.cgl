@@ -10,9 +10,9 @@
                     "required": "True"
                 },
                 {
-                    "label": "Publish",
-                    "module": "cookbook.nuke.pre_publish.rpo.Publish",
-                    "name": "Publish",
+                    "label": "Publish Repo Node",
+                    "module": "cookbook.nuke.pre_publish.rpo.PublishRepoNode",
+                    "name": "PublishRepoNode",
                     "order": 2,
                     "required": "True"
                 }
@@ -22,10 +22,24 @@
         {
             "buttons": [
                 {
+                    "label": "Version Up",
+                    "module": "cookbook.nuke.pre_publish.ret.VersionUp",
+                    "name": "VersionUp",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "PublishRetimeNode",
+                    "module": "cookbook.nuke.pre_publish.ret.Publishretimenode",
+                    "name": "Publishretimenode",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
                     "label": "Publish",
                     "module": "cookbook.nuke.pre_publish.ret.Publish",
                     "name": "Publish",
-                    "order": 1,
+                    "order": 3,
                     "required": "True"
                 }
             ],

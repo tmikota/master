@@ -11,6 +11,18 @@
                 }
             ],
             "name": "edt"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Export Edl",
+                    "module": "cookbook.resolve.pre_publish.edb.ExportEdl",
+                    "name": "ExportEdl",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "edb"
         }
     ]
 }

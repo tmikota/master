@@ -24,16 +24,16 @@
                     "required": "True"
                 },
                 {
-                    "label": "Set Up Node Paths",
-                    "module": "cookbook.nuke.build.rpo.SetUpNodePaths",
-                    "name": "SetUpNodePaths",
+                    "label": "Set Write Node Path",
+                    "module": "cookbook.nuke.build.rpo.SetWriteNodePath",
+                    "name": "SetWriteNodePath",
                     "order": 4,
                     "required": "True"
                 },
                 {
-                    "label": "Set Write Node Path",
-                    "module": "cookbook.nuke.build.rpo.SetWriteNodePath",
-                    "name": "SetWriteNodePath",
+                    "label": "Set Match Grade Node",
+                    "module": "cookbook.nuke.build.rpo.SetMatchGradeNode",
+                    "name": "SetMatchGradeNode",
                     "order": 5,
                     "required": "True"
                 }
@@ -62,6 +62,13 @@
                     "name": "SetResolution",
                     "order": 3,
                     "required": "True"
+                },
+                {
+                    "label": "Set Write Node Path",
+                    "module": "cookbook.nuke.build.ret.SetWriteNodePath",
+                    "name": "SetWriteNodePath",
+                    "order": 4,
+                    "required": "True"
                 }
             ],
             "name": "ret"
@@ -84,6 +91,46 @@
                 }
             ],
             "name": "test"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Set Source Node Paths",
+                    "module": "cookbook.nuke.build.cmp.SetSourceNodePaths",
+                    "name": "SetSourceNodePaths",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Set Frame Range",
+                    "module": "cookbook.nuke.build.cmp.SetFrameRange",
+                    "name": "SetFrameRange",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Set Resolution",
+                    "module": "cookbook.nuke.build.cmp.SetResolution",
+                    "name": "SetResolution",
+                    "order": 3,
+                    "required": "True"
+                },
+                {
+                    "label": "Setup Cg Breakout",
+                    "module": "cookbook.nuke.build.cmp.SetupCgBreakout",
+                    "name": "SetupCgBreakout",
+                    "order": 4,
+                    "required": "True"
+                },
+                {
+                    "label": "Set Write Node Path",
+                    "module": "cookbook.nuke.build.cmp.SetWriteNodePath",
+                    "name": "SetWriteNodePath",
+                    "order": 5,
+                    "required": "True"
+                }
+            ],
+            "name": "cmp"
         }
     ]
 }

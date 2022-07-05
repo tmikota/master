@@ -195,45 +195,38 @@
                     "required": "True"
                 },
                 {
-                    "label": "Next Major Version",
-                    "module": "cookbook.maya.pre_publish.rig.NextMajorVersion",
-                    "name": "NextMajorVersion",
-                    "order": 4,
-                    "required": "True"
-                },
-                {
-                    "label": "Import Reference",
-                    "module": "cookbook.maya.pre_publish.rig.ImportReference",
-                    "name": "ImportReference",
-                    "order": 5,
-                    "required": "True"
-                },
-                {
                     "label": "Remove Namespaces",
                     "module": "cookbook.maya.pre_publish.rig.RemoveNamespaces",
                     "name": "RemoveNamespaces",
-                    "order": 6,
-                    "required": "True"
-                },
-                {
-                    "label": "Check Rig Children",
-                    "module": "cookbook.maya.pre_publish.rig.CheckRigChildren",
-                    "name": "CheckRigChildren",
-                    "order": 7,
+                    "order": 4,
                     "required": "True"
                 },
                 {
                     "label": "Export Rig",
                     "module": "cookbook.maya.pre_publish.rig.ExportRig",
                     "name": "ExportRig",
-                    "order": 8,
+                    "order": 5,
+                    "required": "True"
+                },
+                {
+                    "label": "Copy Rig Template",
+                    "module": "cookbook.maya.pre_publish.rig.CopyRigTemplate",
+                    "name": "CopyRigTemplate",
+                    "order": 6,
+                    "required": "True"
+                },
+                {
+                    "label": "Version Up",
+                    "module": "cookbook.maya.pre_publish.rig.VersionUp",
+                    "name": "VersionUp",
+                    "order": 7,
                     "required": "True"
                 },
                 {
                     "label": "Publish",
                     "module": "cookbook.maya.pre_publish.rig.Publish",
                     "name": "Publish",
-                    "order": 9,
+                    "order": 8,
                     "required": "True"
                 }
             ],
@@ -242,9 +235,9 @@
         {
             "buttons": [
                 {
-                    "label": "FixReferencedBundles",
-                    "module": "cookbook.maya.pre_publish.anim.FixReferencedBundles",
-                    "name": "FixReferencedBundles",
+                    "label": "Set Frame Range",
+                    "module": "cookbook.maya.pre_publish.anim.SetFrameRange",
+                    "name": "SetFrameRange",
                     "order": 1,
                     "required": "True"
                 },
@@ -263,80 +256,38 @@
                     "required": "True"
                 },
                 {
-                    "label": "OrganizeAnim",
-                    "module": "cookbook.maya.pre_publish.anim.OrganizeAnim",
-                    "name": "OrganizeAnim",
-                    "order": 4,
-                    "required": "True"
-                },
-                {
-                    "label": "Check Constraints",
-                    "module": "cookbook.maya.pre_publish.anim.CheckConstraints",
-                    "name": "CheckConstraints",
-                    "order": 5,
-                    "required": "True"
-                },
-                {
-                    "label": "FindStaticRigs",
-                    "module": "cookbook.maya.pre_publish.anim.FindStaticRigs",
-                    "name": "FindStaticRigs",
-                    "order": 6,
-                    "required": "True"
-                },
-                {
                     "label": "VersionUp",
                     "module": "cookbook.maya.pre_publish.anim.VersionUp",
                     "name": "VersionUp",
-                    "order": 7,
-                    "required": "True"
-                },
-                {
-                    "label": "PublishCameras",
-                    "module": "cookbook.maya.pre_publish.anim.PublishCameras",
-                    "name": "PublishCameras",
-                    "order": 8,
-                    "required": "False"
-                },
-                {
-                    "label": "ExportAlembic",
-                    "module": "cookbook.maya.pre_publish.anim.ExportAlembic",
-                    "name": "ExportAlembic",
-                    "order": 9,
-                    "required": "True"
-                },
-                {
-                    "label": "Exporteyesalembic",
-                    "module": "cookbook.maya.pre_publish.anim.Exporteyesalembic",
-                    "name": "Exporteyesalembic",
-                    "order": 10,
-                    "required": "True"
-                },
-                {
-                    "label": "ExportBundlAnimProxy",
-                    "module": "cookbook.maya.pre_publish.anim.ExportBundlAnimProxy",
-                    "name": "ExportBundlAnimProxy",
-                    "order": 11,
-                    "required": "True"
-                },
-                {
-                    "label": "Playblastexists",
-                    "module": "cookbook.maya.pre_publish.anim.Playblastexists",
-                    "name": "Playblastexists",
-                    "order": 12,
-                    "required": "True"
-                },
-                {
-                    "label": "Publish",
-                    "module": "cookbook.maya.pre_publish.anim.Publish",
-                    "name": "Publish",
-                    "order": 13,
+                    "order": 4,
                     "required": "True"
                 },
                 {
                     "label": "Create MSD",
                     "module": "cookbook.maya.pre_publish.anim.Createmsd",
                     "name": "Createmsd",
-                    "order": 14,
+                    "order": 5,
+                    "required": "True"
+                },
+                {
+                    "label": "Parent Rigs To Anim",
+                    "module": "cookbook.maya.pre_publish.anim.ParentRigsToAnim",
+                    "name": "ParentRigsToAnim",
+                    "order": 6,
+                    "required": "True"
+                },
+                {
+                    "label": "Export Animation",
+                    "module": "cookbook.maya.pre_publish.anim.ExportAnimation",
+                    "name": "ExportAnimation",
+                    "order": 7,
+                    "required": "True"
+                },
+                {
+                    "label": "Publish",
+                    "module": "cookbook.maya.pre_publish.anim.Publish",
+                    "name": "Publish",
+                    "order": 8,
                     "required": "True"
                 }
             ],
@@ -423,9 +374,9 @@
                     "required": "True"
                 },
                 {
-                    "label": "Check Mdl Name",
-                    "module": "cookbook.maya.pre_publish.cth.CheckMdlName",
-                    "name": "CheckMdlName",
+                    "label": "Check Cth Name",
+                    "module": "cookbook.maya.pre_publish.cth.CheckCthName",
+                    "name": "CheckCthName",
                     "order": 3,
                     "required": "True"
                 },
@@ -444,59 +395,52 @@
                     "required": "True"
                 },
                 {
-                    "label": "Check Geo Resolution",
-                    "module": "cookbook.maya.pre_publish.cth.CheckGeoResolution",
-                    "name": "CheckGeoResolution",
-                    "order": 6,
-                    "required": "True"
-                },
-                {
                     "label": "Check Mtl Names",
                     "module": "cookbook.maya.pre_publish.cth.CheckMtlNames",
                     "name": "CheckMtlNames",
-                    "order": 7,
+                    "order": 6,
                     "required": "True"
                 },
                 {
                     "label": "Check Geo Names",
                     "module": "cookbook.maya.pre_publish.cth.CheckGeoNames",
                     "name": "CheckGeoNames",
-                    "order": 8,
+                    "order": 7,
                     "required": "True"
                 },
                 {
                     "label": "Assign Basic Colors",
                     "module": "cookbook.maya.pre_publish.cth.AssignBasicColors",
                     "name": "AssignBasicColors",
-                    "order": 9,
+                    "order": 8,
                     "required": "True"
                 },
                 {
                     "label": "Version Up",
                     "module": "cookbook.maya.pre_publish.cth.VersionUp",
                     "name": "VersionUp",
-                    "order": 10,
+                    "order": 9,
                     "required": "True"
                 },
                 {
                     "label": "Export High Res",
                     "module": "cookbook.maya.pre_publish.cth.ExportHighRes",
                     "name": "ExportHighRes",
-                    "order": 11,
+                    "order": 10,
                     "required": "True"
                 },
                 {
                     "label": "Create Msd",
                     "module": "cookbook.maya.pre_publish.cth.CreateMsd",
                     "name": "CreateMsd",
-                    "order": 12,
+                    "order": 11,
                     "required": "True"
                 },
                 {
                     "label": "Publish",
                     "module": "cookbook.maya.pre_publish.cth.Publish",
                     "name": "Publish",
-                    "order": 13,
+                    "order": 12,
                     "required": "True"
                 }
             ],

@@ -21,6 +21,6 @@ class CreateMsd(PreflightCheck):
         self.fail_check('Message about a failed check')
         :return:
         """
-        mdl.Task().export_msd(task_name='mdl')
+        mdl.Task().export_msd(task_name='cth')
         self.pass_check('Check Passed')
         # self.fail_check('Check Failed')

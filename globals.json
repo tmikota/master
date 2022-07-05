@@ -216,6 +216,7 @@
                 "default": {
                     "long_to_short": {
                         "assets": {
+                            "bid": "bid",
                             "blendshapes": "bls",
                             "cloth": "cth",
                             "cloth rig": "crg",
@@ -225,11 +226,13 @@
                             "groom": "grm",
                             "groom rig": "grg",
                             "hdr": "hdr",
+                            "lidar": "ldr",
                             "light rig": "lrg",
                             "look dev": "ldv",
                             "model": "mdl",
                             "muscle rig": "mrg",
                             "rig": "rig",
+                            "specsheet": "spc",
                             "texture": "tex"
                         },
                         "shots": {
@@ -257,6 +260,7 @@
                     },
                     "short_to_long": {
                         "assets": {
+                            "bid": "bid",
                             "bls": "blendshapes",
                             "clr": "color",
                             "crg": "cloth rig",
@@ -265,11 +269,13 @@
                             "grg": "groom rig",
                             "grm": "groom",
                             "hdr": "hdr",
+                            "ldr": "lidar",
                             "ldv": "look dev",
                             "lrg": "light rig",
                             "mdl": "model",
                             "mrg": "muscle rig",
                             "rig": "rig",
+                            "spc": "specsheet",
                             "tex": "texture",
                             "wrg": "crowd rig"
                         },
@@ -451,7 +457,7 @@
                 "example": "Project name rules:\n    Underscores are ok ('_',)\n    Letters of the alphabet (a-z, A-Z)\n    Must Contain 3 or more characters",
                 "regex": "[A-Za-z_]{3,}$"
             },
-            "render_pass": {
+            "render_layer": {
                 "regex": "[A-Za-z0-9]+"
             },
             "resolution": {
@@ -524,11 +530,12 @@
         },
         "assets": {
             "render": {
-                "file": "/{filename}.{ext}",
+                "filename": "{seq}_{shot}_{task}",
                 "path": "{company}/render/{project}/{branch}/assets/{episode}/{type}/{asset}/{task}/{variant}/{user}",
                 "version": "{version}/{resolution}/{filename}.{ext}"
             },
             "source": {
+                "filename": "{seq}_{shot}_{task}",
                 "path": "{company}/source/{project}/{branch}/assets/{episode}/{type}/{asset}/{task}/{variant}/{user}",
                 "version": "{version}/{resolution}/{filename}.{ext}"
             }
@@ -542,11 +549,17 @@
         ],
         "shots": {
             "render": {
+                "filename": "{seq}_{shot}_{task}",
+                "filename_anim": "{seq}_{shot}_{task}_{name}",
+                "filename_lte": "{rop}",
+                "filename_plt": "{episode}_{seq}_{shot}_{task}_{variant}",
                 "path": "{company}/render/{project}/{branch}/shots/{episode}/{seq}/{shot}/{task}/{variant}/{user}",
                 "version": "{version}/{resolution}/{filename}.{ext}",
-                "version_lite": "{version}/{resolution}/{render_pass}/{camera}/{aov}/{filename}.{ext}"
+                "version_lte": "{version}/{resolution}/{render_layer}/{name}/{rop}/{filename}.{ext}",
+                "version_tex": "{version}/{resolution}/{mtl_group}/{channel}/{filename}.{ext}"
             },
             "source": {
+                "filename": "{seq}_{shot}_{task}",
                 "path": "{company}/source/{project}/{branch}/shots/{episode}/{seq}/{shot}/{task}/{variant}/{user}",
                 "version": "{version}/{resolution}/{filename}.{ext}"
             }

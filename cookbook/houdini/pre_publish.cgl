@@ -38,23 +38,23 @@
                     "required": "True"
                 },
                 {
-                    "label": "Check Shader Util Aovs",
-                    "module": "cookbook.houdini.pre_publish.ldv.CheckShaderUtilAovs",
-                    "name": "CheckShaderUtilAovs",
-                    "order": 6,
-                    "required": "True"
-                },
-                {
                     "label": "Check Subdivs",
                     "module": "cookbook.houdini.pre_publish.ldv.CheckSubdivs",
                     "name": "CheckSubdivs",
-                    "order": 7,
+                    "order": 6,
                     "required": "True"
                 },
                 {
                     "label": "Check Displacement",
                     "module": "cookbook.houdini.pre_publish.ldv.CheckDisplacement",
                     "name": "CheckDisplacement",
+                    "order": 7,
+                    "required": "True"
+                },
+                {
+                    "label": "Check Shader Util Aovs",
+                    "module": "cookbook.houdini.pre_publish.ldv.CheckShaderUtilAovs",
+                    "name": "CheckShaderUtilAovs",
                     "order": 8,
                     "required": "True"
                 },

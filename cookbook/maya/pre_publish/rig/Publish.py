@@ -6,14 +6,16 @@ from cgl.plugins.maya import alchemy as alc
 
 class Publish(PreflightCheck):
 
-    def getName(self):
-        pass
 
     def run(self):
         """
         Publish copies the current user source and render files into the "publish" user for further use down the
         pipeline.
         """
-        alc.scene_object().publish()
-        self.pass_check('Check Passed')
-        # self.fail_check('Check Failed')
+        scene_object = alc.scene_object()
+        if scene_object.resolution == 'high':
+            alc.scene_object().publish()
+            self.pass_check('Check Passed')
+            # self.fail_check('Check Failed')
+        else:
+            print("Resolution isn't, 'high' skipping publish ")

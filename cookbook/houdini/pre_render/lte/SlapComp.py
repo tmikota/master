@@ -1,8 +1,7 @@
 from cgl.plugins.preflight.preflight_check import PreflightCheck
 # there is typically a alchemy.py, and utils.py file in the plugins directory.
 # look here for pre-built, useful functions
-# from cgl.plugins.houdini import alchemy as alc
-
+from cgl.plugins.nuke import alchemy as alc
 
 class SlapComp(PreflightCheck):
 
@@ -20,6 +19,12 @@ class SlapComp(PreflightCheck):
         self.fail_check('Message about a failed check')
         :return:
         """
-        print('PreflightTemplate')
+        job_info = self.shared_data['job_info']
+        print('job_info::', job_info)
+        render_path = job_info['render_path']
+        # job = job_info['job']
+        # print('job::',job)
+        parent_job_id = job_info['job_id']
+        print('parent_job_id::', parent_job_id)
         self.pass_check('Check Passed')
         # self.fail_check('Check Failed')

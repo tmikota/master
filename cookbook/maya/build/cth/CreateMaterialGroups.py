@@ -1,5 +1,5 @@
 from cgl.plugins.preflight.preflight_check import PreflightCheck
-from cgl.plugins.maya.tasks.mdl import create_material_groups
+from cgl.plugins.maya.tasks.cth import create_material_groups
 # there is typically a alchemy.py, and utils.py file in the plugins directory.
 # look here for pre-built, useful functions
 # from cgl.plugins.maya import alchemy as alc

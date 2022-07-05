@@ -1,0 +1,37 @@
+{
+    "three_d_equalizer": [
+        {
+            "buttons": [
+                {
+                    "label": "Importplate",
+                    "module": "cookbook.three_d_equalizer.build.trk.Importplate",
+                    "name": "Importplate",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Importlidar",
+                    "module": "cookbook.three_d_equalizer.build.trk.Importlidar",
+                    "name": "Importlidar",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "GetCameraData",
+                    "module": "cookbook.three_d_equalizer.build.trk.Getcameradata",
+                    "name": "Getcameradata",
+                    "order": 3,
+                    "required": "True"
+                },
+                {
+                    "label": "Exportimagebuffer",
+                    "module": "cookbook.three_d_equalizer.build.trk.Exportimagebuffer",
+                    "name": "Exportimagebuffer",
+                    "order": 4,
+                    "required": "True"
+                }
+            ],
+            "name": "trk"
+        }
+    ]
+}

@@ -46,28 +46,47 @@
         {
             "buttons": [
                 {
+                    "label": "Set Framerange",
+                    "module": "cookbook.maya.build.anm.SetFramerange",
+                    "name": "SetFramerange",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
                     "label": "Import Camera",
                     "module": "cookbook.maya.build.anm.ImportCamera",
                     "name": "ImportCamera",
-                    "order": 1,
+                    "order": 2,
                     "required": "True"
                 },
                 {
                     "label": "Import Tracked Geo",
                     "module": "cookbook.maya.build.anm.ImportTrackedGeo",
                     "name": "ImportTrackedGeo",
-                    "order": 2,
+                    "order": 3,
                     "required": "True"
                 },
                 {
-                    "label": "Set Framerange",
-                    "module": "cookbook.maya.build.anm.SetFramerange",
-                    "name": "SetFramerange",
-                    "order": 3,
+                    "label": "Import Rigs",
+                    "module": "cookbook.maya.build.anm.ImportRigs",
+                    "name": "ImportRigs",
+                    "order": 4,
                     "required": "True"
                 }
             ],
             "name": "anm"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Importmelscript",
+                    "module": "cookbook.maya.build.trk.Importmelscript",
+                    "name": "Importmelscript",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "trk"
         }
     ]
 }

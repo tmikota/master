@@ -21,6 +21,6 @@ class AssignBasicColors(PreflightCheck):
         self.fail_check('Message about a failed check')
         :return:
         """
-        mdl.assign_lambert_to_material_groups()
+        mdl.assign_lambert_to_material_groups(model='cth')
         self.pass_check('Check Passed')
         # self.fail_check('Check Failed')

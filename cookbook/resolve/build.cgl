@@ -1,0 +1,23 @@
+{
+    "resolve": [
+        {
+            "buttons": [
+                {
+                    "label": "Import Edit Ref",
+                    "module": "cookbook.resolve.build.edb.ImportEditRef",
+                    "name": "ImportEditRef",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Buildtimeline",
+                    "module": "cookbook.resolve.build.edb.Buildtimeline",
+                    "name": "Buildtimeline",
+                    "order": 2,
+                    "required": "True"
+                }
+            ],
+            "name": "edb"
+        }
+    ]
+}

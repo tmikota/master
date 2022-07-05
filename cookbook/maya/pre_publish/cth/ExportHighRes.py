@@ -17,6 +17,6 @@ class ExportHighRes(PreflightCheck):
         """
         types = ['fbx', 'ma', 'abc']
         for t in types:
-            mdl.export_mdl(ext=t)
+            mdl.export_mdl(ext=t,mesh = 'cth')
         self.pass_check('Check Passed')
         # self.fail_check('Check Failed')

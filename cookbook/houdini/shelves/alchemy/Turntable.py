@@ -8,7 +8,8 @@ def run():
     
     viewer = toolutils.sceneViewer()
     view = viewer.curViewport()
-    
+    scene = alc.scene_object()
+    frame_length = int(scene.project_settings['turntable_length'])
     root = hou.node('/obj')
     rotationNull = root.createNode('null')
     
@@ -23,7 +24,7 @@ def run():
     nullYRotation.setKeyframe(key1)
     
     key2 = hou.Keyframe()
-    key2.setFrame(9)
+    key2.setFrame(frame_length)
     key2.setValue(360)
     
     nullYRotation.setKeyframe(key2)

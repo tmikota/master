@@ -70,6 +70,98 @@
                 }
             ],
             "name": "clr"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Publish",
+                    "module": "cookbook.alchemy.pre_publish.plt.Publish",
+                    "name": "Publish",
+                    "order": 1,
+                    "required": "True"
+                }
+            ],
+            "name": "plt"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Frame Numbers And Handles",
+                    "module": "cookbook.alchemy.pre_publish.spc.FrameNumbersAndHandles",
+                    "name": "FrameNumbersAndHandles",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Vfx Plates",
+                    "module": "cookbook.alchemy.pre_publish.spc.VfxPlates",
+                    "name": "VfxPlates",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Vfx Delivery Naming Conventions",
+                    "module": "cookbook.alchemy.pre_publish.spc.VfxDeliveryNamingConventions",
+                    "name": "VfxDeliveryNamingConventions",
+                    "order": 3,
+                    "required": "True"
+                },
+                {
+                    "label": "Cameras And Camera Workflows",
+                    "module": "cookbook.alchemy.pre_publish.spc.CamerasAndCameraWorkflows",
+                    "name": "CamerasAndCameraWorkflows",
+                    "order": 4,
+                    "required": "True"
+                },
+                {
+                    "label": "Color Delivery Specs",
+                    "module": "cookbook.alchemy.pre_publish.spc.ColorDeliverySpecs",
+                    "name": "ColorDeliverySpecs",
+                    "order": 5,
+                    "required": "True"
+                }
+            ],
+            "name": "spc"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Check For Shot Breakdown Csv",
+                    "module": "cookbook.alchemy.pre_publish.bid.CheckForShotBreakdownCsv",
+                    "name": "CheckForShotBreakdownCsv",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Get Shots",
+                    "module": "cookbook.alchemy.pre_publish.bid.GetShots",
+                    "name": "GetShots",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Version Up Major",
+                    "module": "cookbook.alchemy.pre_publish.bid.VersionUpMajor",
+                    "name": "VersionUpMajor",
+                    "order": 3,
+                    "required": "True"
+                },
+                {
+                    "label": "Publish",
+                    "module": "cookbook.alchemy.pre_publish.bid.Publish",
+                    "name": "Publish",
+                    "order": 4,
+                    "required": "True"
+                },
+                {
+                    "label": "Build Show",
+                    "module": "cookbook.alchemy.pre_publish.bid.BuildShow",
+                    "name": "BuildShow",
+                    "order": 5,
+                    "required": "True"
+                }
+            ],
+            "name": "bid"
         }
     ]
 }
