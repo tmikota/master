@@ -1,6 +1,8 @@
 import nuke
+from collections import OrderedDict as odict
 from cgl.plugins.preflight.preflight_check import PreflightCheck
 from plugins.nuke import utils
+from plugins.nuke.templates.config import TASK_BD_COLORS
 
 
 # there is typically a alchemy.py, and utils.py file in the plugins directory.
@@ -8,18 +10,26 @@ from plugins.nuke import utils
 # from cgl.plugins.nuke import alchemy as alc
 
 # Define task and node name pairs
-SOURCE_TASKS = ('edr',          # Edit Ref
-                'lte',          # Lighting Renders
+SOURCE_TASKS = ('edr',          # Edit Ref Plate
+                'lte',          # Lighting Render Layers
                 'plt',          # Degrained Plate
                 'plt_ingest',   # Original Plate
-                'pnt',          # Paintout
-                'rep',          # Repo Node
-                'ret',          # Retime Plate
-                'rto',          # Roto Node
-                'trk',          # Tracked Camera
+                'pnt',          # Paintout Plate
+                'rep',          # Repo Transform Node
+                'ret',          # Retime Plate and Kronos Node
+                'rto',          # Roto Node (and Mattes ?)
+                'cam',          # Camera FBX
+                'trk',          # Undistort Node
                 )
 
+DX, DY = (100, 50)  # Grid W/H
+BD_WIDTH, BD_HEIGHT = DX*5, DY*8  # Default Backdrop dimensions
+ROW_HEIGHT = BD_HEIGHT + DY  # Default row height
 
+TASK_SOURCES_LAYOUT = [
+    ['edr', 'plt_ingest', 'plt', 'ret', 'pnt'],  # first row
+    ['cam', 'lte', 'rto', 'rpo', 'trk']  # second row
+]
 
 class SetSourceNodePaths(PreflightCheck):
     def getName(self):
@@ -37,6 +47,14 @@ class SetSourceNodePaths(PreflightCheck):
         :return:
         """
         print("Updating Comp Source Nodes")
+        caret_x, caret_y = (0, 0)
+
+        for row, tasks in enumerate(TASK_SOURCES_LAYOUT):
+            for task in tasks:
+                load_task_sources(task, posx, posy)
+
+
+
 
         read_nodes = nuke.allNodes('Read')
         camera_nodes = nuke.allNodes('Camera')

@@ -9,13 +9,13 @@ class ParentRigsToAnim(PreflightCheck):
         pass
 
     def run(self):
-        if not cmds.ls('anim'):
-            cmds.group(em=True,name ='anim')
+        if not cmds.ls('ANIM'):
+            cmds.group(em=True,name ='ANIM')
         
         rigs = cmds.ls('*:rig')
         for rig in rigs: 
             try: 
-                cmds.parent(rig,'anim')
+                cmds.parent(rig,'ANIM')
             except RuntimeError:
                 pass
 

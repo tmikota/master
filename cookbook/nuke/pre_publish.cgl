@@ -29,9 +29,9 @@
                     "required": "True"
                 },
                 {
-                    "label": "PublishRetimeNode",
-                    "module": "cookbook.nuke.pre_publish.ret.Publishretimenode",
-                    "name": "Publishretimenode",
+                    "label": "Publish Retime Node",
+                    "module": "cookbook.nuke.pre_publish.ret.PublishRetimeNode",
+                    "name": "PublishRetimeNode",
                     "order": 2,
                     "required": "True"
                 },

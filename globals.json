@@ -221,6 +221,7 @@
                             "cloth": "cth",
                             "cloth rig": "crg",
                             "color": "clr",
+                            "countSheet": "cts",
                             "crowd rig": "wrg",
                             "fx": "fx",
                             "groom": "grm",
@@ -239,6 +240,7 @@
                             "animation": "anm",
                             "camera": "cam",
                             "cfx": "cfx",
+                            "color": "clr",
                             "compositing": "cmp",
                             "crowd": "cwd",
                             "destruction": "dst",
@@ -255,6 +257,7 @@
                             "roto": "rto",
                             "tracking": "trk",
                             "vanity": "vty",
+                            "ver_zero": "vzo",
                             "water": "wtr"
                         }
                     },
@@ -265,6 +268,7 @@
                             "clr": "color",
                             "crg": "cloth rig",
                             "cth": "cloth",
+                            "cts": "countSheet",
                             "fx": "fx",
                             "grg": "groom rig",
                             "grm": "groom",
@@ -283,6 +287,7 @@
                             "anm": "animation",
                             "cam": "camera",
                             "cfx": "cfx",
+                            "clr": "color",
                             "cmp": "compositing",
                             "cwd": "crowd",
                             "dmp": "dmp",
@@ -299,6 +304,7 @@
                             "rto": "roto",
                             "trk": "tracking",
                             "vty": "vanity",
+                            "vzo": "ver_zero",
                             "wtr": "water"
                         }
                     }
@@ -553,6 +559,8 @@
                 "filename_anim": "{seq}_{shot}_{task}_{name}",
                 "filename_lte": "{rop}",
                 "filename_plt": "{episode}_{seq}_{shot}_{task}_{variant}",
+                "filename_clr": "{episode}_{seq}_{shot}_{task}_{variant}",
+                "filename_edr": "{episode}_{seq}_{shot}_{task}_{variant}",
                 "path": "{company}/render/{project}/{branch}/shots/{episode}/{seq}/{shot}/{task}/{variant}/{user}",
                 "version": "{version}/{resolution}/{filename}.{ext}",
                 "version_lte": "{version}/{resolution}/{render_layer}/{name}/{rop}/{filename}.{ext}",

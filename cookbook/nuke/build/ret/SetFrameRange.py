@@ -21,5 +21,8 @@ class SetFrameRange(PreflightCheck):
         root = nuke.root()
         root['first_frame'].setValue(int(start))
         root['last_frame'].setValue(int(end))
+        for kronos_node in nuke.allNodes('Kronos'):
+            kronos_node['input.first'].setValue(int(start))
+            kronos_node['input.last'].setValue(int(end))
         self.pass_check('frame start and end set ')
 

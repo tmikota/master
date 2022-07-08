@@ -19,6 +19,9 @@ class CleanTt(PreflightCheck):
         :return:
         """
         print('PreflightTemplate')
-        alc.clean_turntable()
+        try: 
+            lc.clean_turntable()
+        except:
+            pass
         self.pass_check('Check Passed')
         # self.fail_check('Check Failed')

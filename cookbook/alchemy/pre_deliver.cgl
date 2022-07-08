@@ -1,0 +1,74 @@
+{
+    "alchemy": [
+        {
+            "buttons": [
+                {
+                    "label": "Test A",
+                    "module": "cookbook.alchemy.pre_deliver.default.Testa",
+                    "name": "Testa",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Test B",
+                    "module": "cookbook.alchemy.pre_deliver.default.TestB",
+                    "name": "TestB",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Timesfive",
+                    "module": "cookbook.alchemy.pre_deliver.default.Timesfive",
+                    "name": "Timesfive",
+                    "order": 3,
+                    "required": "True"
+                }
+            ],
+            "name": "default"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Get Shotgrid Playlist Info",
+                    "module": "cookbook.alchemy.pre_deliver.cmp.GetShotgridPlaylistInfo",
+                    "name": "GetShotgridPlaylistInfo",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Create Nuke Script",
+                    "module": "cookbook.alchemy.pre_deliver.cmp.CreateNukeScript",
+                    "name": "CreateNukeScript",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Render Nuke Script",
+                    "module": "cookbook.alchemy.pre_deliver.cmp.RenderNukeScript",
+                    "name": "RenderNukeScript",
+                    "order": 3,
+                    "required": "True"
+                },
+                {
+                    "label": "Create Slate Frame",
+                    "module": "cookbook.alchemy.pre_deliver.cmp.CreateSlateFrame",
+                    "name": "CreateSlateFrame",
+                    "order": 4,
+                    "required": "True"
+                },
+                {
+                    "label": "Create Quicktimes",
+                    "module": "cookbook.alchemy.pre_deliver.cmp.CreateQuicktimes",
+                    "name": "CreateQuicktimes",
+                    "order": 5,
+                    "required": "True"
+                }
+            ],
+            "name": "cmp"
+        },
+        {
+            "buttons": [],
+            "name": "plt"
+        }
+    ]
+}

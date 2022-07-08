@@ -188,45 +188,38 @@
                     "required": "True"
                 },
                 {
-                    "label": "Save Scene",
-                    "module": "cookbook.maya.pre_publish.rig.SaveScene",
-                    "name": "SaveScene",
-                    "order": 3,
-                    "required": "True"
-                },
-                {
                     "label": "Remove Namespaces",
                     "module": "cookbook.maya.pre_publish.rig.RemoveNamespaces",
                     "name": "RemoveNamespaces",
-                    "order": 4,
+                    "order": 3,
                     "required": "True"
                 },
                 {
                     "label": "Export Rig",
                     "module": "cookbook.maya.pre_publish.rig.ExportRig",
                     "name": "ExportRig",
-                    "order": 5,
+                    "order": 4,
                     "required": "True"
                 },
                 {
                     "label": "Copy Rig Template",
                     "module": "cookbook.maya.pre_publish.rig.CopyRigTemplate",
                     "name": "CopyRigTemplate",
-                    "order": 6,
+                    "order": 5,
                     "required": "True"
                 },
                 {
                     "label": "Version Up",
                     "module": "cookbook.maya.pre_publish.rig.VersionUp",
                     "name": "VersionUp",
-                    "order": 7,
+                    "order": 6,
                     "required": "True"
                 },
                 {
                     "label": "Publish",
                     "module": "cookbook.maya.pre_publish.rig.Publish",
                     "name": "Publish",
-                    "order": 8,
+                    "order": 7,
                     "required": "True"
                 }
             ],
@@ -263,16 +256,16 @@
                     "required": "True"
                 },
                 {
-                    "label": "Create MSD",
-                    "module": "cookbook.maya.pre_publish.anim.Createmsd",
-                    "name": "Createmsd",
+                    "label": "Parent Rigs To Anim",
+                    "module": "cookbook.maya.pre_publish.anim.ParentRigsToAnim",
+                    "name": "ParentRigsToAnim",
                     "order": 5,
                     "required": "True"
                 },
                 {
-                    "label": "Parent Rigs To Anim",
-                    "module": "cookbook.maya.pre_publish.anim.ParentRigsToAnim",
-                    "name": "ParentRigsToAnim",
+                    "label": "Create MSD",
+                    "module": "cookbook.maya.pre_publish.anim.Createmsd",
+                    "name": "Createmsd",
                     "order": 6,
                     "required": "True"
                 },
@@ -445,6 +438,53 @@
                 }
             ],
             "name": "cth"
+        },
+        {
+            "buttons": [
+                {
+                    "label": "Set Framerange",
+                    "module": "cookbook.maya.pre_publish.anm.SetFramerange",
+                    "name": "SetFramerange",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
+                    "label": "Update References",
+                    "module": "cookbook.maya.pre_publish.anm.UpdateReferences",
+                    "name": "UpdateReferences",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
+                    "label": "Parent Rigs To Anim",
+                    "module": "cookbook.maya.pre_publish.anm.ParentRigsToAnim",
+                    "name": "ParentRigsToAnim",
+                    "order": 3,
+                    "required": "True"
+                },
+                {
+                    "label": "Create Msd",
+                    "module": "cookbook.maya.pre_publish.anm.CreateMsd",
+                    "name": "CreateMsd",
+                    "order": 4,
+                    "required": "True"
+                },
+                {
+                    "label": "Export Animation",
+                    "module": "cookbook.maya.pre_publish.anm.ExportAnimation",
+                    "name": "ExportAnimation",
+                    "order": 5,
+                    "required": "True"
+                },
+                {
+                    "label": "Publish",
+                    "module": "cookbook.maya.pre_publish.anm.Publish",
+                    "name": "Publish",
+                    "order": 6,
+                    "required": "True"
+                }
+            ],
+            "name": "anm"
         }
     ]
 }

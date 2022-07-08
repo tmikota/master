@@ -2,7 +2,7 @@ from cgl.plugins.preflight.preflight_check import PreflightCheck
 # there is typically a alchemy.py, and utils.py file in the plugins directory.
 # look here for pre-built, useful functions
 # from cgl.plugins.houdini import alchemy as alc
-
+from cgl.plugins.houdini import pre_flight as pft
 
 class SetRenderSettings(PreflightCheck):
 
@@ -20,6 +20,12 @@ class SetRenderSettings(PreflightCheck):
         self.fail_check('Message about a failed check')
         :return:
         """
+        pft.setRsLight()
+        self.shared_data['RopList'] = pft.getRopList()
+        lights, domes = pft.getRsLight()
+        print(f'Lights: {lights}')
+        print(f'Domes: {domes}')
+        self.shared_data['RSLight'] = [lights, domes]
         print('PreflightTemplate')
         self.pass_check('Check Passed')
         # self.fail_check('Check Failed')

@@ -133,31 +133,45 @@
                     "required": "True"
                 },
                 {
+                    "label": "Checkforassetbreakdowncsv",
+                    "module": "cookbook.alchemy.pre_publish.bid.Checkforassetbreakdowncsv",
+                    "name": "Checkforassetbreakdowncsv",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
                     "label": "Get Shots",
                     "module": "cookbook.alchemy.pre_publish.bid.GetShots",
                     "name": "GetShots",
-                    "order": 2,
+                    "order": 3,
+                    "required": "True"
+                },
+                {
+                    "label": "Getassets",
+                    "module": "cookbook.alchemy.pre_publish.bid.Getassets",
+                    "name": "Getassets",
+                    "order": 4,
                     "required": "True"
                 },
                 {
                     "label": "Version Up Major",
                     "module": "cookbook.alchemy.pre_publish.bid.VersionUpMajor",
                     "name": "VersionUpMajor",
-                    "order": 3,
+                    "order": 5,
                     "required": "True"
                 },
                 {
                     "label": "Publish",
                     "module": "cookbook.alchemy.pre_publish.bid.Publish",
                     "name": "Publish",
-                    "order": 4,
+                    "order": 6,
                     "required": "True"
                 },
                 {
                     "label": "Build Show",
                     "module": "cookbook.alchemy.pre_publish.bid.BuildShow",
                     "name": "BuildShow",
-                    "order": 5,
+                    "order": 7,
                     "required": "True"
                 }
             ],

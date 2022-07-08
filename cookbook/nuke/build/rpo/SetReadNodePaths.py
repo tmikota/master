@@ -17,7 +17,12 @@ class SetReadNodePaths(PreflightCheck):
         """
         Finds read nodes ('read_PLATE and 'read_EREF') and sets paths according to latest published version
         """
+        from importlib import reload
+
+        import plugins.nuke.utils
+        reload(plugins.nuke.utils)
         from plugins.nuke import utils
+
         try:
             utils.update_read_node(PLATE_NODE_NAME, task='plt')
             utils.update_read_node(EDIT_REF_NODE_NAME, task='edr')

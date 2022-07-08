@@ -14,7 +14,6 @@ class CheckForShotBreakdownCsv(PreflightCheck):
         """
         po = self.shared_data['path_object']
         ro = po.copy(context='render', filename='INTERNAL_SHOT_BREAKDOWN', ext='csv')
-        shot_dict = {}
         if os.path.exists(ro.path_root):
             self.shared_data['internal_shot_breakdown'] = ro.path_root
             self.pass_check('Check Passed')
