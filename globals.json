@@ -4,7 +4,7 @@
         "aws_globals_path": "https://fsu-cmpa.s3.amazonaws.com/globals.json",
         "config_repo": "https://github.com/tmikota/master.git",
         "default_company": "",
-        "project_management": "alchemy"
+        "project_management": "shotgun"
     },
     "asset_categories": {
         "Character": "char",
@@ -20,9 +20,12 @@
     ],
     "colors": {
         "background": "#1E1F26",
-        "secondary": "#283655",
         "highlight": "#4D648D",
+        "secondary": "#283655",
         "text": "#D0E1F9"
+    },
+    "company_info": {
+        "short_name": "pre"
     },
     "definitions": {
         "ingest_browser_header": [
@@ -160,7 +163,199 @@
             }
         }
     },
+    "project_info": {
+        "alchemytestb": {
+            "short_name": "alc"
+        }
+    },
     "project_management": {
+        "alchemy": {
+            "api": {
+                "api_key": "",
+                "api_script": "",
+                "api_user": "",
+                "concurrent": "",
+                "concurrent_low": 0,
+                "default_schema": "default",
+                "notes": "ensure short codes exist for all pipeline steps in shotgun, might want a wizard for this.",
+                "project_short_name": "",
+                "server_url": ""
+            },
+            "tasks": {
+                "default": {
+                    "long_to_short": {
+                        "assets": {
+                            "Bundle": "bndl",
+                            "Concept": "cncpt",
+                            "Layout": "lay",
+                            "Modeling/UV": "mdl",
+                            "Reference": "ref",
+                            "Rigging": "rig",
+                            "Set": "set",
+                            "Shading": "shd",
+                            "Stand In": "stdin",
+                            "Texturing": "tex",
+                            "World": "world"
+                        },
+                        "shots": {
+                            "Animatic": "amtc",
+                            "Animation": "anim",
+                            "Background": "bg",
+                            "Camera": "cam",
+                            "Compositing": "comp",
+                            "Editorial": "edit",
+                            "Green Screen": "greenscreen",
+                            "Ingest": "ingest",
+                            "Layout": "lay",
+                            "Lighting": "lite",
+                            "MatchMove": "mm",
+                            "Plate": "plt",
+                            "Previs": "prev",
+                            "Sound Editing": "sound",
+                            "Storyboards": "boards",
+                            "fx": "fx"
+                        }
+                    },
+                    "short_to_long": {
+                        "assets": {
+                            "bndl": "Bundle",
+                            "cncpt": "Concept",
+                            "lay": "Layout",
+                            "mdl": "Modeling/UV",
+                            "ref": "Reference",
+                            "rig": "Rigging",
+                            "set": "Set",
+                            "shd": "Shading",
+                            "stdin": "Stand In",
+                            "tex": "Texturing",
+                            "world": "World"
+                        },
+                        "shots": {
+                            "amtc": "Animatic",
+                            "anim": "Animation",
+                            "bg": "Background",
+                            "boards": "Storyboards",
+                            "cam": "Camera",
+                            "comp": "Compositing",
+                            "edit": "Editorial",
+                            "fx": "fx",
+                            "greenscreen": "Green Screen",
+                            "ingest": "Ingest",
+                            "lay": "Layout",
+                            "lite": "Lighting",
+                            "mm": "MatchMove",
+                            "plt": "Plate",
+                            "prev": "Previs",
+                            "sound": "Sound Editing"
+                        }
+                    }
+                },
+                "symlink": [
+                    "comp",
+                    "tex",
+                    "lite"
+                ]
+            },
+            "users": {
+                "bja16": {
+                    "first": "Brendan",
+                    "last": "Arena",
+                    "login": "bja16@my.fsu.edu"
+                },
+                "cab18n": {
+                    "email": "cab18n@my.fsu.edu",
+                    "first": "Cameron",
+                    "last": "Baker",
+                    "login": "cab18n@my.fsu.edu"
+                },
+                "cmpaforgepc2": {
+                    "email": "km16f@gmail.com",
+                    "first": "Kyul",
+                    "last": "Molt",
+                    "login": "km16f"
+                },
+                "ec18f": {
+                    "email": "ec18f@my.fsu.edu",
+                    "first": "Erica",
+                    "last": "Chow",
+                    "login": "ec18f@my.fsu.edu"
+                },
+                "jhl16": {
+                    "email": "jhl16@my.fsu.edu",
+                    "first": "Jillian",
+                    "last": "Lucia",
+                    "login": "jhl16@my.fsu.edu"
+                },
+                "jzd16": {
+                    "first": "Josh",
+                    "last": "Devaughn",
+                    "login": "jzd16@my.fsu.edu"
+                },
+                "ker18q": {
+                    "email": "ker18q@my.fsu.edu",
+                    "first": "Karli",
+                    "last": "Roberts",
+                    "login": "ker18q@my.fsu.edu"
+                },
+                "kfk18": {
+                    "first": "Keaton",
+                    "last": "Kish",
+                    "login": "kfk18@my.fsu.edu"
+                },
+                "ram16e": {
+                    "first": "Royce",
+                    "last": "Marnell",
+                    "login": "ram16e@my.fsu.edu"
+                },
+                "scd16d": {
+                    "first": "Shae",
+                    "last": "Demandt",
+                    "login": "scd16d@my.fsu.edu"
+                },
+                "tmikota": {
+                    "first": "Tom",
+                    "last": "Mikota",
+                    "login": "tmikota@fsu.edu"
+                },
+                "user": {
+                    "email": "tmikota@fsu.edu",
+                    "first": "Tom",
+                    "last": "Mikota",
+                    "login": "tmikota@fsu.edu"
+                },
+                "vp01": {
+                    "email": "tmikota@fsu.edu",
+                    "first": "Kyle",
+                    "last": "Molter",
+                    "login": "tmikota@fsu.edu"
+                },
+                "vp03": {
+                    "email": "tmikota@gmail.com",
+                    "first": "VP03",
+                    "last": "",
+                    "login": ""
+                },
+                "vp04": {
+                    "email": "tmikota@fsu.edu",
+                    "first": "Tom",
+                    "last": "Mikota",
+                    "login": "tmikota@fsu.edu"
+                },
+                "vp05": {
+                    "email": "tmikota@fsu.edu",
+                    "first": "Tom",
+                    "last": "Mikota",
+                    "login": "tmikota@fsu.edu"
+                }
+            }
+        },
+        "frame.io": {
+            "api": {
+                "api_key": "fio-u-0scVQDPIR-zz15u3vgr8wjXbvm8yWu_DLmmHlocnZq1J0ToLE84GgkW0dVw0l3LI",
+                "project_name": "ForgeFA21",
+                "team_name": "FSU FILM"
+            }
+        },
         "ftrack": {
             "api": {
                 "api_key": "ZTU3ZDZkMDUtMWI3OS00ZWU1LWE2NGItZGJiYmQyOGExZTZiOjoyMTUyYmI2ZC1kNzk2LTRmZmUtYjUzZS0wMjBiMzA5MGZhMDA",
@@ -513,13 +708,6 @@
                 }
             }
         },
-        "frame.io": {
-            "api": {
-                "api_key": "fio-u-0scVQDPIR-zz15u3vgr8wjXbvm8yWu_DLmmHlocnZq1J0ToLE84GgkW0dVw0l3LI",
-                "team_name": "FSU FILM",
-                "project_name": "ForgeFA21"
-            }
-        },
         "lumbermill": {
             "api": {
                 "default_schema": "DEFAULT"
@@ -589,270 +777,53 @@
         },
         "shotgun": {
             "api": {
-                "api_key": "bc29cd2fd4ce9fe3c2598c4d559b09f88eaa95b05edfd12a834a23aea0797e2f",
-                "api_script": "core_tools",
+                "api_key": "o(sryqcdvxsaxadlvUbgr3mdk",
+                "api_script": "alchemy2",
                 "api_user": "tmikota",
                 "concurrent": 4,
                 "concurrent_low": 0,
                 "default_schema": "default",
                 "notes": "ensure short codes exist for all pipeline steps in shotgun, might want a wizard for this.",
                 "project_short_name": "sg_code",
-                "server_url": "https://fsuada.shotgunstudio.com"
+                "server_url": "https://premise-entertainme.shotgrid.autodesk.com"
             },
             "tasks": {
                 "default": {
                     "long_to_short": {
                         "assets": {
-                            "Bundle": "bndl",
-                            "Concept": "cncpt",
-                            "Layout": "lay",
-                            "Modeling/UV": "mdl",
-                            "Reference": "ref",
-                            "Rigging": "rig",
-                            "Set": "set",
-                            "Shading": "shd",
-                            "Stand In": "stdin",
-                            "Texturing": "tex",
-                            "World": "world"
+                            "Bundle": "BDL",
+                            "Model": "MDL",
+                            "Rig": "RIG",
+                            "Shading": "SHD",
+                            "Texture": "TXT"
                         },
                         "shots": {
-                            "Animatic": "amtc",
-                            "Animation": "anim",
-                            "Background": "bg",
-                            "Camera": "cam",
-                            "Compositing": "comp",
-                            "Editorial": "edit",
-                            "Green Screen": "greenscreen",
-                            "Ingest": "ingest",
-                            "Layout": "lay",
-                            "Lighting": "lite",
-                            "MatchMove": "mm",
-                            "Plate": "plt",
-                            "Previs": "prev",
-                            "Sound Editing": "sound",
-                            "Storyboards": "boards",
-                            "fx": "fx"
+                            "Animatic": "AMC",
+                            "Animation": "ANM",
+                            "Comp": "CMP",
+                            "Layout": "LAY",
+                            "Light": "LGT",
+                            "StoryBoard": "SRB"
                         }
                     },
                     "short_to_long": {
                         "assets": {
-                            "bndl": "Bundle",
-                            "cncpt": "Concept",
-                            "lay": "Layout",
-                            "mdl": "Modeling/UV",
-                            "ref": "Reference",
-                            "rig": "Rigging",
-                            "set": "Set",
-                            "shd": "Shading",
-                            "stdin": "Stand In",
-                            "tex": "Texturing",
-                            "world": "World"
+                            "BDL": "Bundle",
+                            "MDL": "Model",
+                            "RIG": "Rig",
+                            "SHD": "Shading",
+                            "TXT": "Texture"
                         },
                         "shots": {
-                            "amtc": "Animatic",
-                            "anim": "Animation",
-                            "bg": "Background",
-                            "boards": "Storyboards",
-                            "cam": "Camera",
-                            "comp": "Compositing",
-                            "edit": "Editorial",
-                            "fx": "fx",
-                            "greenscreen": "Green Screen",
-                            "ingest": "Ingest",
-                            "lay": "Layout",
-                            "lite": "Lighting",
-                            "mm": "MatchMove",
-                            "plt": "Plate",
-                            "prev": "Previs",
-                            "sound": "Sound Editing"
+                            "AMC": "Animatic",
+                            "ANM": "Animation",
+                            "CMP": "Comp",
+                            "LAY": "Layout",
+                            "LGT": "Light",
+                            "SRB": "StoryBoard"
                         }
                     }
-                },
-                "symlink": [
-                    "comp",
-                    "tex",
-                    "lite"
-                ]
-            },
-            "users": {
-                "bja16": {
-                    "first": "Brendan",
-                    "last": "Arena",
-                    "login": "bja16@my.fsu.edu"
-                },
-                "cab18n": {
-                    "email": "cab18n@my.fsu.edu",
-                    "first": "Cameron",
-                    "last": "Baker",
-                    "login": "cab18n@my.fsu.edu"
-                },
-                "cmpaforgepc2": {
-                    "email": "km16f@gmail.com",
-                    "first": "Kyul",
-                    "last": "Molt",
-                    "login": "km16f"
-                },
-                "ec18f": {
-                    "email": "ec18f@my.fsu.edu",
-                    "first": "Erica",
-                    "last": "Chow",
-                    "login": "ec18f@my.fsu.edu"
-                },
-                "jhl16": {
-                    "email": "jhl16@my.fsu.edu",
-                    "first": "Jillian",
-                    "last": "Lucia",
-                    "login": "jhl16@my.fsu.edu"
-                },
-                "jzd16": {
-                    "first": "Josh",
-                    "last": "Devaughn",
-                    "login": "jzd16@my.fsu.edu"
-                },
-                "ker18q": {
-                    "email": "ker18q@my.fsu.edu",
-                    "first": "Karli",
-                    "last": "Roberts",
-                    "login": "ker18q@my.fsu.edu"
-                },
-                "kfk18": {
-                    "first": "Keaton",
-                    "last": "Kish",
-                    "login": "kfk18@my.fsu.edu"
-                },
-                "ram16e": {
-                    "first": "Royce",
-                    "last": "Marnell",
-                    "login": "ram16e@my.fsu.edu"
-                },
-                "scd16d": {
-                    "first": "Shae",
-                    "last": "Demandt",
-                    "login": "scd16d@my.fsu.edu"
-                },
-                "tmikota": {
-                    "first": "Tom",
-                    "last": "Mikota",
-                    "login": "tmikota@fsu.edu"
-                },
-                "user": {
-                    "email": "tmikota@fsu.edu",
-                    "first": "Tom",
-                    "last": "Mikota",
-                    "login": "tmikota@fsu.edu"
-                },
-                "vp01": {
-                    "email": "tmikota@fsu.edu",
-                    "first": "Kyle",
-                    "last": "Molter",
-                    "login": "tmikota@fsu.edu"
-                },
-                "vp03": {
-                    "email": "tmikota@gmail.com",
-                    "first": "VP03",
-                    "last": "",
-                    "login": ""
-                },
-                "vp04": {
-                    "email": "tmikota@fsu.edu",
-                    "first": "Tom",
-                    "last": "Mikota",
-                    "login": "tmikota@fsu.edu"
-                },
-                "vp05": {
-                    "email": "tmikota@fsu.edu",
-                    "first": "Tom",
-                    "last": "Mikota",
-                    "login": "tmikota@fsu.edu"
                 }
-            }
-        },
-        "alchemy": {
-            "api": {
-                "api_key": "",
-                "api_script": "",
-                "api_user": "",
-                "concurrent": "",
-                "concurrent_low": 0,
-                "default_schema": "default",
-                "notes": "ensure short codes exist for all pipeline steps in shotgun, might want a wizard for this.",
-                "project_short_name": "",
-                "server_url": ""
-            },
-            "tasks": {
-                "default": {
-                    "long_to_short": {
-                        "assets": {
-                            "Bundle": "bndl",
-                            "Concept": "cncpt",
-                            "Layout": "lay",
-                            "Modeling/UV": "mdl",
-                            "Reference": "ref",
-                            "Rigging": "rig",
-                            "Set": "set",
-                            "Shading": "shd",
-                            "Stand In": "stdin",
-                            "Texturing": "tex",
-                            "World": "world"
-                        },
-                        "shots": {
-                            "Animatic": "amtc",
-                            "Animation": "anim",
-                            "Background": "bg",
-                            "Camera": "cam",
-                            "Compositing": "comp",
-                            "Editorial": "edit",
-                            "Green Screen": "greenscreen",
-                            "Ingest": "ingest",
-                            "Layout": "lay",
-                            "Lighting": "lite",
-                            "MatchMove": "mm",
-                            "Plate": "plt",
-                            "Previs": "prev",
-                            "Sound Editing": "sound",
-                            "Storyboards": "boards",
-                            "fx": "fx"
-                        }
-                    },
-                    "short_to_long": {
-                        "assets": {
-                            "bndl": "Bundle",
-                            "cncpt": "Concept",
-                            "lay": "Layout",
-                            "mdl": "Modeling/UV",
-                            "ref": "Reference",
-                            "rig": "Rigging",
-                            "set": "Set",
-                            "shd": "Shading",
-                            "stdin": "Stand In",
-                            "tex": "Texturing",
-                            "world": "World"
-                        },
-                        "shots": {
-                            "amtc": "Animatic",
-                            "anim": "Animation",
-                            "bg": "Background",
-                            "boards": "Storyboards",
-                            "cam": "Camera",
-                            "comp": "Compositing",
-                            "edit": "Editorial",
-                            "fx": "fx",
-                            "greenscreen": "Green Screen",
-                            "ingest": "Ingest",
-                            "lay": "Layout",
-                            "lite": "Lighting",
-                            "mm": "MatchMove",
-                            "plt": "Plate",
-                            "prev": "Previs",
-                            "sound": "Sound Editing"
-                        }
-                    }
-                },
-                "symlink": [
-                    "comp",
-                    "tex",
-                    "lite"
-                ]
             },
             "users": {
                 "bja16": {
@@ -1018,6 +989,10 @@
                 "example": "Company name rules:\n    Underscores are ok ('_')\n    Letters of the alphabet (a-z, A-Z)\n    Must Contain 3 or more characters",
                 "regex": "[A-Za-z_]{3,}$"
             },
+            "company_sn": {
+                "example": "Company short name rules:\n    Letters of the alphabet (a-z, A-Z)\n    Must Contain 3 characters",
+                "regex": "[A-Za-z_]{3}$"
+            },
             "context": {
                 "example": "examples: source, render",
                 "regex": "[a-z]+"
@@ -1054,7 +1029,11 @@
             },
             "project": {
                 "example": "Project name rules:\n    Underscores are ok ('_',)\n    Letters of the alphabet (a-z, A-Z)\n    Must Contain 3 or more characters",
-                "regex": "[A-Za-z_]{3,}$"
+                "regex": "[A-Za-z_]{3,10}$"
+            },
+            "project_sn": {
+                "example": "Project short name rules:\n    Letters of the alphabet (a-z, A-Z)\n    Must Contain 3 characters",
+                "regex": "[A-Za-z_]{3}$"
             },
             "render_pass": {
                 "regex": "[A-Za-z0-9]+"

@@ -1,11 +1,8 @@
 {
-    "company_short_name": "thw",
+    "company_short_name": "prm",
     "projects": {
-        "advent": {
-            "short_name": "adv"
-        },
-        "capernaum": {
-            "short_name": "cap"
+        "alchemytestb": {
+            "short_name": "alchemytestb"
         }
     }
 }
