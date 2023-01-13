@@ -826,95 +826,10 @@
                 }
             },
             "users": {
-                "bja16": {
-                    "first": "Brendan",
-                    "last": "Arena",
-                    "login": "bja16@my.fsu.edu"
-                },
-                "cab18n": {
-                    "email": "cab18n@my.fsu.edu",
-                    "first": "Cameron",
-                    "last": "Baker",
-                    "login": "cab18n@my.fsu.edu"
-                },
-                "cmpaforgepc2": {
-                    "email": "km16f@gmail.com",
-                    "first": "Kyul",
-                    "last": "Molt",
-                    "login": "km16f"
-                },
-                "ec18f": {
-                    "email": "ec18f@my.fsu.edu",
-                    "first": "Erica",
-                    "last": "Chow",
-                    "login": "ec18f@my.fsu.edu"
-                },
-                "jhl16": {
-                    "email": "jhl16@my.fsu.edu",
-                    "first": "Jillian",
-                    "last": "Lucia",
-                    "login": "jhl16@my.fsu.edu"
-                },
-                "jzd16": {
-                    "first": "Josh",
-                    "last": "Devaughn",
-                    "login": "jzd16@my.fsu.edu"
-                },
-                "ker18q": {
-                    "email": "ker18q@my.fsu.edu",
-                    "first": "Karli",
-                    "last": "Roberts",
-                    "login": "ker18q@my.fsu.edu"
-                },
-                "kfk18": {
-                    "first": "Keaton",
-                    "last": "Kish",
-                    "login": "kfk18@my.fsu.edu"
-                },
-                "ram16e": {
-                    "first": "Royce",
-                    "last": "Marnell",
-                    "login": "ram16e@my.fsu.edu"
-                },
-                "scd16d": {
-                    "first": "Shae",
-                    "last": "Demandt",
-                    "login": "scd16d@my.fsu.edu"
-                },
-                "tmikota": {
+                "v02": {
                     "first": "Tom",
                     "last": "Mikota",
-                    "login": "tmikota@fsu.edu"
-                },
-                "user": {
-                    "email": "tmikota@fsu.edu",
-                    "first": "Tom",
-                    "last": "Mikota",
-                    "login": "tmikota@fsu.edu"
-                },
-                "vp01": {
-                    "email": "tmikota@fsu.edu",
-                    "first": "Kyle",
-                    "last": "Molter",
-                    "login": "tmikota@fsu.edu"
-                },
-                "vp03": {
-                    "email": "tmikota@gmail.com",
-                    "first": "VP03",
-                    "last": "",
-                    "login": ""
-                },
-                "vp04": {
-                    "email": "tmikota@fsu.edu",
-                    "first": "Tom",
-                    "last": "Mikota",
-                    "login": "tmikota@fsu.edu"
-                },
-                "vp05": {
-                    "email": "tmikota@fsu.edu",
-                    "first": "Tom",
-                    "last": "Mikota",
-                    "login": "tmikota@fsu.edu"
+                    "login": "tom@cglumberjack.com"
                 }
             }
         }
@@ -954,7 +869,21 @@
             },
             "valid_sequence": {
                 "regex": "[aA-zZ]+(\\.|\\_|\\-)[0-9]{2,4}\\."
+            },
+            "file_type": {
+                "regex": "*"
+            },
+            "thumb_path": {
+                "regex": "*"
+            },
+            "preview_pat": {
+                "regex": "*"
+            },
+            "hd_proxy_path": {
+                "regex": "*"
             }
+
+
         },
         "ignore": {
             "contains": [
