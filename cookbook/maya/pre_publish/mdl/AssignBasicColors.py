@@ -21,6 +21,7 @@ class AssignBasicColors(PreflightCheck):
         self.fail_check('Message about a failed check')
         :return:
         """
+        # Check each mtl in the scene and see if it has a properly named shader and material group assigned to it.
         mdl.assign_lambert_to_material_groups()
         self.pass_check('Check Passed')
         # self.fail_check('Check Failed')

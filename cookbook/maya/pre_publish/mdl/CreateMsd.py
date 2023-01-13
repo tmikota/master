@@ -17,3 +17,4 @@ class CreateMsd(PreflightCheck):
         #                    "anim": ['cam']}
         msd_obj = msd.MSD(path_object=alc.Scene().path_object, dcc="maya")
         msd_obj.write_msd()
+        self.pass_check('Check Passed')
