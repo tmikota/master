@@ -10,37 +10,37 @@
                     "required": "True"
                 },
                 {
+                    "label": "Assign Basic Colors",
+                    "module": "cookbook.maya.pre_publish.mdl.AssignBasicColors",
+                    "name": "AssignBasicColors",
+                    "order": 2,
+                    "required": "True"
+                },
+                {
                     "label": "Save Scene",
                     "module": "cookbook.maya.pre_publish.mdl.SaveScene",
                     "name": "SaveScene",
-                    "order": 2,
+                    "order": 3,
                     "required": "True"
                 },
                 {
                     "label": "Clean Tt",
                     "module": "cookbook.maya.pre_publish.mdl.CleanTt",
                     "name": "CleanTt",
-                    "order": 3,
+                    "order": 4,
                     "required": "True"
                 },
                 {
                     "label": "Delete History",
                     "module": "cookbook.maya.pre_publish.mdl.DeleteHistory",
                     "name": "DeleteHistory",
-                    "order": 4,
+                    "order": 5,
                     "required": "True"
                 },
                 {
                     "label": "Freeze Transformations",
                     "module": "cookbook.maya.pre_publish.mdl.FreezeTransformations",
                     "name": "FreezeTransformations",
-                    "order": 5,
-                    "required": "True"
-                },
-                {
-                    "label": "Assign Basic Colors",
-                    "module": "cookbook.maya.pre_publish.mdl.AssignBasicColors",
-                    "name": "AssignBasicColors",
                     "order": 6,
                     "required": "True"
                 },
