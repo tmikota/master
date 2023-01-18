@@ -4,7 +4,6 @@ from cgl.plugins.preflight.preflight_check import PreflightCheck
 from cgl.plugins.maya.tasks import mdl
 
 
-
 class AssignBasicColors(PreflightCheck):
 
     def getName(self):
