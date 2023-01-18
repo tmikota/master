@@ -3,23 +3,23 @@
         {
             "buttons": [
                 {
+                    "label": "Check Mdl Naming",
+                    "module": "cookbook.maya.pre_publish.mdl.CheckMdlNaming",
+                    "name": "CheckMdlNaming",
+                    "order": 1,
+                    "required": "True"
+                },
+                {
                     "label": "Save Scene",
                     "module": "cookbook.maya.pre_publish.mdl.SaveScene",
                     "name": "SaveScene",
-                    "order": 1,
+                    "order": 2,
                     "required": "True"
                 },
                 {
                     "label": "Clean Tt",
                     "module": "cookbook.maya.pre_publish.mdl.CleanTt",
                     "name": "CleanTt",
-                    "order": 2,
-                    "required": "True"
-                },
-                {
-                    "label": "Check Mdl Name",
-                    "module": "cookbook.maya.pre_publish.mdl.CheckMdlName",
-                    "name": "CheckMdlName",
                     "order": 3,
                     "required": "True"
                 },
@@ -38,66 +38,52 @@
                     "required": "True"
                 },
                 {
-                    "label": "Check Geo Resolution",
-                    "module": "cookbook.maya.pre_publish.mdl.CheckGeoResolution",
-                    "name": "CheckGeoResolution",
-                    "order": 6,
-                    "required": "True"
-                },
-                {
-                    "label": "Check Mtl Names",
-                    "module": "cookbook.maya.pre_publish.mdl.CheckMtlNames",
-                    "name": "CheckMtlNames",
-                    "order": 7,
-                    "required": "True"
-                },
-                {
-                    "label": "Check Geo Names",
-                    "module": "cookbook.maya.pre_publish.mdl.CheckGeoNames",
-                    "name": "CheckGeoNames",
-                    "order": 8,
-                    "required": "True"
-                },
-                {
                     "label": "Assign Basic Colors",
                     "module": "cookbook.maya.pre_publish.mdl.AssignBasicColors",
                     "name": "AssignBasicColors",
-                    "order": 9,
+                    "order": 6,
                     "required": "True"
                 },
                 {
                     "label": "Version Up",
                     "module": "cookbook.maya.pre_publish.mdl.VersionUp",
                     "name": "VersionUp",
-                    "order": 10,
+                    "order": 7,
                     "required": "True"
                 },
                 {
                     "label": "Export High Res",
                     "module": "cookbook.maya.pre_publish.mdl.ExportHighRes",
                     "name": "ExportHighRes",
-                    "order": 11,
+                    "order": 8,
                     "required": "True"
                 },
                 {
                     "label": "Update Shotgun",
                     "module": "cookbook.maya.pre_publish.mdl.UpdateShotgun",
                     "name": "UpdateShotgun",
-                    "order": 12,
+                    "order": 9,
                     "required": "True"
                 },
                 {
                     "label": "Playblast Exists",
                     "module": "cookbook.maya.pre_publish.mdl.PlayblastExists",
                     "name": "PlayblastExists",
-                    "order": 13,
+                    "order": 10,
+                    "required": "True"
+                },
+                {
+                    "label": "Create Msd",
+                    "module": "cookbook.maya.pre_publish.mdl.CreateMsd",
+                    "name": "CreateMsd",
+                    "order": 11,
                     "required": "True"
                 },
                 {
                     "label": "Publish",
                     "module": "cookbook.maya.pre_publish.mdl.Publish",
                     "name": "Publish",
-                    "order": 14,
+                    "order": 12,
                     "required": "True"
                 }
             ],
